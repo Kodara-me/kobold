@@ -1,6 +1,6 @@
 # On a version tag, builds the Arch package from the tag's source archive in a fresh Arch
-# container (tests included) and attaches the package, the archive, the PKGBUILD and their
-# checksums to a draft release, which the maintainer publishes (TASKS.md R5, R9).
+# container (tests included) and attaches the package, the archive, the PKGBUILD, the install
+# script and their checksums to a draft release, which the maintainer publishes (TASKS.md R5, R9).
 name: Release
 
 on:
@@ -67,11 +67,13 @@ jobs:
           su builder -c 'cd /tmp/package && updpkgsums && makepkg --nodeps --noconfirm'
           cp /tmp/package/PKGBUILD dist/PKGBUILD
           cp /tmp/package/kobold-"$VERSION"-*.pkg.tar.zst dist/
+          # The one-command installer (SPEC-INSTALL.md §6.4), served by releases/latest/download/.
+          cp scripts/get-kobold.sh dist/
 
       - name: Checksums
         run: |
           cd dist
-          sha256sum kobold-* PKGBUILD > SHA256SUMS
+          sha256sum kobold-* PKGBUILD get-kobold.sh > SHA256SUMS
           cat SHA256SUMS
 
       - name: Draft the release

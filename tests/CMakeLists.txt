@@ -66,6 +66,7 @@ get_property(kobold_tests DIRECTORY PROPERTY TESTS)
 set_tests_properties(${kobold_tests} PROPERTIES ENVIRONMENT_MODIFICATION "LANGUAGE=set:en")
 
 # Translations (SPEC-I18N.md §7): complete French catalog, CLI in both languages.
+add_test(NAME getkobold COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/getkobold.sh ${PROJECT_SOURCE_DIR}/scripts/get-kobold.sh)
 add_test(NAME translations-complete COMMAND ${PROJECT_SOURCE_DIR}/scripts/update-translations.sh --check)
 add_test(NAME translations-cli-fr COMMAND kobold --help)
 # LANGUAGE is ignored under the C locale, and fr_FR is not generated everywhere: the

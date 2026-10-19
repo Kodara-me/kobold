@@ -206,6 +206,43 @@ Decided by the user on 2026-10-17:
   and `SHA256SUMS` to a **draft** release using `docs/release-notes/<version>.md`.
 - To release: tag `v<version>` on `main` and push the tag; check the draft, then publish it.
 
+### 6.4 Install script for releases (`scripts/get-kobold.sh`)
+
+Chosen by the user on 2026-10-19 (issue #3). One command installs the latest release:
+
+```
+curl -fsSL https://github.com/jstmichel/kobold/releases/latest/download/get-kobold.sh | sh
+```
+
+- **Where it lives**: `scripts/get-kobold.sh`, attached to every release by the release
+  workflow and listed in its `SHA256SUMS`. `releases/latest/download/` always serves the
+  latest release's copy. It is distinct from `scripts/install.sh`, which builds the
+  development checkout (§6).
+- **Shell**: POSIX `sh`, using only `curl`, `sha256sum`, `mktemp`, `pacman`, `vercmp` and
+  `sudo`. No GitHub API call: the release's `SHA256SUMS` names the package to download.
+- **Steps**:
+  1. Refuse to run as root, on a system without `pacman`, or on a machine other than
+     `x86_64` (exit 1, with the reason).
+  2. Download `SHA256SUMS` of the latest release (or of `--version <tag>`), then the package
+     it lists (`kobold-<version>-<rel>-x86_64.pkg.tar.zst`), into a temporary folder removed
+     on exit.
+  3. Check the package against `SHA256SUMS`; on a mismatch, stop before installing anything
+     (exit 1).
+  4. Compare with the installed `kobold` (`vercmp`): the same version is reported and the
+     script ends (exit 0); a newer installed version (a development build such as
+     `0.1.0.r28.ecd9ec9`) needs a confirmation, since pacman sees a downgrade.
+  5. Install `kepubify` when missing, with `paru`, else `yay` (`-S --needed kepubify`); with
+     neither, print how to install it and exit 1.
+  6. `sudo pacman -U` the package, then run `kobold doctor` and print its result (a fresh
+     install reports Komga as not configured yet: not an error of the script).
+- **Questions** read the terminal (`/dev/tty`), not standard input, which is the script
+  itself under `curl … | sh`; `pacman` and the AUR helper read the terminal too. Without a
+  terminal, a question needs `--yes`, or the script stops (exit 1).
+- **Options**: `--version <tag>` (for example `v0.1.0`), `--yes` (answer yes, pass
+  `--noconfirm`), `--dry-run` (download and check, then print the install commands without
+  running them), `--help`.
+- **Test hook**: `KOBOLD_RELEASES_URL` replaces `https://github.com/jstmichel/kobold/releases`.
+
 ## 7. Runtime checks
 
 ### 7.1 `kobold doctor`
@@ -261,3 +298,13 @@ configuration, `4` for Komga).
     keychain entry untouched.
 12. No test reads or writes the system keychain: every test runs with `KOBOLD_KEYCHAIN=memory`,
    which keeps keys in the process; KWallet logs no access during `ctest`.
+13. `get-kobold.sh` with a release whose package matches `SHA256SUMS` runs
+    `sudo pacman -U` on that package and then `kobold doctor`.
+14. With a corrupted package, `get-kobold.sh` exits 1 and never runs `sudo` or `pacman -U`.
+15. `get-kobold.sh --dry-run` downloads and checks, prints the install commands, and runs
+    neither `sudo` nor the AUR helper.
+16. Without `kepubify`, `get-kobold.sh` installs it with `paru` when present; without any AUR
+    helper it exits 1 and prints how to install kepubify.
+17. With the same version installed, `get-kobold.sh` says so and exits 0 without installing;
+    with a newer installed version and no terminal, it exits 1 unless `--yes` is given.
+18. Run as root, `get-kobold.sh` exits 1 before downloading anything.
