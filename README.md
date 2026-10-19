@@ -4,6 +4,10 @@
 [![Release](https://img.shields.io/github/v/release/jstmichel/kobold)](https://github.com/jstmichel/kobold/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
+*Français : [README.fr.md](README.fr.md)*
+
+![Kobold: a series from Komga followed on a Kobo Clara 2E](docs/screenshots/en/2-series.png)
+
 Kobold synchronizes books from a [Komga](https://komga.org) server, and from folders of
 your own, to Kobo e-readers connected over USB. EPUB books are converted to KEPUB with
 [kepubify](https://pgaskin.net/kepubify/), comics to fixed-layout KEPUB, PDF books are
@@ -44,6 +48,13 @@ features as the CLI (SPEC-APP.md):
 
 The current Kobo is chosen in the toolbar. When the Komga sync endpoint of a connected Kobo
 is broken (for example after a firmware update), the window offers to reinstall it.
+
+| Preview of a sync | Books on the Kobo | Settings of a Kobo |
+|---|---|---|
+| ![Preview of a sync](docs/screenshots/en/3-preview.png) | ![Books on the Kobo](docs/screenshots/en/10-kobo-books.png) | ![Settings of a Kobo](docs/screenshots/en/5-settings.png) |
+
+The screenshots use demo data only (public-domain books on a fake Komga server and a fake
+Kobo): `scripts/demo/screenshots.sh` takes them again.
 
 ## Installation (Arch Linux and derivatives)
 
@@ -109,7 +120,8 @@ cmake --preset dev && cmake --build --preset dev && ctest --preset dev
 
 The executables are `build/bin/kobold` and `build/bin/kobold-gui`.
 `build/bin/kobold-gui-screenshots <dir>` saves a screenshot of every page of the application
-(development aid).
+(development aid); `scripts/demo/screenshots.sh` runs it on demo data, a fake Komga server with
+public-domain books and a fake Kobo (`scripts/demo/demo-komga.py`, `scripts/demo/demo-kobo.py`).
 
 For manual tests without real devices, `KOBOLD_MEDIA_ROOT=<dir>` makes Kobold look for Kobos
 only in `<dir>` (one sub-directory per fake Kobo with `.kobo/KoboReader.sqlite` and
