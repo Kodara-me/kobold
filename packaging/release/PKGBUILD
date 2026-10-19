@@ -5,7 +5,7 @@
 pkgname=kobold
 pkgver=0.1.0
 pkgrel=1
-pkgdesc='Synchronize Komga books with a Kobo e-reader'
+pkgdesc='Sync Komga books and local shelves with Kobo e-readers (KDE app and CLI)'
 arch=('x86_64')
 url='https://github.com/jstmichel/kobold'
 license=('MIT')
