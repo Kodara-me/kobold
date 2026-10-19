@@ -1,5 +1,9 @@
 # Kobold
 
+[![CI](https://github.com/jstmichel/kobold/actions/workflows/ci.yml/badge.svg)](https://github.com/jstmichel/kobold/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/jstmichel/kobold)](https://github.com/jstmichel/kobold/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Kobold synchronizes books from a [Komga](https://komga.org) server, and from folders of
 your own, to Kobo e-readers connected over USB. EPUB books are converted to KEPUB with
 [kepubify](https://pgaskin.net/kepubify/), comics to fixed-layout KEPUB, PDF books are
@@ -43,12 +47,26 @@ is broken (for example after a firmware update), the window offers to reinstall 
 
 ## Installation (Arch Linux and derivatives)
 
-### From a release
-
-Download `kobold-<version>-1-x86_64.pkg.tar.zst` from the
-[releases](https://github.com/jstmichel/kobold/releases), then:
+### From a release (one command)
 
 ```sh
+curl -fsSL https://github.com/jstmichel/kobold/releases/latest/download/get-kobold.sh | sh
+```
+
+The script downloads the latest release, checks the package against the release's
+`SHA256SUMS`, installs kepubify from the AUR when it is missing (with `paru` or `yay`), installs
+Kobold with `sudo pacman -U`, then runs `kobold doctor`. It asks before replacing a newer
+development build. Options: `--version v0.1.0`, `--yes`, `--dry-run` (pass them with
+`| sh -s -- --dry-run`). Read it first if you like:
+[scripts/get-kobold.sh](scripts/get-kobold.sh).
+
+### From a release (by hand)
+
+Download `kobold-<version>-1-x86_64.pkg.tar.zst` and `SHA256SUMS` from the
+[latest release](https://github.com/jstmichel/kobold/releases/latest), then:
+
+```sh
+sha256sum -c --ignore-missing SHA256SUMS
 paru -S kepubify                                    # from the AUR, needed by Kobold
 sudo pacman -U kobold-<version>-1-x86_64.pkg.tar.zst
 kobold doctor
@@ -369,6 +387,12 @@ User data stays in place and can be removed by hand:
 
 Before uninstalling, run `kobold kobo-sync uninstall --delete-key` for each Kobo with Komga
 sync, so that it points to the Kobo Store again.
+
+## Contributing
+
+Ideas and bugs go to the [issues](https://github.com/jstmichel/kobold/issues). Kobold is built
+spec first: an idea is discussed, then specified with acceptance criteria, then built with
+tests. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

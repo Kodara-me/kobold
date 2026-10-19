@@ -1,0 +1,52 @@
+name: Bug
+description: Something does not work as the specifications or the documentation say.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please leave out personal data: Kobo serial numbers, Komga
+        addresses, API keys and the titles of your own library are not needed.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. kobold sync --dry-run
+        2. …
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `kobold doctor`
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Kobold version
+      description: "`kobold --version`"
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: kobo
+    attributes:
+      label: Kobo model and firmware
+      placeholder: "Clara 2E, 4.38.23828"
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Desktop application
+        - Command line
+        - Both
+        - Installation

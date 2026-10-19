@@ -1,0 +1,29 @@
+name: Idea
+description: A proposal to discuss. Once chosen, it gets a specification before any code.
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kobold follows spec-driven development: an idea is discussed here first; when it is
+        chosen, its behaviour is written in a `SPEC-*.md` file, then broken into tasks, then
+        built with tests. See [CONTRIBUTING.md](https://github.com/jstmichel/kobold/blob/main/CONTRIBUTING.md).
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What Kobold would do, from the user's point of view.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The problem it solves, or what it makes easier today.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How we would know it works
+      description: Observable results, for example "a click on … puts … on the Kobo".
