@@ -3,7 +3,8 @@
 // Development tool: opens the application window offscreen, goes through its main states and
 // saves a screenshot of each in the directory given as first argument. It uses the same
 // settings, keychain and Komga server as kobold-gui; set XDG_CONFIG_HOME, XDG_DATA_HOME,
-// XDG_CACHE_HOME and KOBOLD_MEDIA_ROOT to keep real settings and devices out of it.
+// XDG_CACHE_HOME and KOBOLD_MEDIA_ROOT to keep real settings and devices out of it, and see
+// scripts/demo/screenshots.sh for demo data.
 // The preview it runs is a dry run: it never changes a Kobo.
 
 #include "apikeystore.h"
@@ -79,6 +80,14 @@ int main(int argc, char *argv[])
 
     Kobold::Settings settings;
     Kobold::ApiKeyStore apiKeyStore;
+    // For the demo Komga server (scripts/demo): a key kept in memory, never in the keychain.
+    if (qEnvironmentVariable("KOBOLD_KEYCHAIN") == QLatin1String("memory") && qEnvironmentVariableIsSet("KOBOLD_SCREENSHOT_API_KEY")) {
+        QEventLoop stored;
+        apiKeyStore.write(qEnvironmentVariable("KOBOLD_SCREENSHOT_API_KEY"), [&stored](const Kobold::ApiKeyStore::Result &) {
+            stored.quit();
+        });
+        stored.exec();
+    }
     QNetworkAccessManager network;
     Kobold::AppController controller(&settings, &apiKeyStore, &network);
     Kobold::AppController::setInstance(&controller);
