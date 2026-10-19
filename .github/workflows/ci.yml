@@ -1,0 +1,51 @@
+# Builds Kobold and runs every test on Arch Linux, the platform of SPEC-INSTALL.md §2, for
+# every push to main and every pull request (TASKS.md R8).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build and test (Arch Linux)
+    runs-on: ubuntu-latest
+    container: archlinux:base-devel
+    steps:
+      - name: Install dependencies
+        # SPEC-INSTALL.md §3, without the AUR: kepubify and KCC are optional at build time, and
+        # the tests that need them are skipped.
+        run: |
+          pacman -Syu --noconfirm --needed \
+            git cmake ninja extra-cmake-modules gettext \
+            qt6-base qt6-declarative kcoreaddons ki18n kconfig solid qtkeychain-qt6 \
+            karchive poppler-qt6 kirigami kirigami-addons kcrash kiconthemes \
+            sqlite python
+          # The language tests run Kobold in English, French and German.
+          sed -i -E 's/^#(en_US|fr_FR|fr_CA|de_DE)(\.UTF-8 UTF-8)/\1\2/' /etc/locale.gen
+          locale-gen
+
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+
+      - name: Build
+        run: cmake --build build
+
+      - name: Test
+        # Every test keeps keys in memory (KOBOLD_KEYCHAIN=memory, set by CMake) and draws
+        # offscreen.
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: ctest --test-dir build --output-on-failure --parallel "$(nproc)"

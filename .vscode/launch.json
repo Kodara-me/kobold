@@ -1,0 +1,49 @@
+{
+  // F5 builds with the dev preset (tasks.json), then starts under CodeLLDB.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Kobold (app)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/kobold-gui",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build (dev)"
+    },
+    {
+      // Own settings, data and fake Kobos in .dev/, keys in memory: never touches the real
+      // Kobos, settings or keychain. Put fake Kobos in .dev/media/<name>/.kobo/.
+      "name": "Kobold (app, test data)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/kobold-gui",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "XDG_CONFIG_HOME": "${workspaceFolder}/.dev/config",
+        "XDG_DATA_HOME": "${workspaceFolder}/.dev/data",
+        "XDG_CACHE_HOME": "${workspaceFolder}/.dev/cache",
+        "KOBOLD_MEDIA_ROOT": "${workspaceFolder}/.dev/media",
+        "KOBOLD_KEYCHAIN": "memory"
+      },
+      "preLaunchTask": "build (dev)"
+    },
+    {
+      "name": "kobold (CLI)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/kobold",
+      "args": "${input:cliArguments}",
+      "cwd": "${workspaceFolder}",
+      "terminal": "integrated",
+      "preLaunchTask": "build (dev)"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "cliArguments",
+      "type": "promptString",
+      "description": "Arguments for kobold",
+      "default": "status"
+    }
+  ]
+}

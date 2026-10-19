@@ -1,0 +1,63 @@
+# Builds a Kobold release from its source archive, the one attached to the GitHub release
+# (SPEC-INSTALL.md §6.3). The release workflow sets pkgver from the tag and the checksum.
+# packaging/PKGBUILD stays for building the development checkout.
+
+pkgname=kobold
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Synchronize Komga books with a Kobo e-reader'
+arch=('x86_64')
+url='https://github.com/jstmichel/kobold'
+license=('MIT')
+depends=(
+  'kconfig'
+  'kcoreaddons'
+  'kcrash'
+  'kepubify'
+  'karchive'
+  'ki18n'
+  'kiconthemes'
+  'kirigami'
+  'kirigami-addons'
+  'poppler-qt6'
+  'qt6-base'
+  'qt6-declarative'
+  'qtkeychain-qt6'
+  'solid'
+)
+makedepends=(
+  'cmake'
+  'extra-cmake-modules'
+  'gettext'
+  'ninja'
+)
+# The shell tests of check() script a fake Kobo database and a local web server.
+checkdepends=(
+  'python'
+  'sqlite'
+)
+optdepends=(
+  'kwallet: store the Komga API key on Plasma'
+  'kcc: convert CBZ and CBR comics (AUR)'
+  '7zip: archive extraction for kcc'
+  'python-cffi: needed by a kcc dependency'
+)
+source=("$pkgname-$pkgver.tar.gz::https://github.com/jstmichel/kobold/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cmake -B build -S "$pkgname-$pkgver" -G Ninja \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_TESTING=ON
+  cmake --build build
+}
+
+check() {
+  QT_QPA_PLATFORM=offscreen ctest --test-dir build --output-on-failure
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$pkgname-$pkgver/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

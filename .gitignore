@@ -1,0 +1,12 @@
+build/
+build-release/
+*.user
+.cache/
+compile_commands.json
+packaging/src/
+packaging/pkg/
+packaging/kobold/
+*.pkg.tar.*
+packaging/.SRCINFO
+po/kobold.pot
+.dev/

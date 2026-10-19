@@ -1,0 +1,68 @@
+# Builds Kobold from this Git checkout (committed HEAD). See SPEC-INSTALL.md §6.
+#
+# Install with an AUR helper, which also installs the AUR dependency kepubify:
+#   paru -Bi packaging/
+
+pkgname=kobold
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Synchronize Komga books with a Kobo e-reader'
+arch=('x86_64')
+url='https://github.com/jstmichel/kobold'
+license=('MIT')
+depends=(
+  'kconfig'
+  'kcoreaddons'
+  'kcrash'
+  'kepubify'
+  'karchive'
+  'ki18n'
+  'kiconthemes'
+  'kirigami'
+  'kirigami-addons'
+  'poppler-qt6'
+  'qt6-base'
+  'qt6-declarative'
+  'qtkeychain-qt6'
+  'solid'
+)
+makedepends=(
+  'cmake'
+  'extra-cmake-modules'
+  'gettext'
+  'git'
+  'ninja'
+)
+optdepends=(
+  'kwallet: store the Komga API key on Plasma'
+  'kcc: convert CBZ and CBR comics (AUR)'
+  '7zip: archive extraction for kcc'
+  'python-cffi: needed by a kcc dependency'
+)
+source=("kobold::git+file://${startdir}/..")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd kobold
+  printf '%s.r%s.%s' \
+    "$(sed -n 's/^project(kobold VERSION \([0-9.]*\).*/\1/p' CMakeLists.txt)" \
+    "$(git rev-list --count HEAD)" \
+    "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cmake -B build -S kobold -G Ninja \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_TESTING=ON
+  cmake --build build
+}
+
+check() {
+  ctest --test-dir build --output-on-failure
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 kobold/LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

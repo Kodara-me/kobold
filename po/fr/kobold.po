@@ -1,0 +1,5266 @@
+# French translation of Kobold.
+msgid ""
+msgstr ""
+"Project-Id-Version: kobold\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 08:14-0400\n"
+"PO-Revision-Date: 2026-10-17\n"
+"Last-Translator: Kira <kira@kodara.me>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/app/appcontroller.cpp:55
+#, kde-format
+msgid "Unknown model"
+msgstr "Modèle inconnu"
+
+#: src/app/appcontroller.cpp:62
+#, kde-format
+msgid "Not analyzed by Komga yet"
+msgstr "Pas encore analysé par Komga"
+
+#: src/app/appcontroller.cpp:62
+#, kde-format
+msgid "Unsupported format"
+msgstr "Format non pris en charge"
+
+#: src/app/appcontroller.cpp:65
+#, kde-format
+msgid "Not ready in Komga"
+msgstr "Pas prêt dans Komga"
+
+#: src/app/appcontroller.cpp:184 src/app/appcontroller.cpp:207
+#, kde-format
+msgid "Connecting to %1…"
+msgstr "Connexion à %1…"
+
+#: src/app/appcontroller.cpp:191
+#, kde-format
+msgid "No Komga API key is set. Enter one in the settings."
+msgstr ""
+"Aucune clé d'API Komga n'est définie. Saisissez-en une dans la configuration."
+
+#: src/app/appcontroller.cpp:559 src/app/appcontroller.cpp:698
+#, kde-format
+msgid "Following"
+msgstr "Suivi"
+
+#: src/app/appcontroller.cpp:559
+#, kde-format
+msgid "Following volumes %1"
+msgstr "Tomes suivis : %1"
+
+#: src/app/appcontroller.cpp:561
+#, kde-format
+msgid "1 selected"
+msgid_plural "%1 selected"
+msgstr[0] "%1 sélectionné"
+msgstr[1] "%1 sélectionnés"
+
+#: src/app/appcontroller.cpp:593 src/app/appcontroller.cpp:749
+#: src/cli/librarycommand.cpp:198 src/cli/librarycommand.cpp:301
+#, kde-format
+msgid "1 series"
+msgid_plural "%1 series"
+msgstr[0] "%1 série"
+msgstr[1] "%1 séries"
+
+#: src/app/appcontroller.cpp:609 src/app/appcontroller.cpp:669
+#: src/app/appcontroller.cpp:738 src/app/appcontroller.cpp:753
+#: src/app/shelfeditcontroller.cpp:157 src/cli/librarycommand.cpp:227
+#: src/cli/librarycommand.cpp:369 src/cli/selectcommand.cpp:456
+#: src/cli/shelfcommand.cpp:556 src/cli/shelfcommand.cpp:578
+#, kde-format
+msgid "1 book"
+msgid_plural "%1 books"
+msgstr[0] "%1 livre"
+msgstr[1] "%1 livres"
+
+#: src/app/appcontroller.cpp:704
+#, kde-format
+msgid "Collections"
+msgstr "Collections"
+
+#: src/app/appcontroller.cpp:705
+#, kde-format
+msgid "Read Lists"
+msgstr "Listes de lecture"
+
+#: src/app/appcontroller.cpp:740
+#, kde-format
+msgid "Read right to left"
+msgstr "Lecture de droite à gauche"
+
+#: src/app/appcontroller.cpp:749
+#, kde-format
+msgid "Collection · %1"
+msgstr "Collection · %1"
+
+#: src/app/appcontroller.cpp:753
+#, kde-format
+msgid "Read list · %1"
+msgstr "Liste de lecture · %1"
+
+#: src/app/appcontroller.cpp:891
+#, kde-format
+msgid "Synced by Komga"
+msgstr "Synchronisé par Komga"
+
+#: src/app/appcontroller.cpp:895
+#, kde-format
+msgid "Selected through the followed %1"
+msgstr "Sélectionné par le suivi de %1"
+
+#: src/app/appcontroller.cpp:899
+#, kde-format
+msgctxt "@info volume number · format"
+msgid "Volume %1 · %2"
+msgstr "Tome %1 · %2"
+
+#: src/app/appcontroller.cpp:925
+#, kde-format
+msgid "Invalid volume range; examples: 1-10, 5, 1-3,7,10-"
+msgstr "Plage de tomes non valable ; exemples : 1-10, 5, 1-3,7,10-"
+
+#: src/app/appcontroller.cpp:941 src/cli/devicecommand.cpp:175
+#, kde-format
+msgid "No Kobo known yet. Plug one in."
+msgstr "Aucun Kobo connu pour l'instant. Branchez-en un."
+
+#: src/app/appcontroller.cpp:1013 src/app/appcontroller.cpp:1039
+#, kde-format
+msgid "Series"
+msgstr "Série"
+
+#: src/app/appcontroller.cpp:1017 src/app/appcontroller.cpp:1047
+#, kde-format
+msgid "Collection"
+msgstr "Collection"
+
+#: src/app/appcontroller.cpp:1021 src/app/appcontroller.cpp:1055
+#, kde-format
+msgid "Read list"
+msgstr "Liste de lecture"
+
+#: src/app/appcontroller.cpp:1114
+#, kde-format
+msgid "Not an EPUB, PDF, CBZ or CBR file: %1"
+msgstr "Pas un fichier EPUB, PDF, CBZ ou CBR : %1"
+
+#: src/app/appcontroller.cpp:1129
+#, kde-format
+msgid "No Kobo selected"
+msgstr "Aucun Kobo sélectionné"
+
+#: src/app/appcontroller.cpp:1415
+#, kde-format
+msgid "The series could not be set on %1: %2"
+msgstr "La série n'a pas pu être définie sur %1 : %2"
+
+#: src/app/appcontroller.cpp:1418
+#, kde-format
+msgid "Series set for 1 book on %2. Eject the Kobo to see it grouped."
+msgid_plural ""
+"Series set for %1 books on %2. Eject the Kobo to see them grouped."
+msgstr[0] ""
+"Série définie pour %1 livre sur %2. Éjectez la Kobo pour le voir regroupé."
+msgstr[1] ""
+"Série définie pour %1 livres sur %2. Éjectez la Kobo pour les voir regroupés."
+
+#: src/app/appcontroller.cpp:1471
+#, kde-format
+msgid "This Kobo is not waiting to be mounted."
+msgstr "Ce Kobo n'attend pas d'être monté."
+
+#: src/app/appcontroller.cpp:1476 src/cli/devicecommand.cpp:112
+#, kde-format
+msgid "Mounted at %1."
+msgstr "Monté à %1."
+
+#: src/app/appcontroller.cpp:1498
+#, kde-format
+msgid "The Kobo is in use; wait for the operation to finish."
+msgstr "Le Kobo est utilisé ; attendez la fin de l'opération."
+
+#: src/app/appcontroller.cpp:1595 src/app/appcontroller.cpp:1636
+#, kde-format
+msgid "The shelf database cannot be opened."
+msgstr "La base des étagères ne peut pas être ouverte."
+
+#: src/app/appcontroller.cpp:1710
+#, kde-format
+msgid "Scanning %1…"
+msgstr "Scan de %1…"
+
+#: src/app/appcontroller.cpp:1713
+#, kde-format
+msgid "Scanning %1: %2 of %3"
+msgstr "Scan de %1 : %2 sur %3"
+
+#: src/app/appcontroller.cpp:1719
+#, kde-format
+msgid "%1: %2 new, %3 changed, %4 missing."
+msgstr "%1 : %2 nouveaux, %3 modifiés, %4 absents."
+
+#: src/app/appcontroller.cpp:1774 src/app/kobobookscontroller.cpp:180
+#: src/app/kobobookscontroller.cpp:397
+#, kde-format
+msgid "Connect the Kobo first."
+msgstr "Branchez d'abord le Kobo."
+
+#: src/app/appcontroller.cpp:1797
+#, kde-format
+msgid "No longer in Komga"
+msgstr "N'est plus dans Komga"
+
+#: src/app/appcontroller.cpp:1798
+#, kde-format
+msgid "No longer on its shelf"
+msgstr "N'est plus sur son étagère"
+
+#: src/app/appcontroller.cpp:1799
+#, kde-format
+msgid "Left the selection"
+msgstr "Retiré de la sélection"
+
+#: src/app/appcontroller.cpp:2087
+#, kde-format
+msgid "No Kobo connected"
+msgstr "Aucun Kobo connecté"
+
+#: src/app/appcontroller.cpp:2100
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Preview"
+msgstr "Aperçu"
+
+#: src/app/appcontroller.cpp:2100
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Sync"
+msgstr "Synchronisation"
+
+#: src/app/appcontroller.cpp:2191
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Preview Reading Progress"
+msgstr "Aperçu de la progression de lecture"
+
+#: src/app/appcontroller.cpp:2191
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Send Reading Progress"
+msgstr "Envoi de la progression de lecture"
+
+#: src/app/appcontroller.cpp:2252
+#, kde-format
+msgid "Cannot write the configuration file"
+msgstr "Impossible d'écrire le fichier de configuration"
+
+#: src/app/appcontroller.cpp:2263
+#, kde-format
+msgid "Enter an API key."
+msgstr "Saisissez une clé d'API."
+
+#: src/app/appcontroller.cpp:2272
+#, kde-format
+msgid "Komga refused this API key; it was not stored."
+msgstr "Komga a refusé cette clé d'API ; elle n'a pas été enregistrée."
+
+#: src/app/appcontroller.cpp:2278
+#, kde-format
+msgid "Cannot store the API key: %1"
+msgstr "Impossible d'enregistrer la clé d'API : %1"
+
+#: src/app/appcontroller.cpp:2282
+#, kde-format
+msgid "API key stored. Connected as %1."
+msgstr "Clé d'API enregistrée. Connecté en tant que %1."
+
+#: src/app/appcontroller.cpp:2283
+#, kde-format
+msgid "API key stored, but Komga could not be reached to check it (%1)."
+msgstr ""
+"Clé d'API enregistrée, mais Komga n'a pas pu être joint pour la vérifier "
+"(%1)."
+
+#: src/app/kobobookscontroller.cpp:41 src/cli/kobobookscommand.cpp:60
+#, kde-format
+msgctxt "@info book origin"
+msgid "Kobo Store"
+msgstr "Boutique Kobo"
+
+#: src/app/kobobookscontroller.cpp:43 src/cli/kobobookscommand.cpp:62
+#, kde-format
+msgctxt "@info book origin"
+msgid "Komga"
+msgstr "Komga"
+
+#: src/app/kobobookscontroller.cpp:45 src/cli/kobobookscommand.cpp:64
+#, kde-format
+msgctxt "@info book origin"
+msgid "Kobold"
+msgstr "Kobold"
+
+#: src/app/kobobookscontroller.cpp:49 src/cli/kobobookscommand.cpp:68
+#, kde-format
+msgctxt "@info book origin"
+msgid "Other file"
+msgstr "Autre fichier"
+
+#: src/app/kobobookscontroller.cpp:55 src/cli/kobobookscommand.cpp:74
+#, kde-format
+msgctxt "@info read status"
+msgid "finished"
+msgstr "terminé"
+
+#: src/app/kobobookscontroller.cpp:58 src/cli/kobobookscommand.cpp:77
+#, kde-format
+msgctxt "@info read status"
+msgid "reading (%1%)"
+msgstr "en cours (%1 %)"
+
+#: src/app/kobobookscontroller.cpp:60 src/cli/kobobookscommand.cpp:79
+#, kde-format
+msgctxt "@info read status"
+msgid "unread"
+msgstr "non lu"
+
+#: src/app/kobobookscontroller.cpp:68 src/cli/kobobookscommand.cpp:170
+#, kde-format
+msgctxt "@info book state"
+msgid "no series"
+msgstr "sans série"
+
+#: src/app/kobobookscontroller.cpp:70 src/app/kobobookscontroller.cpp:257
+#: src/cli/kobobookscommand.cpp:172
+#, kde-format
+msgctxt "@info series and number"
+msgid "%1 #%2"
+msgstr "%1 nº %2"
+
+#: src/app/kobobookscontroller.cpp:73 src/cli/kobobookscommand.cpp:175
+#, kde-format
+msgctxt "@info book state"
+msgid "deleted"
+msgstr "supprimé"
+
+#: src/app/kobobookscontroller.cpp:73 src/cli/kobobookscommand.cpp:175
+#, kde-format
+msgctxt "@info book state"
+msgid "on the Kobo"
+msgstr "sur le Kobo"
+
+#: src/app/kobobookscontroller.cpp:76 src/app/kobobookscontroller.cpp:79
+#: src/cli/kobobookscommand.cpp:178 src/cli/kobobookscommand.cpp:181
+#: src/cli/kobobookscommand.cpp:223
+#, kde-format
+msgctxt "@info visibility"
+msgid "hidden"
+msgstr "masqué"
+
+#: src/app/kobobookscontroller.cpp:76 src/app/kobobookscontroller.cpp:79
+#: src/cli/kobobookscommand.cpp:178 src/cli/kobobookscommand.cpp:181
+#: src/cli/kobobookscommand.cpp:223
+#, kde-format
+msgctxt "@info visibility"
+msgid "shown"
+msgstr "affiché"
+
+#: src/app/kobobookscontroller.cpp:261 src/cli/kobobookscommand.cpp:228
+#, kde-format
+msgid "in the cloud only"
+msgstr "dans le nuage seulement"
+
+#: src/app/kobobookscontroller.cpp:292 src/cli/kobobookscommand.cpp:321
+#: src/core/parental.cpp:29
+#, kde-format
+msgid "a hidden book"
+msgstr "un livre caché"
+
+#: src/app/kobobookscontroller.cpp:293
+#, kde-format
+msgctxt "@info book: before → after"
+msgid "%1: %2 → %3"
+msgstr "%1 : %2 → %3"
+
+#: src/app/kobobookscontroller.cpp:371
+#, kde-format
+msgid "1 book will be hidden."
+msgid_plural "%1 books will be hidden."
+msgstr[0] "%1 livre sera masqué."
+msgstr[1] "%1 livres seront masqués."
+
+#: src/app/kobobookscontroller.cpp:374
+#, kde-format
+msgid "1 book will be shown."
+msgid_plural "%1 books will be shown."
+msgstr[0] "%1 livre sera affiché."
+msgstr[1] "%1 livres seront affichés."
+
+#: src/app/kobobookscontroller.cpp:377
+#, kde-format
+msgid "1 book will be marked as read."
+msgid_plural "%1 books will be marked as read."
+msgstr[0] "%1 livre sera marqué comme lu."
+msgstr[1] "%1 livres seront marqués comme lus."
+
+#: src/app/kobobookscontroller.cpp:380
+#, kde-format
+msgid "1 book will be deleted from the Kobo."
+msgid_plural "%1 books will be deleted from the Kobo."
+msgstr[0] "%1 livre sera supprimé du Kobo."
+msgstr[1] "%1 livres seront supprimés du Kobo."
+
+#: src/app/kobobookscontroller.cpp:382
+#, kde-format
+msgid "1 book will be marked as unread."
+msgid_plural "%1 books will be marked as unread."
+msgstr[0] "%1 livre sera marqué comme non lu."
+msgstr[1] "%1 livres seront marqués comme non lus."
+
+#: src/app/kobobookscontroller.cpp:391
+#, kde-format
+msgid "Wait for the running sync to end."
+msgstr "Attends la fin de la synchronisation en cours."
+
+#: src/app/kobobookscontroller.cpp:423
+#, kde-format
+msgid "1 book changed. Eject the Kobo so that it reloads its library."
+msgid_plural "%1 books changed. Eject the Kobo so that it reloads its library."
+msgstr[0] ""
+"%1 livre modifié. Éjecte le Kobo pour qu'il recharge sa bibliothèque."
+msgstr[1] ""
+"%1 livres modifiés. Éjecte le Kobo pour qu'il recharge sa bibliothèque."
+
+#: src/app/kobobookscontroller.cpp:426 src/cli/kobobookscommand.cpp:274
+#, kde-format
+msgid "Nothing to change."
+msgstr "Rien à changer."
+
+#: src/app/kobobookscontroller.cpp:466 src/cli/kobobookscommand.cpp:378
+#, kde-format
+msgid "Backup restored. Eject the Kobo so that it reloads its library."
+msgstr ""
+"Sauvegarde restaurée. Éjecte le Kobo pour qu'il recharge sa bibliothèque."
+
+#: src/app/shelfeditcontroller.cpp:32
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Title:"
+msgstr "Titre :"
+
+#: src/app/shelfeditcontroller.cpp:33
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Sort title:"
+msgstr "Titre de tri :"
+
+#: src/app/shelfeditcontroller.cpp:34
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Authors:"
+msgstr "Auteurs :"
+
+#: src/app/shelfeditcontroller.cpp:35
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Series:"
+msgstr "Série :"
+
+#: src/app/shelfeditcontroller.cpp:36
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Volume:"
+msgstr "Tome :"
+
+#: src/app/shelfeditcontroller.cpp:37
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Summary:"
+msgstr "Résumé :"
+
+#: src/app/shelfeditcontroller.cpp:38
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Publisher:"
+msgstr "Éditeur :"
+
+#: src/app/shelfeditcontroller.cpp:39
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Language:"
+msgstr "Langue :"
+
+#: src/app/shelfeditcontroller.cpp:40
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Genres:"
+msgstr "Genres :"
+
+#: src/app/shelfeditcontroller.cpp:41
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Tags:"
+msgstr "Étiquettes :"
+
+#: src/app/shelfeditcontroller.cpp:42
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Age rating:"
+msgstr "Âge :"
+
+#: src/app/shelfeditcontroller.cpp:43
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Release date:"
+msgstr "Date de parution :"
+
+#: src/app/shelfeditcontroller.cpp:44
+#, kde-format
+msgctxt "@label:textbox"
+msgid "ISBN:"
+msgstr "ISBN :"
+
+#: src/app/shelfeditcontroller.cpp:45
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Reading direction (rtl or ltr):"
+msgstr "Sens de lecture (rtl ou ltr) :"
+
+#: src/app/shelfeditcontroller.cpp:46
+#, kde-format
+msgctxt "@label"
+msgid "Cover:"
+msgstr "Couverture :"
+
+#: src/app/shelfeditcontroller.cpp:47
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr "Nom :"
+
+#: src/app/shelfeditcontroller.cpp:48
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Sort name:"
+msgstr "Nom de tri :"
+
+#: src/app/shelfeditcontroller.cpp:56 src/cli/shelfcommand.cpp:74
+#, kde-format
+msgctxt "@info value source"
+msgid "manual"
+msgstr "manuel"
+
+#: src/app/shelfeditcontroller.cpp:59 src/cli/shelfcommand.cpp:77
+#, kde-format
+msgctxt "@info value source"
+msgid "online"
+msgstr "en ligne"
+
+#: src/app/shelfeditcontroller.cpp:62 src/cli/shelfcommand.cpp:80
+#, kde-format
+msgctxt "@info value source"
+msgid "file"
+msgstr "fichier"
+
+#: src/app/shelfeditcontroller.cpp:65 src/cli/shelfcommand.cpp:83
+#, kde-format
+msgctxt "@info value source"
+msgid "file name"
+msgstr "nom du fichier"
+
+#: src/app/shelfeditcontroller.cpp:68 src/cli/shelfcommand.cpp:86
+#, kde-format
+msgctxt "@info value source"
+msgid "its books"
+msgstr "ses livres"
+
+#: src/app/shelfeditcontroller.cpp:164 src/app/shelfeditcontroller.cpp:332
+#: src/app/shelfeditcontroller.cpp:373 src/app/shelfeditcontroller.cpp:397
+#, kde-format
+msgid "no book to edit"
+msgstr "aucun livre à modifier"
+
+#: src/app/shelfeditcontroller.cpp:168 src/app/shelfeditcontroller.cpp:195
+#: src/cli/shelfcommand.cpp:162 src/cli/shelfcommand.cpp:246
+#: src/cli/shelfcommand.cpp:608 src/cli/shelfcommand.cpp:617
+#, kde-format
+msgid "no book or series %1 (see kobold shelf series and books)"
+msgstr "aucun livre ni série %1 (voir kobold shelf series et books)"
+
+#: src/app/shelfeditcontroller.cpp:341 src/app/shelfeditcontroller.cpp:352
+#: src/cli/shelfcommand.cpp:192
+#, kde-format
+msgid "\"%1\" is not a valid value for %2"
+msgstr "« %1 » n'est pas une valeur valide pour %2"
+
+#: src/app/shelfeditcontroller.cpp:497 src/cli/shelfcommand.cpp:300
+#: src/core/metadatalookup.cpp:325
+#, kde-format
+msgid "nothing found"
+msgstr "rien trouvé"
+
+#: src/app/shelfeditcontroller.cpp:603 src/cli/shelfcommand.cpp:417
+#, kde-format
+msgid "Applied: %1."
+msgstr "Appliqué : %1."
+
+#: src/app/shelfeditcontroller.cpp:636 src/cli/shelfcommand.cpp:644
+#, kde-format
+msgid "Imported: %1 book(s), %2 series; %3 book(s) not found on these shelves."
+msgstr ""
+"Importé : %1 livre(s), %2 série(s) ; %3 livre(s) introuvable(s) sur ces "
+"étagères."
+
+#: src/app/shelfeditcontroller.cpp:669 src/cli/shelfcommand.cpp:432
+#, kde-format
+msgid "ComicVine key removed."
+msgstr "Clé ComicVine retirée."
+
+#: src/app/shelfeditcontroller.cpp:669 src/cli/shelfcommand.cpp:432
+#, kde-format
+msgid "ComicVine key stored in the keychain."
+msgstr "Clé ComicVine enregistrée dans le trousseau."
+
+#: src/cli/configcommand.cpp:40
+#, kde-format
+msgid ""
+"missing action, expected one of: set-url, set-api-key, show, set-profile"
+msgstr "action manquante, attendu : set-url, set-api-key, show ou set-profile"
+
+#: src/cli/configcommand.cpp:41
+#, kde-format
+msgid ""
+"unknown action \"%1\", expected one of: set-url, set-api-key, show, set-"
+"profile"
+msgstr ""
+"action « %1 » inconnue, attendu : set-url, set-api-key, show ou set-profile"
+
+#: src/cli/configcommand.cpp:49
+#, kde-format
+msgid "usage: kobold config set-url <url>"
+msgstr "utilisation : kobold config set-url <url>"
+
+#: src/cli/configcommand.cpp:61 src/cli/configcommand.cpp:160
+#: src/cli/devicecommand.cpp:210
+#, kde-format
+msgid "cannot write the configuration file"
+msgstr "impossible d'écrire le fichier de configuration"
+
+#: src/cli/configcommand.cpp:65
+#, kde-format
+msgid "Komga URL set to %1"
+msgstr "URL de Komga définie à %1"
+
+#: src/cli/configcommand.cpp:71
+#, kde-format
+msgid "Komga API key: "
+msgstr "Clé d'API Komga : "
+
+#: src/cli/configcommand.cpp:73 src/cli/kobosynccommand.cpp:52
+#, kde-format
+msgid "no API key read from standard input"
+msgstr "aucune clé d'API lue sur l'entrée standard"
+
+#: src/cli/configcommand.cpp:92
+#, kde-format
+msgid "the API key was refused by %1; it was not stored"
+msgstr "la clé d'API a été refusée par %1 ; elle n'a pas été enregistrée"
+
+#: src/cli/configcommand.cpp:96
+#, kde-format
+msgid "could not verify the API key (%1); storing it anyway"
+msgstr ""
+"impossible de vérifier la clé d'API (%1) ; elle est enregistrée quand même"
+
+#: src/cli/configcommand.cpp:107
+#, kde-format
+msgid "cannot store the API key: %1"
+msgstr "impossible d'enregistrer la clé d'API : %1"
+
+#: src/cli/configcommand.cpp:111
+#, kde-format
+msgid "API key stored in the system keychain."
+msgstr "Clé d'API enregistrée dans le trousseau du système."
+
+#: src/cli/configcommand.cpp:113
+#, kde-format
+msgid "Connected to %1 as %2."
+msgstr "Connecté à %1 en tant que %2."
+
+#: src/cli/configcommand.cpp:122
+#, kde-format
+msgid "usage: kobold config set-profile <profile> | --clear [--device <path>]"
+msgstr ""
+"utilisation : kobold config set-profile <profil> | --clear [--device "
+"<chemin>]"
+
+#: src/cli/configcommand.cpp:135
+#, kde-format
+msgid "unknown KCC profile \"%1\"; Kobo profiles: %2"
+msgstr "profil KCC « %1 » inconnu ; profils Kobo : %2"
+
+#: src/cli/configcommand.cpp:166
+#, kde-format
+msgid "Kobo %1 (%2): comic profile %3"
+msgstr "Kobo %1 (%2) : profil BD %3"
+
+#: src/cli/configcommand.cpp:169 src/services/kobotarget.cpp:30
+#, kde-format
+msgid "none"
+msgstr "aucun"
+
+#: src/cli/configcommand.cpp:175
+#, kde-format
+msgid "Komga URL:          %1"
+msgstr "URL de Komga :          %1"
+
+#: src/cli/configcommand.cpp:176
+#, kde-format
+msgid "Books folder:       %1"
+msgstr "Dossier des livres :    %1"
+
+#: src/cli/configcommand.cpp:177
+#, kde-format
+msgid "Conversion timeout: %1 s"
+msgstr "Délai de conversion :   %1 s"
+
+#: src/cli/configcommand.cpp:182
+#, kde-format
+msgid "API key:            stored in the system keychain"
+msgstr "Clé d'API :             enregistrée dans le trousseau du système"
+
+#: src/cli/configcommand.cpp:186
+#, kde-format
+msgid "API key:            not set (kobold config set-api-key)"
+msgstr "Clé d'API :             non définie (kobold config set-api-key)"
+
+#: src/cli/configcommand.cpp:190
+#, kde-format
+msgid "API key:            unknown (%1)"
+msgstr "Clé d'API :             inconnue (%1)"
+
+#: src/cli/devicecommand.cpp:31
+#, kde-format
+msgid "%1 book(s), %2 followed group(s)"
+msgstr "%1 livre(s), %2 groupe(s) suivi(s)"
+
+#: src/cli/devicecommand.cpp:39 src/services/comicsetup.cpp:16
+#, kde-format
+msgid "unknown model"
+msgstr "modèle inconnu"
+
+#: src/cli/devicecommand.cpp:39 src/services/comicsetup.cpp:21
+#, kde-format
+msgid "unknown model (%1)"
+msgstr "modèle inconnu (%1)"
+
+#: src/cli/devicecommand.cpp:49
+#, kde-format
+msgid "no comic profile"
+msgstr "aucun profil BD"
+
+#: src/cli/devicecommand.cpp:60
+#, kde-format
+msgid "  Name:      %1"
+msgstr "  Nom :         %1"
+
+#: src/cli/devicecommand.cpp:61
+#, kde-format
+msgid "  Serial:    %1"
+msgstr "  N° de série : %1"
+
+#: src/cli/devicecommand.cpp:62
+#, kde-format
+msgid "  Model:     %1"
+msgstr "  Modèle :      %1"
+
+#: src/cli/devicecommand.cpp:63
+#, kde-format
+msgid "  Comics:    %1"
+msgstr "  BD :          %1"
+
+#: src/cli/devicecommand.cpp:64
+#, kde-format
+msgid "  Selection: %1"
+msgstr "  Sélection :   %1"
+
+#: src/cli/devicecommand.cpp:94
+#, kde-format
+msgid "no Kobo waiting to be mounted"
+msgstr "aucun Kobo n'attend d'être monté"
+
+#: src/cli/devicecommand.cpp:102
+#, kde-format
+msgid "several Kobos are not mounted (%1); pass --kobo <name>"
+msgstr "plusieurs Kobo ne sont pas montés (%1) ; indiquez --kobo <nom>"
+
+#: src/cli/devicecommand.cpp:142 src/cli/main.cpp:327
+#, kde-format
+msgid "no Kobo connected"
+msgstr "aucun Kobo connecté"
+
+#: src/cli/devicecommand.cpp:171
+#, kde-format
+msgid "A Kobo is connected but not mounted: kobold device mount"
+msgstr "Un Kobo est branché mais pas monté : kobold device mount"
+
+#: src/cli/devicecommand.cpp:179
+#, kde-format
+msgid "not connected"
+msgstr "non connecté"
+
+#: src/cli/devicecommand.cpp:187
+#, kde-format
+msgid "connected, not mounted (kobold device mount)"
+msgstr "branché, non monté (kobold device mount)"
+
+#: src/cli/devicecommand.cpp:191
+#, kde-format
+msgid "    model %1, comics %2"
+msgstr "    modèle %1, BD %2"
+
+#: src/cli/devicecommand.cpp:192
+#, kde-format
+msgid "    %1; selection: %2"
+msgstr "    %1 ; sélection : %2"
+
+#: src/cli/devicecommand.cpp:213
+#, kde-format
+msgid "Kobo %1 renamed from \"%2\" to \"%3\"."
+msgstr "Kobo %1 renommé de « %2 » en « %3 »."
+
+#: src/cli/devicecommand.cpp:236
+#, kde-format
+msgid ""
+"usage: kobold device [list | rename <name> | mount | eject [--all]] [--kobo "
+"<kobo>] [--device <path>]"
+msgstr ""
+"utilisation : kobold device [list | rename <nom> | mount | eject [--all]] [--"
+"kobo <kobo>] [--device <chemin>]"
+
+#: src/cli/kobobookscommand.cpp:127
+#, kde-format
+msgid ""
+"parental control is on and Komga could not be reached: Komga and Kobold "
+"books are hidden (--unlock shows them)"
+msgstr ""
+"le contrôle parental est actif et Komga est injoignable : les livres Komga "
+"et Kobold sont masqués (--unlock les affiche)"
+
+#: src/cli/kobobookscommand.cpp:138
+#, kde-format
+msgid "this changes the Kobo and asks for confirmation; pass --yes to skip it"
+msgstr ""
+"ceci modifie le Kobo et demande une confirmation ; passe --yes pour la sauter"
+
+#: src/cli/kobobookscommand.cpp:142 src/cli/kobosynccommand.cpp:65
+#: src/cli/parentalcommand.cpp:131 src/cli/shelfcommand.cpp:400
+#, kde-format
+msgctxt "@info first letter of the answer yes"
+msgid "y"
+msgstr "o"
+
+#: src/cli/kobobookscommand.cpp:143 src/cli/kobosynccommand.cpp:66
+#: src/cli/parentalcommand.cpp:132 src/cli/shelfcommand.cpp:314
+#: src/cli/shelfcommand.cpp:364
+#, kde-format
+msgid "Nothing was changed."
+msgstr "Rien n'a été modifié."
+
+#: src/cli/kobobookscommand.cpp:152
+#, kde-format
+msgid "Backup: %1"
+msgstr "Sauvegarde : %1"
+
+#: src/cli/kobobookscommand.cpp:158
+#, kde-format
+msgid "1 book changed."
+msgid_plural "%1 books changed."
+msgstr[0] "%1 livre modifié."
+msgstr[1] "%1 livres modifiés."
+
+#: src/cli/kobobookscommand.cpp:160
+#, kde-format
+msgid ""
+"Eject the Kobo so that it reloads its library (kobold device eject). Undo "
+"with: kobold device undo"
+msgstr ""
+"Éjecte le Kobo pour qu'il recharge sa bibliothèque (kobold device eject). "
+"Pour annuler : kobold device undo"
+
+#: src/cli/kobobookscommand.cpp:190
+#, kde-format
+msgid "--origin is one of store, komga, kobold, other"
+msgstr "--origin vaut store, komga, kobold ou other"
+
+#: src/cli/kobobookscommand.cpp:232
+#, kde-format
+msgid "1 book, %2 hidden"
+msgid_plural "%1 books, %2 hidden"
+msgstr[0] "%1 livre, %2 masqué(s)"
+msgstr[1] "%1 livres, %2 masqué(s)"
+
+#: src/cli/kobobookscommand.cpp:234
+#, kde-format
+msgid "1 book left out by parental control"
+msgid_plural "%1 books left out by parental control"
+msgstr[0] "%1 livre écarté par le contrôle parental"
+msgstr[1] "%1 livres écartés par le contrôle parental"
+
+#: src/cli/kobobookscommand.cpp:242
+#, kde-format
+msgid "usage: kobold device %1 <id>... (ids from kobold device books)"
+msgstr "usage : kobold device %1 <id>... (identifiants de kobold device books)"
+
+#: src/cli/kobobookscommand.cpp:257
+#, kde-format
+msgid "no book with the id %1 on this Kobo (see kobold device books)"
+msgstr "aucun livre d'identifiant %1 sur ce Kobo (voir kobold device books)"
+
+#: src/cli/kobobookscommand.cpp:267
+#, kde-format
+msgid "%1 is a Kobo Store book: the store would bring it back; hide it instead"
+msgstr ""
+"%1 est un livre de la boutique Kobo : la boutique le remettrait ; masque-le "
+"plutôt"
+
+#: src/cli/kobobookscommand.cpp:277
+#, kde-format
+msgid "1 book will be hidden:"
+msgid_plural "%1 books will be hidden:"
+msgstr[0] "%1 livre sera masqué :"
+msgstr[1] "%1 livres seront masqués :"
+
+#: src/cli/kobobookscommand.cpp:278
+#, kde-format
+msgid "1 book will be shown:"
+msgid_plural "%1 books will be shown:"
+msgstr[0] "%1 livre sera affiché :"
+msgstr[1] "%1 livres seront affichés :"
+
+#: src/cli/kobobookscommand.cpp:279
+#, kde-format
+msgid "1 book will be marked as read:"
+msgid_plural "%1 books will be marked as read:"
+msgstr[0] "%1 livre sera marqué comme lu :"
+msgstr[1] "%1 livres seront marqués comme lus :"
+
+#: src/cli/kobobookscommand.cpp:280
+#, kde-format
+msgid "1 book will be deleted from the Kobo:"
+msgid_plural "%1 books will be deleted from the Kobo:"
+msgstr[0] "%1 livre sera supprimé du Kobo :"
+msgstr[1] "%1 livres seront supprimés du Kobo :"
+
+#: src/cli/kobobookscommand.cpp:281
+#, kde-format
+msgid "1 book will be marked as unread:"
+msgid_plural "%1 books will be marked as unread:"
+msgstr[0] "%1 livre sera marqué comme non lu :"
+msgstr[1] "%1 livres seront marqués comme non lus :"
+
+#: src/cli/kobobookscommand.cpp:286
+#, kde-format
+msgid "The Kobo's database is backed up first."
+msgstr "La base de données du Kobo est d'abord sauvegardée."
+
+#: src/cli/kobobookscommand.cpp:288
+#, kde-format
+msgid ""
+"Their files are kept with the backup, so that undo can bring them back. A "
+"book still selected in Kobold, or synced by Komga, comes back at the next "
+"sync."
+msgstr ""
+"Leurs fichiers sont gardés avec la sauvegarde, pour que l'annulation puisse "
+"les remettre. Un livre encore sélectionné dans Kobold, ou synchronisé par "
+"Komga, revient à la prochaine synchronisation."
+
+#: src/cli/kobobookscommand.cpp:291 src/cli/kobobookscommand.cpp:370
+#: src/cli/kobobookscommand.cpp:420
+#, kde-format
+msgid "Continue?"
+msgstr "Continuer ?"
+
+#: src/cli/kobobookscommand.cpp:301
+#, kde-format
+msgid "No change yet."
+msgstr "Aucun changement pour l'instant."
+
+#: src/cli/kobobookscommand.cpp:310
+#, kde-format
+msgid "(undo of %1)"
+msgstr "(annulation de %1)"
+
+#: src/cli/kobobookscommand.cpp:312
+#, kde-format
+msgid "(undone)"
+msgstr "(annulé)"
+
+#: src/cli/kobobookscommand.cpp:351
+#, kde-format
+msgid "No backup yet."
+msgstr "Aucune sauvegarde pour l'instant."
+
+#: src/cli/kobobookscommand.cpp:365
+#, kde-format
+msgid ""
+"usage: kobold device restore <backup> (names from kobold device backups)"
+msgstr ""
+"usage : kobold device restore <sauvegarde> (noms de kobold device backups)"
+
+#: src/cli/kobobookscommand.cpp:368
+#, kde-format
+msgid ""
+"The Kobo's database will be replaced by the backup of %1; the current one is "
+"backed up first."
+msgstr ""
+"La base de données du Kobo sera remplacée par la sauvegarde du %1 ; "
+"l'actuelle est d'abord sauvegardée."
+
+#: src/cli/kobobookscommand.cpp:408 src/core/kobobooks.cpp:623
+#, kde-format
+msgid "this change was already undone"
+msgstr "ce changement a déjà été annulé"
+
+#: src/cli/kobobookscommand.cpp:416 src/core/kobobooks.cpp:634
+#, kde-format
+msgid "nothing to undo"
+msgstr "rien à annuler"
+
+#: src/cli/kobobookscommand.cpp:419
+#, kde-format
+msgid "1 change of %2 will be undone."
+msgid_plural "%1 changes of %2 will be undone."
+msgstr[0] "%1 changement de %2 sera annulé."
+msgstr[1] "%1 changements de %2 seront annulés."
+
+#: src/cli/kobobookscommand.cpp:429
+#, kde-format
+msgid ""
+"usage: kobold device books | hide <id>... | show <id>... | mark-read <id>... "
+"| mark-unread <id>... | delete <id>... | history | undo [<batch>] | backups "
+"| restore <backup>"
+msgstr ""
+"usage : kobold device books | hide <id>... | show <id>... | mark-read "
+"<id>... | mark-unread <id>... | delete <id>... | history | undo [<lot>] | "
+"backups | restore <sauvegarde>"
+
+#: src/cli/kobosynccommand.cpp:33
+#, kde-format
+msgid ""
+"usage: kobold kobo-sync status | install [--key-from-stdin] | uninstall [--"
+"delete-key] | reinstall | set-key [--create] [--delete-old] | reset [--yes]"
+msgstr ""
+"utilisation : kobold kobo-sync status | install [--key-from-stdin] | "
+"uninstall [--delete-key] | reinstall | set-key [--create] [--delete-old] | "
+"reset [--yes]"
+
+#: src/cli/kobosynccommand.cpp:50
+#, kde-format
+msgid "Komga API key for the Kobo: "
+msgstr "Clé d'API Komga pour le Kobo : "
+
+#: src/cli/kobosynccommand.cpp:61
+#, kde-format
+msgid "kobo-sync reset asks for confirmation; pass --yes to skip it"
+msgstr ""
+"kobo-sync reset demande une confirmation ; indiquez --yes pour l'éviter"
+
+#: src/cli/kobosynccommand.cpp:64
+#, kde-format
+msgid "Every book will be downloaded again by the Kobo. Continue? [y/N] "
+msgstr "Le Kobo téléchargera de nouveau tous les livres. Continuer ? [o/N] "
+
+#: src/cli/kobosynccommand.cpp:88
+#, kde-format
+msgid ""
+"Komga does not let the API key create keys; run this in a terminal to sign "
+"in, or pass --key-from-stdin"
+msgstr ""
+"Komga ne permet pas à la clé d'API de créer des clés ; lancez la commande "
+"dans un terminal pour vous connecter, ou indiquez --key-from-stdin"
+
+#: src/cli/kobosynccommand.cpp:92
+#, kde-format
+msgid ""
+"Komga asks for your email and password to create the Kobo's key. They are "
+"used once and not kept."
+msgstr ""
+"Komga demande votre courriel et votre mot de passe pour créer la clé du "
+"Kobo. Ils servent une seule fois et ne sont pas gardés."
+
+#: src/cli/kobosynccommand.cpp:93
+#, kde-format
+msgid "Komga email: "
+msgstr "Courriel Komga : "
+
+#: src/cli/kobosynccommand.cpp:94
+#, kde-format
+msgid "Komga password: "
+msgstr "Mot de passe Komga : "
+
+#: src/cli/librarycommand.cpp:34 src/cli/selectcommand.cpp:311
+#, kde-format
+msgid "no %1 named \"%2\""
+msgstr "aucun élément de type %1 nommé « %2 »"
+
+#: src/cli/librarycommand.cpp:40 src/cli/selectcommand.cpp:317
+#, kde-format
+msgid "several %1 named \"%2\": %3; pass an id or --library"
+msgstr ""
+"plusieurs éléments de type %1 nommés « %2 » : %3 ; indiquez un identifiant "
+"ou --library"
+
+#: src/cli/librarycommand.cpp:72 src/cli/selectcommand.cpp:63
+#, kde-format
+msgid "Note: no selection markers (%1)"
+msgstr "Remarque : pas de marques de sélection (%1)"
+
+#: src/cli/librarycommand.cpp:75 src/cli/librarycommand.cpp:95
+#, kde-format
+msgid "%1; books are shown without selection markers"
+msgstr "%1 ; les livres sont affichés sans marques de sélection"
+
+#: src/cli/librarycommand.cpp:130
+#, kde-format
+msgid "library"
+msgstr "bibliothèque"
+
+#: src/cli/librarycommand.cpp:163
+#, kde-format
+msgid "No libraries."
+msgstr "Aucune bibliothèque."
+
+#: src/cli/librarycommand.cpp:212 src/cli/librarycommand.cpp:335
+#, kde-format
+msgid "No series."
+msgstr "Aucune série."
+
+#: src/cli/librarycommand.cpp:229
+#, kde-format
+msgid "(%1 selected)"
+msgstr "(%1 sélectionné(s))"
+
+#: src/cli/librarycommand.cpp:262 src/cli/selectcommand.cpp:330
+#, kde-format
+msgid "series"
+msgstr "série"
+
+#: src/cli/librarycommand.cpp:290
+#, kde-format
+msgid "No collections."
+msgstr "Aucune collection."
+
+#: src/cli/librarycommand.cpp:315 src/cli/selectcommand.cpp:344
+#, kde-format
+msgid "collection"
+msgstr "collection"
+
+#: src/cli/librarycommand.cpp:365
+#, kde-format
+msgid "No read lists."
+msgstr "Aucune liste de lecture."
+
+#: src/cli/librarycommand.cpp:383 src/cli/selectcommand.cpp:358
+#, kde-format
+msgid "read list"
+msgstr "liste de lecture"
+
+#: src/cli/librarycommand.cpp:414
+#, kde-format
+msgid "1 book, %2 selected."
+msgid_plural "%1 books, %2 selected."
+msgstr[0] "%1 livre, %2 sélectionné(s)."
+msgstr[1] "%1 livres, %2 sélectionné(s)."
+
+#: src/cli/librarycommand.cpp:415
+#, kde-format
+msgid "Add books with: kobold select add <id>..."
+msgstr "Ajoutez des livres avec : kobold select add <id>..."
+
+#: src/cli/main.cpp:80
+#, kde-format
+msgid ""
+"Commands:\n"
+"  config set-url <url>   Set the Komga server URL\n"
+"  config set-api-key     Read the Komga API key from standard input and "
+"store it\n"
+"  config show            Show the configuration (never the API key)\n"
+"  config set-profile <p> Set the KCC comic profile of the connected Kobo (--"
+"clear removes it)\n"
+"  device                 Show the connected Kobo (name, model, profile, "
+"selection)\n"
+"  device list            List the known Kobos\n"
+"  device rename <name>   Rename a Kobo (--kobo to choose which)\n"
+"  device mount           Mount a Kobo that is plugged in but not mounted\n"
+"  device eject           Eject the Kobo so that it indexes its books (--all "
+"for every one)\n"
+"  device books           List every book of the Kobo (--hidden, --visible, --"
+"origin, --search)\n"
+"  device hide <id>... | show <id>...\n"
+"                         Hide books from the Kobo's library, or show them "
+"again\n"
+"  device mark-read <id>... | mark-unread <id>...\n"
+"                         Change the read status of books on the Kobo\n"
+"  device delete <id>...  Delete Komga books and files from the Kobo "
+"(undoable; not store books)\n"
+"  device history | undo [<batch>]\n"
+"                         List or undo the changes made to the Kobo's books\n"
+"  device backups | restore <backup>\n"
+"                         List or restore the backups of the Kobo's database\n"
+"  select search <text>   Search Komga for books\n"
+"  select add <id>...     Add books to the selection\n"
+"  select add --series <s> [--volumes <range>] | --collection <c> | --"
+"readlist <r>\n"
+"                         Follow a series, collection or read list\n"
+"  select remove <id>...  Remove books from the selection\n"
+"  select add-file <path>...  Add files from the computer (EPUB, PDF, CBZ, "
+"CBR)\n"
+"  select remove-file <path>...\n"
+"                         Take files from the computer out of the selection\n"
+"  select list            List the selected books\n"
+"  library libraries      List the Komga libraries\n"
+"  library series [<series>]            List series, or the books of one\n"
+"  library collections | collection <c> List collections, or the books of "
+"one\n"
+"  library readlists | readlist <r>     List read lists, or the books of one\n"
+"  sync                   Copy the selected books to the Kobo and remove "
+"deselected ones\n"
+"  pull-progress          Send reading progress from the Kobo to Komga\n"
+"  status                 Show the configuration, the Kobo and the pending "
+"changes\n"
+"  doctor                 Check dependencies and configuration\n"
+"  kobo-sync status       Show the Komga sync endpoint of a Kobo\n"
+"  kobo-sync install      Point the Kobo to Komga's own Kobo sync (creates "
+"its key)\n"
+"  kobo-sync uninstall    Point the Kobo back to the Kobo Store\n"
+"  kobo-sync reinstall    Write the endpoint again, after a firmware update\n"
+"  kobo-sync set-key      Change the Kobo's Komga key (standard input, or --"
+"create)\n"
+"  kobo-sync reset        Make the Kobo download every book again from Komga\n"
+"  parental status        Show parental control (enable, disable, set-age, "
+"add-keyword, remove-keyword)\n"
+"  shelf add <name> <folder>  Add a shelf: a folder of books outside Komga, "
+"scanned by Kobold\n"
+"  shelf scan [<shelf>]   Scan shelves for new, changed and missing books\n"
+"  shelf list | series [<shelf>] | books <series> | show <book or series>\n"
+"                         Browse shelves (also: remove, rename)\n"
+"  shelf edit <book or series>... --set <field>=<value> --unset <field>\n"
+"                         Edit metadata; several books share series, authors, "
+"genres, age...\n"
+"  shelf lookup <book or series>  Find metadata online (Open Library, Google "
+"Books, ComicVine)\n"
+"  shelf export <file> | import <file>  Move the edits to another computer\n"
+"  shelf create-library [<folder>]  Create a Kobold Library folder (in "
+"Documents) as a shelf\n"
+"  shelf set-comicvine-key  Read the ComicVine API key from standard input "
+"and store it"
+msgstr ""
+"Commandes :\n"
+"  config set-url <url>   Définir l'URL du serveur Komga\n"
+"  config set-api-key     Lire la clé d'API Komga sur l'entrée standard et "
+"l'enregistrer\n"
+"  config show            Afficher la configuration (jamais la clé d'API)\n"
+"  config set-profile <p> Définir le profil BD KCC du Kobo connecté (--clear "
+"le retire)\n"
+"  device                 Afficher le Kobo connecté (nom, modèle, profil, "
+"sélection)\n"
+"  device list            Lister les Kobo connus\n"
+"  device rename <nom>    Renommer un Kobo (--kobo pour choisir lequel)\n"
+"  device mount           Monter un Kobo branché mais non monté\n"
+"  device eject           Éjecter le Kobo pour qu'il indexe ses livres (--all "
+"pour tous)\n"
+"  device books           Lister tous les livres du Kobo (--hidden, --"
+"visible, --origin, --search)\n"
+"  device hide <id>... | show <id>...\n"
+"                         Masquer des livres de la bibliothèque du Kobo, ou "
+"les réafficher\n"
+"  device mark-read <id>... | mark-unread <id>...\n"
+"                         Changer l'état de lecture de livres du Kobo\n"
+"  device delete <id>...  Supprimer du Kobo des livres Komga et des fichiers "
+"(annulable ; pas les livres de la boutique)\n"
+"  device history | undo [<lot>]\n"
+"                         Lister ou annuler les changements faits aux livres "
+"du Kobo\n"
+"  device backups | restore <sauvegarde>\n"
+"                         Lister ou restaurer les sauvegardes de la base du "
+"Kobo\n"
+"  select search <texte>  Chercher des livres dans Komga\n"
+"  select add <id>...     Ajouter des livres à la sélection\n"
+"  select add --series <s> [--volumes <plage>] | --collection <c> | --"
+"readlist <l>\n"
+"                         Suivre une série, une collection ou une liste de "
+"lecture\n"
+"  select remove <id>...  Retirer des livres de la sélection\n"
+"  select add-file <chemin>...  Ajouter des fichiers de l'ordinateur (EPUB, "
+"PDF, CBZ, CBR)\n"
+"  select remove-file <chemin>...\n"
+"                         Retirer de la sélection des fichiers de "
+"l'ordinateur\n"
+"  select list            Lister les livres sélectionnés\n"
+"  library libraries      Lister les bibliothèques Komga\n"
+"  library series [<série>]             Lister les séries, ou les livres de "
+"l'une d'elles\n"
+"  library collections | collection <c> Lister les collections, ou les livres "
+"de l'une d'elles\n"
+"  library readlists | readlist <l>     Lister les listes de lecture, ou les "
+"livres de l'une d'elles\n"
+"  sync                   Copier les livres sélectionnés sur le Kobo et "
+"retirer les autres\n"
+"  pull-progress          Envoyer la progression de lecture du Kobo à Komga\n"
+"  status                 Afficher la configuration, le Kobo et les "
+"changements en attente\n"
+"  doctor                 Vérifier les dépendances et la configuration\n"
+"  kobo-sync status       Afficher le point d'accès de synchronisation Komga "
+"d'un Kobo\n"
+"  kobo-sync install      Faire pointer le Kobo vers la synchronisation Kobo "
+"de Komga (crée sa clé)\n"
+"  kobo-sync uninstall    Faire pointer de nouveau le Kobo vers la boutique "
+"Kobo\n"
+"  kobo-sync reinstall    Réécrire le point d'accès, après une mise à jour du "
+"micrologiciel\n"
+"  kobo-sync set-key      Changer la clé Komga du Kobo (entrée standard, ou --"
+"create)\n"
+"  kobo-sync reset        Faire retélécharger tous les livres de Komga au "
+"Kobo\n"
+"  parental status        Afficher le contrôle parental (enable, disable, set-"
+"age, add-keyword, remove-keyword)\n"
+"  shelf add <nom> <dossier>  Ajouter une étagère : un dossier de livres hors "
+"de Komga, scanné par Kobold\n"
+"  shelf scan [<étagère>] Scanner les étagères (livres nouveaux, modifiés, "
+"absents)\n"
+"  shelf list | series [<étagère>] | books <série> | show <livre ou série>\n"
+"                         Parcourir les étagères (aussi : remove, rename)\n"
+"  shelf edit <livre ou série>... --set <champ>=<valeur> --unset <champ>\n"
+"                         Modifier les métadonnées ; plusieurs livres "
+"partagent série, auteurs, genres, âge...\n"
+"  shelf lookup <livre ou série>  Chercher les métadonnées en ligne (Open "
+"Library, Google Books, ComicVine)\n"
+"  shelf export <fichier> | import <fichier>  Déplacer les modifications vers "
+"un autre ordinateur\n"
+"  shelf create-library [<dossier>]  Créer un dossier Bibliothèque Kobold "
+"(dans Documents) comme étagère\n"
+"  shelf set-comicvine-key  Lire la clé d'API ComicVine sur l'entrée standard "
+"et l'enregistrer"
+
+#: src/cli/main.cpp:133
+#, kde-format
+msgid "Command to run, see above."
+msgstr "Commande à exécuter, voir ci-dessus."
+
+#: src/cli/main.cpp:134
+#, kde-format
+msgid "config set-api-key: store the key without checking it against Komga."
+msgstr ""
+"config set-api-key : enregistrer la clé sans la vérifier auprès de Komga."
+
+#: src/cli/main.cpp:136
+#, kde-format
+msgid "config set-profile: remove the comic profile override of the Kobo."
+msgstr "config set-profile : retirer le profil BD imposé au Kobo."
+
+#: src/cli/main.cpp:138
+#, kde-format
+msgid "Use the Kobo mounted at <path> instead of detecting it."
+msgstr "Utiliser le Kobo monté à <path> au lieu de le détecter."
+
+#: src/cli/main.cpp:140
+#, kde-format
+msgid "Print debug messages."
+msgstr "Afficher les messages de débogage."
+
+#: src/cli/main.cpp:142
+#, kde-format
+msgid ""
+"sync, pull-progress, kobo-sync: print the planned changes without modifying "
+"anything."
+msgstr ""
+"sync, pull-progress, kobo-sync : afficher les changements prévus sans rien "
+"modifier."
+
+#: src/cli/main.cpp:144
+#, kde-format
+msgid "sync: accept a Kobo previously synced from another Komga server."
+msgstr ""
+"sync : accepter un Kobo synchronisé auparavant depuis un autre serveur Komga."
+
+#: src/cli/main.cpp:147
+#, kde-format
+msgid ""
+"library, select search: only consider the Komga library <library> (id or "
+"name)."
+msgstr ""
+"library, select search : ne considérer que la bibliothèque Komga <library> "
+"(identifiant ou nom)."
+
+#: src/cli/main.cpp:151
+#, kde-format
+msgid ""
+"select add/remove: follow or stop following the series <series> (id or name)."
+msgstr ""
+"select add/remove : suivre ou ne plus suivre la série <series> (identifiant "
+"ou nom)."
+
+#: src/cli/main.cpp:155
+#, kde-format
+msgid ""
+"select add/remove: follow or stop following the collection <collection>."
+msgstr ""
+"select add/remove : suivre ou ne plus suivre la collection <collection>."
+
+#: src/cli/main.cpp:159
+#, kde-format
+msgid "select add/remove: follow or stop following the read list <readlist>."
+msgstr ""
+"select add/remove : suivre ou ne plus suivre la liste de lecture <readlist>."
+
+#: src/cli/main.cpp:163
+#, kde-format
+msgid ""
+"select add --series: only the volumes in <range>, e.g. 1-10 or 1-3,7,10-."
+msgstr ""
+"select add --series : seulement les tomes de <range>, par exemple 1-10 ou "
+"1-3,7,10-."
+
+#: src/cli/main.cpp:167
+#, kde-format
+msgid "The Kobo to work on, by name or serial number (see kobold device list)."
+msgstr ""
+"Le Kobo à utiliser, par nom ou numéro de série (voir kobold device list)."
+
+#: src/cli/main.cpp:170
+#, kde-format
+msgid "kobo-sync install: read the Kobo's Komga key from standard input."
+msgstr "kobo-sync install : lire la clé Komga du Kobo sur l'entrée standard."
+
+#: src/cli/main.cpp:172
+#, kde-format
+msgid "kobo-sync set-key: create a new Komga key instead of reading one."
+msgstr ""
+"kobo-sync set-key : créer une nouvelle clé Komga au lieu d'en lire une."
+
+#: src/cli/main.cpp:174
+#, kde-format
+msgid "kobo-sync set-key: delete the former key in Komga."
+msgstr "kobo-sync set-key : supprimer l'ancienne clé dans Komga."
+
+#: src/cli/main.cpp:176
+#, kde-format
+msgid "kobo-sync uninstall: also delete the Kobo's key in Komga."
+msgstr "kobo-sync uninstall : supprimer aussi la clé du Kobo dans Komga."
+
+#: src/cli/main.cpp:178
+#, kde-format
+msgid ""
+"sync, kobo-sync reset, device hide/show/undo/restore: answer every question "
+"with its default."
+msgstr ""
+"sync, kobo-sync reset, device hide/show/undo/restore : répondre à chaque "
+"question par défaut."
+
+#: src/cli/main.cpp:181
+#, kde-format
+msgid "sync: remove the books that left the selection without asking."
+msgstr "sync : retirer sans demander les livres sortis de la sélection."
+
+#: src/cli/main.cpp:183
+#, kde-format
+msgid ""
+"sync: remove the books their library (Komga or a shelf) no longer has, "
+"without asking."
+msgstr ""
+"sync : retirer sans demander les livres que leur bibliothèque (Komga ou une "
+"étagère) n'a plus."
+
+#: src/cli/main.cpp:185
+#, kde-format
+msgid "sync: eject the Kobo afterwards when the sync changed it."
+msgstr "sync : éjecter ensuite le Kobo si la synchronisation l'a modifié."
+
+#: src/cli/main.cpp:187
+#, kde-format
+msgid "Ask for the parental PIN and show adult content."
+msgstr "Demander le NIP parental et afficher le contenu adulte."
+
+#: src/cli/main.cpp:189
+#, kde-format
+msgid "parental disable: forget a lost PIN."
+msgstr "parental disable : oublier un NIP perdu."
+
+#: src/cli/main.cpp:191
+#, kde-format
+msgid "device books: only the hidden books."
+msgstr "device books : seulement les livres masqués."
+
+#: src/cli/main.cpp:193
+#, kde-format
+msgid "device books: only the books shown on the Kobo."
+msgstr "device books : seulement les livres affichés sur le Kobo."
+
+#: src/cli/main.cpp:195
+#, kde-format
+msgid ""
+"device books: only the books from <origin>: store, komga, kobold or other."
+msgstr ""
+"device books : seulement les livres de <origine> : store, komga, kobold ou "
+"other."
+
+#: src/cli/main.cpp:197
+#, kde-format
+msgid ""
+"device books: only the books whose title, author or series contains <text>."
+msgstr ""
+"device books : seulement les livres dont le titre, l'auteur ou la série "
+"contient <texte>."
+
+#: src/cli/main.cpp:199
+#, kde-format
+msgid "shelf edit: set <field>=<value> (repeat for several fields)."
+msgstr ""
+"shelf edit : définir <champ>=<valeur> (à répéter pour plusieurs champs)."
+
+#: src/cli/main.cpp:201
+#, kde-format
+msgid ""
+"shelf edit: clear the manual value of <field>, falling back to the next "
+"source."
+msgstr ""
+"shelf edit : effacer la valeur manuelle de <champ>, pour revenir à la source "
+"suivante."
+
+#: src/cli/main.cpp:203
+#, kde-format
+msgid "shelf lookup: use result <n> (1 is the first)."
+msgstr "shelf lookup : utiliser le résultat <n> (1 est le premier)."
+
+#: src/cli/main.cpp:205
+#, kde-format
+msgid "shelf lookup: apply these fields (comma separated, or all)."
+msgstr ""
+"shelf lookup : appliquer ces champs (séparés par des virgules, ou all)."
+
+#: src/cli/main.cpp:207
+#, kde-format
+msgid "sync, pull-progress: run for every connected Kobo."
+msgstr "sync, pull-progress : exécuter pour chaque Kobo connecté."
+
+#: src/cli/main.cpp:220
+#, kde-format
+msgid "--all only applies to sync, pull-progress and device eject"
+msgstr "--all ne s'applique qu'à sync, pull-progress et device eject"
+
+#: src/cli/main.cpp:322
+#, kde-format
+msgid "--all cannot be combined with --kobo or --device"
+msgstr "--all ne peut pas être combiné avec --kobo ou --device"
+
+#: src/cli/main.cpp:442
+#, kde-format
+msgid "unknown command \"%1\"; see kobold --help"
+msgstr "commande « %1 » inconnue ; voir kobold --help"
+
+#: src/cli/parentalcommand.cpp:48
+#, kde-format
+msgid "Parental control: off"
+msgstr "Contrôle parental : désactivé"
+
+#: src/cli/parentalcommand.cpp:51
+#, kde-format
+msgid "Parental control: on"
+msgstr "Contrôle parental : activé"
+
+#: src/cli/parentalcommand.cpp:52
+#, kde-format
+msgid "  Age rating from: %1"
+msgstr "  Classification à partir de : %1"
+
+#: src/cli/parentalcommand.cpp:52
+#, kde-format
+msgid "  Age rule: off"
+msgstr "  Règle d'âge : désactivée"
+
+#: src/cli/parentalcommand.cpp:53
+#, kde-format
+msgid "  Genre rule: off"
+msgstr "  Règle des genres : désactivée"
+
+#: src/cli/parentalcommand.cpp:53
+#, kde-format
+msgid "  Genres containing: %1"
+msgstr "  Genres contenant : %1"
+
+#: src/cli/parentalcommand.cpp:63
+#, kde-format
+msgid "--unlock needs a terminal to type the parental PIN"
+msgstr "--unlock a besoin d'un terminal pour saisir le NIP parental"
+
+#: src/cli/parentalcommand.cpp:68 src/cli/parentalcommand.cpp:141
+#: src/cli/parentalcommand.cpp:154
+#, kde-format
+msgid "Parental PIN: "
+msgstr "NIP parental : "
+
+#: src/cli/parentalcommand.cpp:97
+#, kde-format
+msgid "kobold parental %1 needs a terminal to type the PIN"
+msgstr "kobold parental %1 a besoin d'un terminal pour saisir le NIP"
+
+#: src/cli/parentalcommand.cpp:103
+#, kde-format
+msgid "Parental control is already on."
+msgstr "Le contrôle parental est déjà activé."
+
+#: src/cli/parentalcommand.cpp:106
+#, kde-format
+msgid "New parental PIN (4 to 8 digits): "
+msgstr "Nouveau NIP parental (4 à 8 chiffres) : "
+
+#: src/cli/parentalcommand.cpp:107
+#, kde-format
+msgid "New parental PIN again: "
+msgstr "Nouveau NIP parental de nouveau : "
+
+#: src/cli/parentalcommand.cpp:108
+#, kde-format
+msgid "the two PINs differ"
+msgstr "les deux NIP sont différents"
+
+#: src/cli/parentalcommand.cpp:118
+#, kde-format
+msgid "Parental control is on; adult series are hidden until the PIN is given."
+msgstr ""
+"Le contrôle parental est activé ; les séries adultes sont cachées tant que "
+"le NIP n'est pas donné."
+
+#: src/cli/parentalcommand.cpp:124
+#, kde-format
+msgid "parental control is off; turn it on with: kobold parental enable"
+msgstr ""
+"le contrôle parental est désactivé ; activez-le avec : kobold parental enable"
+
+#: src/cli/parentalcommand.cpp:130
+#, kde-format
+msgid "Forget the parental PIN and turn parental control off? [y/N] "
+msgstr "Oublier le NIP parental et désactiver le contrôle parental ? [o/N] "
+
+#: src/cli/parentalcommand.cpp:138 src/cli/parentalcommand.cpp:149
+#, kde-format
+msgid "Parental control is off."
+msgstr "Le contrôle parental est désactivé."
+
+#: src/cli/removalprompt.cpp:18
+#, kde-format
+msgctxt "@info answer letter for remove"
+msgid "r"
+msgstr "r"
+
+#: src/cli/removalprompt.cpp:19
+#, kde-format
+msgctxt "@info answer letter for keep"
+msgid "k"
+msgstr "g"
+
+#: src/cli/removalprompt.cpp:20
+#, kde-format
+msgctxt "@info answer letter for remove all"
+msgid "a"
+msgstr "t"
+
+#: src/cli/removalprompt.cpp:21
+#, kde-format
+msgctxt "@info answer letter for keep all"
+msgid "l"
+msgstr "d"
+
+#: src/cli/removalprompt.cpp:22
+#, kde-format
+msgctxt "@info answer letter for cancel"
+msgid "c"
+msgstr "a"
+
+#: src/cli/removalprompt.cpp:33
+#, kde-format
+msgid "These books left the selection; Komga still has them:"
+msgstr "Ces livres sont sortis de la sélection ; Komga les a toujours :"
+
+#: src/cli/removalprompt.cpp:36
+#, kde-format
+msgid "These local files left the selection; the computer still has them:"
+msgstr ""
+"Ces fichiers locaux sont sortis de la sélection ; l'ordinateur les a "
+"toujours :"
+
+#: src/cli/removalprompt.cpp:39
+#, kde-format
+msgid ""
+"Their library (Komga or a shelf) no longer has these books; the Kobo has the "
+"only copy:"
+msgstr ""
+"Leur bibliothèque (Komga ou une étagère) n'a plus ces livres ; le Kobo en a "
+"la seule copie :"
+
+#: src/cli/removalprompt.cpp:42
+#, kde-format
+msgid ""
+"These local files are gone from the computer; the Kobo has the only copy:"
+msgstr ""
+"Ces fichiers locaux ont disparu de l'ordinateur ; le Kobo en a la seule "
+"copie :"
+
+#: src/cli/removalprompt.cpp:53
+#, kde-format
+msgid "  %1 (%2) — [R]emove, [k]eep, remove [a]ll, keep a[l]l, [c]ancel? "
+msgstr ""
+"  %1 (%2) — [R]etirer, [g]arder, [t]out retirer, tout gar[d]er, [a]nnuler ? "
+
+#: src/cli/removalprompt.cpp:54
+#, kde-format
+msgid "  %1 (%2) — [r]emove, [K]eep, remove [a]ll, keep a[l]l, [c]ancel? "
+msgstr ""
+"  %1 (%2) — [r]etirer, [G]arder, [t]out retirer, tout gar[d]er, [a]nnuler ? "
+
+#: src/cli/selectcommand.cpp:60 src/services/diagnosticsrunner.cpp:219
+#, kde-format
+msgid "Selection of %1:"
+msgstr "Sélection de %1 :"
+
+#: src/cli/selectcommand.cpp:69
+#, kde-format
+msgid ""
+"usage: kobold select add <id>... | add --series <series> [--volumes <range>] "
+"| add --collection <collection> | add --readlist <readlist>\n"
+"       kobold select remove <id>... | remove --series|--collection|--"
+"readlist <name or id>\n"
+"       kobold select add-file <path>... | remove-file <path>...\n"
+"       kobold select list | search <text> [--library <library>]"
+msgstr ""
+"utilisation : kobold select add <id>... | add --series <série> [--volumes "
+"<plage>] | add --collection <collection> | add --readlist <liste>\n"
+"              kobold select remove <id>... | remove --series|--collection|--"
+"readlist <nom ou id>\n"
+"              kobold select add-file <chemin>... | remove-file <chemin>...\n"
+"              kobold select list | search <texte> [--library <bibliothèque>]"
+
+#: src/cli/selectcommand.cpp:100
+#, kde-format
+msgid "invalid volume range \"%1\"; examples: 1-10, 5, 1-3,7,10-"
+msgstr "plage de tomes « %1 » non valable ; exemples : 1-10, 5, 1-3,7,10-"
+
+#: src/cli/selectcommand.cpp:135
+#, kde-format
+msgid "unknown book id %1"
+msgstr "identifiant de livre inconnu : %1"
+
+#: src/cli/selectcommand.cpp:141
+#, kde-format
+msgid "the selection was not changed"
+msgstr "la sélection n'a pas été modifiée"
+
+#: src/cli/selectcommand.cpp:148 src/cli/selectcommand.cpp:386
+#, kde-format
+msgid "Already selected: %1"
+msgstr "Déjà sélectionné : %1"
+
+#: src/cli/selectcommand.cpp:151
+#, kde-format
+msgid "Added: %1 (%2)"
+msgstr "Ajouté : %1 (%2)"
+
+#: src/cli/selectcommand.cpp:153
+#, kde-format
+msgid "%1 is not supported yet and will be skipped by sync"
+msgstr "%1 n'est pas encore pris en charge et sera ignoré par sync"
+
+#: src/cli/selectcommand.cpp:180
+#, kde-format
+msgid "Removed 1 book from the selection."
+msgid_plural "Removed %1 books from the selection."
+msgstr[0] "%1 livre retiré de la sélection."
+msgstr[1] "%1 livres retirés de la sélection."
+
+#: src/cli/selectcommand.cpp:184 src/cli/selectcommand.cpp:197
+#: src/cli/selectcommand.cpp:402
+#, kde-format
+msgid "%1 is not in the selection"
+msgstr "%1 n'est pas dans la sélection"
+
+#: src/cli/selectcommand.cpp:195
+#, kde-format
+msgid "%1 is selected through the followed %2; use --volumes or remove the %2"
+msgstr ""
+"%1 est sélectionné par le suivi de %2 ; utilisez --volumes ou retirez le "
+"suivi de %2"
+
+#: src/cli/selectcommand.cpp:233
+#, kde-format
+msgid "Following %2: 1 book"
+msgid_plural "Following %2: %1 books"
+msgstr[0] "Suivi de %2 : %1 livre"
+msgstr[1] "Suivi de %2 : %1 livres"
+
+#: src/cli/selectcommand.cpp:235
+#, kde-format
+msgid " (volumes %1)"
+msgstr " (tomes %1)"
+
+#: src/cli/selectcommand.cpp:239
+#, kde-format
+msgid ""
+"1 of them will be skipped by sync (unsupported format or not analyzed by "
+"Komga)"
+msgid_plural ""
+"%1 of them will be skipped by sync (unsupported format or not analyzed by "
+"Komga)"
+msgstr[0] ""
+"%1 d'entre eux sera ignoré par sync (format non pris en charge ou non "
+"analysé par Komga)"
+msgstr[1] ""
+"%1 d'entre eux seront ignorés par sync (format non pris en charge ou non "
+"analysé par Komga)"
+
+#: src/cli/selectcommand.cpp:244 src/cli/selectcommand.cpp:473
+#, kde-format
+msgid "Effective selection: 1 book."
+msgid_plural "Effective selection: %1 books."
+msgstr[0] "Sélection effective : %1 livre."
+msgstr[1] "Sélection effective : %1 livres."
+
+#: src/cli/selectcommand.cpp:266
+#, kde-format
+msgid "\"%1\" is not followed"
+msgstr "« %1 » n'est pas suivi"
+
+#: src/cli/selectcommand.cpp:274
+#, kde-format
+msgid ""
+"Stopped following \"%1\". Books it selected leave the Kobo at the next sync, "
+"unless selected otherwise."
+msgstr ""
+"« %1 » n'est plus suivi. Les livres qu'il sélectionnait quitteront le Kobo à "
+"la prochaine synchronisation, sauf s'ils sont sélectionnés autrement."
+
+#: src/cli/selectcommand.cpp:297 src/cli/shelfcommand.cpp:602
+#, kde-format
+msgid "no series named \"%1\""
+msgstr "aucune série nommée « %1 »"
+
+#: src/cli/selectcommand.cpp:376
+#, kde-format
+msgid "%1 is not a file"
+msgstr "%1 n'est pas un fichier"
+
+#: src/cli/selectcommand.cpp:380
+#, kde-format
+msgid "%1 is not an EPUB, PDF, CBZ or CBR file"
+msgstr "%1 n'est pas un fichier EPUB, PDF, CBZ ou CBR"
+
+#: src/cli/selectcommand.cpp:386
+#, kde-format
+msgid "Added: %1"
+msgstr "Ajouté : %1"
+
+#: src/cli/selectcommand.cpp:400
+#, kde-format
+msgid "Removed: %1 (it leaves the Kobo at the next sync, after confirmation)"
+msgstr ""
+"Retiré : %1 (il quittera le Kobo à la prochaine synchronisation, après "
+"confirmation)"
+
+#: src/cli/selectcommand.cpp:418
+#, kde-format
+msgid "Local files:"
+msgstr "Fichiers locaux :"
+
+#: src/cli/selectcommand.cpp:420
+#, kde-format
+msgid "%1 (missing on the computer)"
+msgstr "%1 (absent de l'ordinateur)"
+
+#: src/cli/selectcommand.cpp:432
+#, kde-format
+msgid ""
+"The selection is empty. Find books with: kobold select search <text> or "
+"kobold library series"
+msgstr ""
+"La sélection est vide. Trouvez des livres avec : kobold select search "
+"<texte> ou kobold library series"
+
+#: src/cli/selectcommand.cpp:454
+#, kde-format
+msgid "volumes %1"
+msgstr "tomes %1"
+
+#: src/cli/selectcommand.cpp:459 src/cli/selectcommand.cpp:478
+#, kde-format
+msgid "(none)"
+msgstr "(aucun)"
+
+#: src/cli/selectcommand.cpp:462
+#, kde-format
+msgid "Series:"
+msgstr "Séries :"
+
+#: src/cli/selectcommand.cpp:463
+#, kde-format
+msgid "Collections:"
+msgstr "Collections :"
+
+#: src/cli/selectcommand.cpp:464
+#, kde-format
+msgid "Read lists:"
+msgstr "Listes de lecture :"
+
+#: src/cli/selectcommand.cpp:471
+#, kde-format
+msgid "1 item hidden"
+msgid_plural "%1 items hidden"
+msgstr[0] "%1 élément caché"
+msgstr[1] "%1 éléments cachés"
+
+#: src/cli/selectcommand.cpp:476
+#, kde-format
+msgid "Books:"
+msgstr "Livres :"
+
+#: src/cli/selectcommand.cpp:513
+#, kde-format
+msgid "No book matches."
+msgstr "Aucun livre ne correspond."
+
+#: src/cli/selectcommand.cpp:522
+#, kde-format
+msgid "* = already selected. Add books with: kobold select add <id>..."
+msgstr ""
+"* = déjà sélectionné. Ajoutez des livres avec : kobold select add <id>..."
+
+#: src/cli/selectcommand.cpp:546
+#, kde-format
+msgid "no library named \"%1\""
+msgstr "aucune bibliothèque nommée « %1 »"
+
+#: src/cli/selectcommand.cpp:547
+#, kde-format
+msgid "several libraries named \"%1\"; pass an id"
+msgstr "plusieurs bibliothèques nommées « %1 » ; indiquez un identifiant"
+
+#: src/cli/shelfcommand.cpp:137
+#, kde-format
+msgid "File: %1"
+msgstr "Fichier : %1"
+
+#: src/cli/shelfcommand.cpp:145
+#, kde-format
+msgid "Series %2: 1 book"
+msgid_plural "Series %2: %1 books"
+msgstr[0] "Série %2 : %1 livre"
+msgstr[1] "Série %2 : %1 livres"
+
+#: src/cli/shelfcommand.cpp:155
+#, kde-format
+msgid ""
+"usage: kobold shelf edit <book or series>... --set <field>=<value> --unset "
+"<field>"
+msgstr ""
+"usage : kobold shelf edit <livre ou série>... --set <champ>=<valeur> --unset "
+"<champ>"
+
+#: src/cli/shelfcommand.cpp:169
+#, kde-format
+msgid "edit one series at a time"
+msgstr "modifie une série à la fois"
+
+#: src/cli/shelfcommand.cpp:175
+#, kde-format
+msgid "edit either books or one series"
+msgstr "modifie soit des livres, soit une série"
+
+#: src/cli/shelfcommand.cpp:187 src/cli/shelfcommand.cpp:199
+#, kde-format
+msgid "cannot set \"%1\"; the fields are: %2"
+msgstr "impossible de définir « %1 » ; les champs sont : %2"
+
+#: src/cli/shelfcommand.cpp:220
+#, kde-format
+msgid "Saved for 1 book."
+msgid_plural "Saved for %1 books."
+msgstr[0] "Enregistré pour %1 livre."
+msgstr[1] "Enregistré pour %1 livres."
+
+#: src/cli/shelfcommand.cpp:221
+#, kde-format
+msgid ""
+"Books already on a Kobo are copied again at the next sync when what the Kobo "
+"shows changed."
+msgstr ""
+"Les livres déjà sur une Kobo sont recopiés à la prochaine synchronisation si "
+"ce que la Kobo affiche a changé."
+
+#: src/cli/shelfcommand.cpp:282
+#, kde-format
+msgid ""
+"No ComicVine key (kobold shelf set-comicvine-key): searching book sources."
+msgstr ""
+"Pas de clé ComicVine (kobold shelf set-comicvine-key) : recherche dans les "
+"sources de livres."
+
+#: src/cli/shelfcommand.cpp:289
+#, kde-format
+msgid "Searching for \"%1\"…"
+msgstr "Recherche de « %1 »…"
+
+#: src/cli/shelfcommand.cpp:309
+#, kde-format
+msgid "pass --pick <n> to choose a result"
+msgstr "passe --pick <n> pour choisir un résultat"
+
+#: src/cli/shelfcommand.cpp:312
+#, kde-format
+msgid "Result to use (1-%1, empty to cancel): "
+msgstr "Résultat à utiliser (1-%1, vide pour annuler) : "
+
+#: src/cli/shelfcommand.cpp:319
+#, kde-format
+msgid "there is no result %1"
+msgstr "il n'y a pas de résultat %1"
+
+#: src/cli/shelfcommand.cpp:340
+#, kde-format
+msgid "This result brings nothing new."
+msgstr "Ce résultat n'apporte rien de nouveau."
+
+#: src/cli/shelfcommand.cpp:346
+#, kde-format
+msgid "pass --fields <field,...> or --fields all to choose the fields"
+msgstr "passe --fields <champ,...> ou --fields all pour choisir les champs"
+
+#: src/cli/shelfcommand.cpp:349
+#, kde-format
+msgid "Fields to apply (names separated by commas, all, empty to cancel): "
+msgstr ""
+"Champs à appliquer (noms séparés par des virgules, all, vide pour annuler) : "
+
+#: src/cli/shelfcommand.cpp:359
+#, kde-format
+msgid "this result has no %1; it offers: %2"
+msgstr "ce résultat n'a pas de %1 ; il propose : %2"
+
+#: src/cli/shelfcommand.cpp:380
+#, kde-format
+msgid "the cover could not be downloaded: %1"
+msgstr "la couverture n'a pas pu être téléchargée : %1"
+
+#: src/cli/shelfcommand.cpp:399
+#, kde-format
+msgid "Copy %1 to every volume? [y/N] "
+msgstr "Copier %1 dans chaque tome ? [o/N] "
+
+#: src/cli/shelfcommand.cpp:423
+#, kde-format
+msgid "ComicVine API key (empty to remove): "
+msgstr "Clé d'API ComicVine (vide pour la retirer) : "
+
+#: src/cli/shelfcommand.cpp:463
+#, kde-format
+msgid "Scanning %1 (%2)…"
+msgstr "Scan de %1 (%2)…"
+
+#: src/cli/shelfcommand.cpp:477
+#, kde-format
+msgid ""
+"%1: %2 new, %3 changed, %4 moved, %5 missing, %6 forgotten, %7 unchanged."
+msgstr ""
+"%1 : %2 nouveaux, %3 modifiés, %4 déplacés, %5 absents, %6 oubliés, %7 "
+"inchangés."
+
+#: src/cli/shelfcommand.cpp:513
+#, kde-format
+msgid "Shelf %1 added."
+msgstr "Étagère %1 ajoutée."
+
+#: src/cli/shelfcommand.cpp:519 src/cli/shelfcommand.cpp:539
+#: src/cli/shelfcommand.cpp:567
+#, kde-format
+msgid "no shelf named \"%1\""
+msgstr "aucune étagère nommée « %1 »"
+
+#: src/cli/shelfcommand.cpp:524
+#, kde-format
+msgid "Shelf %1 removed; its files were not touched."
+msgstr "Étagère %1 retirée ; ses fichiers n'ont pas été touchés."
+
+#: src/cli/shelfcommand.cpp:531
+#, kde-format
+msgid "Shelf %1 renamed to %2."
+msgstr "Étagère %1 renommée en %2."
+
+#: src/cli/shelfcommand.cpp:553
+#, kde-format
+msgid "No shelves. Add one with: kobold shelf add <name> <folder>"
+msgstr "Aucune étagère. Ajoutez-en une avec : kobold shelf add <nom> <dossier>"
+
+#: src/cli/shelfcommand.cpp:557
+#, kde-format
+msgid "unavailable (is the share mounted?)"
+msgstr "indisponible (le partage est-il monté ?)"
+
+#: src/cli/shelfcommand.cpp:635
+#, kde-format
+msgid "Edits exported to %1."
+msgstr "Modifications exportées vers %1."
+
+#: src/cli/shelfcommand.cpp:653
+#, kde-format
+msgid "Shelf %1 created in %2. Put books there, then: kobold shelf scan"
+msgstr "Étagère %1 créée dans %2. Mets-y des livres, puis : kobold shelf scan"
+
+#: src/core/apikeystore.cpp:28
+#, kde-format
+msgid "keychain error: %1"
+msgstr "erreur du trousseau : %1"
+
+#: src/core/comicconverter.cpp:58 src/core/comicconverter.cpp:135
+#, kde-format
+msgid "kcc-c2e not found in PATH"
+msgstr "kcc-c2e introuvable dans PATH"
+
+#: src/core/comicconverter.cpp:62 src/core/converter.cpp:52
+#: src/core/epubmetadatawriter.cpp:135 src/core/syncexecutor.cpp:830
+#, kde-format
+msgid "cannot replace %1"
+msgstr "impossible de remplacer %1"
+
+#: src/core/comicconverter.cpp:69
+#, kde-format
+msgid "cannot create a work directory: %1"
+msgstr "impossible de créer un dossier de travail : %1"
+
+#: src/core/comicconverter.cpp:100 src/core/comicconverter.cpp:146
+#, kde-format
+msgid "cannot start kcc-c2e: %1"
+msgstr "impossible de lancer kcc-c2e : %1"
+
+#: src/core/comicconverter.cpp:103
+#, kde-format
+msgid "kcc-c2e timed out after %1 s"
+msgstr "kcc-c2e a dépassé le délai de %1 s"
+
+#: src/core/comicconverter.cpp:105
+#, kde-format
+msgid "kcc-c2e crashed"
+msgstr "kcc-c2e a planté"
+
+#: src/core/comicconverter.cpp:109
+#, kde-format
+msgid "kcc-c2e failed (exit code %1)"
+msgstr "kcc-c2e a échoué (code de sortie %1)"
+
+#: src/core/comicconverter.cpp:116
+#, kde-format
+msgid "kcc-c2e produced %1 KEPUB files instead of one"
+msgstr "kcc-c2e a produit %1 fichiers KEPUB au lieu d'un seul"
+
+#: src/core/comicconverter.cpp:118 src/core/epubmetadatawriter.cpp:113
+#: src/core/epubmetadatawriter.cpp:129 src/core/shelfcovers.cpp:100
+#, kde-format
+msgid "cannot write %1"
+msgstr "impossible d'écrire %1"
+
+#: src/core/comicconverter.cpp:153
+#, kde-format
+msgid "kcc-c2e --help failed: %1"
+msgstr "kcc-c2e --help a échoué : %1"
+
+#: src/core/comicconverter.cpp:161
+#, kde-format
+msgid "cannot read the kcc-c2e version"
+msgstr "impossible de lire la version de kcc-c2e"
+
+#: src/core/comicconverter.cpp:168
+#, kde-format
+msgid "kcc-c2e %1 is too old, %2 or later is required"
+msgstr "kcc-c2e %1 est trop ancien, %2 ou plus récent est requis"
+
+#: src/core/converter.cpp:48 src/core/converter.cpp:92
+#, kde-format
+msgid "kepubify not found in PATH"
+msgstr "kepubify introuvable dans PATH"
+
+#: src/core/converter.cpp:64 src/core/converter.cpp:103
+#, kde-format
+msgid "cannot start kepubify: %1"
+msgstr "impossible de lancer kepubify : %1"
+
+#: src/core/converter.cpp:66
+#, kde-format
+msgid "kepubify timed out after %1 s"
+msgstr "kepubify a dépassé le délai de %1 s"
+
+#: src/core/converter.cpp:68
+#, kde-format
+msgid "kepubify crashed"
+msgstr "kepubify a planté"
+
+#: src/core/converter.cpp:71
+#, kde-format
+msgid "kepubify failed (exit code %1)"
+msgstr "kepubify a échoué (code de sortie %1)"
+
+#: src/core/converter.cpp:76
+#, kde-format
+msgid "kepubify did not produce %1"
+msgstr "kepubify n'a pas produit %1"
+
+#: src/core/converter.cpp:109
+#, kde-format
+msgid "kepubify --version failed"
+msgstr "kepubify --version a échoué"
+
+#: src/core/converter.cpp:117
+#, kde-format
+msgid "cannot read the kepubify version"
+msgstr "impossible de lire la version de kepubify"
+
+#: src/core/converter.cpp:124
+#, kde-format
+msgid "kepubify %1 is too old, %2 or later is required"
+msgstr "kepubify %1 est trop ancien, %2 ou plus récent est requis"
+
+#: src/core/deviceidentity.cpp:42 src/core/epubmetadatawriter.cpp:100
+#: src/core/komgaclient.cpp:590 src/core/shelfcovers.cpp:110
+#: src/core/syncexecutor.cpp:651
+#, kde-format
+msgid "cannot read %1"
+msgstr "impossible de lire %1"
+
+#: src/core/deviceidentity.cpp:53
+#, kde-format
+msgid "unexpected .kobo/version content"
+msgstr "contenu inattendu dans .kobo/version"
+
+#: src/core/devicelocator.cpp:29
+#, kde-format
+msgid "%1 is not a Kobo: .kobo/KoboReader.sqlite not found"
+msgstr "%1 n'est pas un Kobo : .kobo/KoboReader.sqlite introuvable"
+
+#: src/core/devicelocator.cpp:52
+#, kde-format
+msgid "no Kobo found; plug it in and unlock it, or pass --device <path>"
+msgstr ""
+"aucun Kobo trouvé ; branchez-le et déverrouillez-le, ou indiquez --device "
+"<chemin>"
+
+#: src/core/devicelocator.cpp:55
+#, kde-format
+msgid "several Kobo devices found (%1); pass --device <path>"
+msgstr "plusieurs Kobo trouvés (%1) ; indiquez --device <chemin>"
+
+#: src/core/epubmetadatawriter.cpp:105
+#, kde-format
+msgid "%1 has no package document"
+msgstr "%1 n'a pas de document de paquet (OPF)"
+
+#: src/core/jsonfile.cpp:29 src/core/koboconf.cpp:174
+#: src/core/syncexecutor.cpp:40 src/core/syncexecutor.cpp:51
+#, kde-format
+msgid "cannot read %1: %2"
+msgstr "impossible de lire %1 : %2"
+
+#: src/core/jsonfile.cpp:36
+#, kde-format
+msgid "invalid JSON in %1 at offset %2: %3"
+msgstr "JSON non valable dans %1 à la position %2 : %3"
+
+#: src/core/jsonfile.cpp:40
+#, kde-format
+msgid "invalid content in %1: expected a JSON object"
+msgstr "contenu non valable dans %1 : un objet JSON est attendu"
+
+#: src/core/jsonfile.cpp:53
+#, kde-format
+msgid "cannot create directory %1"
+msgstr "impossible de créer le dossier %1"
+
+#: src/core/jsonfile.cpp:59 src/core/jsonfile.cpp:68 src/core/jsonfile.cpp:72
+#: src/core/koboconf.cpp:195 src/core/komgaclient.cpp:599
+#: src/core/komgaclient.cpp:623 src/core/komgaclient.cpp:626
+#: src/core/syncexecutor.cpp:45 src/core/syncexecutor.cpp:55
+#, kde-format
+msgid "cannot write %1: %2"
+msgstr "impossible d'écrire %1 : %2"
+
+#: src/core/kobobooks.cpp:167 src/core/kobodatabase.cpp:27
+#: src/core/kobodatabase.cpp:34
+#, kde-format
+msgid "cannot copy %1"
+msgstr "impossible de copier %1"
+
+#: src/core/kobobooks.cpp:308 src/core/kobobooks.cpp:548
+#: src/core/kobobooks.cpp:663 src/core/kobodatabase.cpp:73
+#, kde-format
+msgid "cannot open the Kobo database: %1"
+msgstr "impossible d'ouvrir la base de données du Kobo : %1"
+
+#: src/core/kobobooks.cpp:331 src/core/kobodatabase.cpp:80
+#, kde-format
+msgid "cannot read the Kobo database: %1"
+msgstr "impossible de lire la base de données du Kobo : %1"
+
+#: src/core/kobobooks.cpp:400 src/core/kobodatabase.cpp:60
+#: src/core/shelfedits.cpp:165
+#, kde-format
+msgid "%1 not found"
+msgstr "%1 introuvable"
+
+#: src/core/kobobooks.cpp:409
+#, kde-format
+msgid ""
+"the backup of the Kobo database failed its integrity check; nothing was "
+"changed"
+msgstr ""
+"la sauvegarde de la base de données du Kobo a échoué à la vérification "
+"d'intégrité ; rien n'a été modifié"
+
+#: src/core/kobobooks.cpp:695
+#, kde-format
+msgid "the backup of this deletion is gone; it cannot be undone"
+msgstr ""
+"la sauvegarde de cette suppression n'existe plus ; elle ne peut pas être "
+"annulée"
+
+#: src/core/kobobooks.cpp:754
+#, kde-format
+msgid ""
+"the Kobo database failed its integrity check after the change; the backup "
+"was put back"
+msgstr ""
+"la base de données du Kobo a échoué à la vérification d'intégrité après la "
+"modification ; la sauvegarde a été remise en place"
+
+#: src/core/kobobooks.cpp:773 src/core/kobobooks.cpp:788
+#, kde-format
+msgid "cannot move %1"
+msgstr "impossible de déplacer %1"
+
+#: src/core/kobobooks.cpp:834
+#, kde-format
+msgid "this backup is damaged; nothing was changed"
+msgstr "cette sauvegarde est endommagée ; rien n'a été modifié"
+
+#: src/core/koboconf.cpp:170
+#, kde-format
+msgid "%1 not found; start the Kobo once before plugging it in"
+msgstr "%1 introuvable ; démarrez le Kobo une fois avant de le brancher"
+
+#: src/core/koboconf.cpp:188
+#, kde-format
+msgid "cannot keep a copy of %1 in %2"
+msgstr "impossible de garder une copie de %1 dans %2"
+
+#: src/core/kobovolumes.cpp:58
+#, kde-format
+msgid "this Kobo cannot be mounted"
+msgstr "ce Kobo ne peut pas être monté"
+
+#: src/core/kobovolumes.cpp:76
+#, kde-format
+msgid "this Kobo cannot be unmounted"
+msgstr "ce Kobo ne peut pas être démonté"
+
+#: src/core/kobovolumes.cpp:87
+#, kde-format
+msgid ""
+"the Kobo is busy: close the file manager or terminal using it, then try again"
+msgstr ""
+"le Kobo est occupé : fermez le gestionnaire de fichiers ou le terminal qui "
+"l'utilise, puis réessayez"
+
+#: src/core/kobovolumes.cpp:99 src/core/kobovolumes.cpp:107
+#, kde-format
+msgid "the Kobo cannot be powered off; unplug it"
+msgstr "le Kobo ne peut pas être mis hors tension ; débranchez-le"
+
+#: src/core/kobovolumes.cpp:115
+#, kde-format
+msgid "the Kobo is unmounted but could not be powered off (%1); unplug it"
+msgstr ""
+"le Kobo est démonté mais n'a pas pu être mis hors tension (%1) ; débranchez-"
+"le"
+
+#: src/core/komgaclient.cpp:45
+#, kde-format
+msgid "authentication refused by Komga (HTTP %1)"
+msgstr "authentification refusée par Komga (HTTP %1)"
+
+#: src/core/komgaclient.cpp:48 src/core/komgaclient.cpp:422
+#, kde-format
+msgid "not found in Komga"
+msgstr "introuvable dans Komga"
+
+#: src/core/komgaclient.cpp:51
+#, kde-format
+msgid "Komga returned HTTP %1"
+msgstr "Komga a répondu HTTP %1"
+
+#: src/core/komgaclient.cpp:54
+#, kde-format
+msgid "request to Komga timed out or was cancelled"
+msgstr "la requête à Komga a expiré ou a été annulée"
+
+#: src/core/komgaclient.cpp:57
+#, kde-format
+msgid "cannot reach Komga: %1"
+msgstr "impossible de joindre Komga : %1"
+
+#: src/core/komgaclient.cpp:77
+#, kde-format
+msgid "invalid response from Komga: %1"
+msgstr "réponse non valable de Komga : %1"
+
+#: src/core/komgaclient.cpp:105
+#, kde-format
+msgid "expected a JSON object"
+msgstr "un objet JSON est attendu"
+
+#: src/core/komgaclient.cpp:156
+#, kde-format
+msgid "not found in the library"
+msgstr "introuvable dans la bibliothèque"
+
+#: src/core/komgaclient.cpp:249
+#, kde-format
+msgid "book without id"
+msgstr "livre sans identifiant"
+
+#: src/core/komgaclient.cpp:359
+#, kde-format
+msgid "expected a JSON array of libraries"
+msgstr "un tableau JSON de bibliothèques est attendu"
+
+#: src/core/komgaclient.cpp:400
+#, kde-format
+msgid "object without id"
+msgstr "objet sans identifiant"
+
+#: src/core/komgaclient.cpp:662
+#, kde-format
+msgid "expected a JSON array of genres"
+msgstr "un tableau JSON de genres est attendu"
+
+#: src/core/komgaclient.cpp:691
+#, kde-format
+msgid "API key without id or value"
+msgstr "clé d'API sans identifiant ni valeur"
+
+#: src/core/komgaclient.cpp:710
+#, kde-format
+msgid "expected a JSON array of API keys"
+msgstr "un tableau JSON de clés d'API est attendu"
+
+#: src/core/manifest.cpp:91
+#, kde-format
+msgid "unsupported manifest format version in %1"
+msgstr "version du format de manifeste non prise en charge dans %1"
+
+#: src/core/manifest.cpp:97
+#, kde-format
+msgid "invalid manifest %1: \"books\" must be an array"
+msgstr "manifeste %1 non valable : « books » doit être un tableau"
+
+#: src/core/manifest.cpp:123
+#, kde-format
+msgid "invalid manifest %1: entry without book id or with an invalid path"
+msgstr ""
+"manifeste %1 non valable : entrée sans identifiant de livre ou avec un "
+"chemin non valable"
+
+#: src/core/manifest.cpp:130
+#, kde-format
+msgid "invalid manifest %1: duplicate book id or path %2"
+msgstr "manifeste %1 non valable : identifiant de livre ou chemin %2 en double"
+
+#: src/core/manifest.cpp:145 src/core/selectionstore.cpp:200
+#, kde-format
+msgid "refusing to write %1: it was not loaded successfully"
+msgstr "écriture de %1 refusée : il n'a pas été chargé correctement"
+
+#: src/core/metadatalookup.cpp:282
+#, kde-format
+msgid "give a title or an ISBN to search"
+msgstr "indique un titre ou un ISBN pour chercher"
+
+#: src/core/parental.cpp:34 src/services/diagnosticsrunner.cpp:246
+#, kde-format
+msgid "a hidden series"
+msgstr "une série cachée"
+
+#: src/core/selectionresolver.cpp:30
+#, kde-format
+msgctxt "@item followed group"
+msgid "series %1"
+msgstr "série %1"
+
+#: src/core/selectionresolver.cpp:32
+#, kde-format
+msgctxt "@item followed group"
+msgid "collection %1"
+msgstr "collection %1"
+
+#: src/core/selectionresolver.cpp:34
+#, kde-format
+msgctxt "@item followed group"
+msgid "read list %1"
+msgstr "liste de lecture %1"
+
+#: src/core/selectionresolver.cpp:105
+#, kde-format
+msgid "followed %1 no longer exists in Komga; run: kobold select remove %2 %3"
+msgstr ""
+"%1 (suivie) n'existe plus dans Komga ; lancez : kobold select remove %2 %3"
+
+#: src/core/selectionresolver.cpp:111
+#, kde-format
+msgid "cannot read followed %1: %2"
+msgstr "impossible de lire %1 (suivie) : %2"
+
+#: src/core/selectionstore.cpp:124
+#, kde-format
+msgid "unsupported selection format version in %1"
+msgstr "version du format de sélection non prise en charge dans %1"
+
+#: src/core/selectionstore.cpp:130
+#, kde-format
+msgid "invalid selection in %1: \"books\" must be an array"
+msgstr "sélection non valable dans %1 : « books » doit être un tableau"
+
+#: src/core/selectionstore.cpp:137
+#, kde-format
+msgid "invalid selection in %1: book ids must be non-empty strings"
+msgstr ""
+"sélection non valable dans %1 : les identifiants de livres doivent être des "
+"chaînes non vides"
+
+#: src/core/selectionstore.cpp:147
+#, kde-format
+msgid "invalid selection in %1: \"series\" must be an array"
+msgstr "sélection non valable dans %1 : « series » doit être un tableau"
+
+#: src/core/selectionstore.cpp:155
+#, kde-format
+msgid ""
+"invalid selection in %1: followed series need an id and a valid volume range"
+msgstr ""
+"sélection non valable dans %1 : les séries suivies demandent un identifiant "
+"et une plage de tomes valable"
+
+#: src/core/selectionstore.cpp:168
+#, kde-format
+msgid "invalid selection in %1: followed collections and read lists need an id"
+msgstr ""
+"sélection non valable dans %1 : les collections et listes de lecture suivies "
+"demandent un identifiant"
+
+#: src/core/selectionstore.cpp:178
+#, kde-format
+msgid "invalid selection in %1: local files must be non-empty paths"
+msgstr ""
+"sélection non valable dans %1 : les fichiers locaux doivent être des chemins "
+"non vides"
+
+#: src/core/settings.cpp:44
+#, kde-format
+msgid "invalid Komga URL \"%1\": expected http(s)://host[:port][/path]"
+msgstr ""
+"URL de Komga « %1 » non valable : attendu http(s)://hôte[:port][/chemin]"
+
+#: src/core/settings.cpp:48
+#, kde-format
+msgid ""
+"invalid Komga URL \"%1\": credentials, query and fragment are not allowed"
+msgstr ""
+"URL de Komga « %1 » non valable : identifiants, requête et fragment ne sont "
+"pas permis"
+
+#: src/core/settings.cpp:275
+#, kde-format
+msgid "invalid Kobo name \"%1\""
+msgstr "nom de Kobo « %1 » non valable"
+
+#: src/core/settings.cpp:280
+#, kde-format
+msgid "the name \"%1\" is already used by the Kobo %2"
+msgstr "le nom « %1 » est déjà utilisé par le Kobo %2"
+
+#: src/core/settings.cpp:285
+#, kde-format
+msgid "unknown Kobo %1"
+msgstr "Kobo %1 inconnu"
+
+#: src/core/shelfcovers.cpp:92
+#, kde-format
+msgid "this is not an image Kobold can read"
+msgstr "ce n'est pas une image que Kobold sait lire"
+
+#: src/core/shelfdatabase.cpp:95
+#, kde-format
+msgid "cannot open %1: %2"
+msgstr "impossible d'ouvrir %1 : %2"
+
+#: src/core/shelfdatabase.cpp:103
+#, kde-format
+msgid "%1 was written by a newer Kobold"
+msgstr "%1 a été écrit par une version plus récente de Kobold"
+
+#: src/core/shelfdatabase.cpp:117
+#, kde-format
+msgid "cannot create %1: %2"
+msgstr "impossible de créer %1 : %2"
+
+#: src/core/shelfdatabase.cpp:135
+#, kde-format
+msgid "cannot update %1: %2"
+msgstr "impossible de mettre à jour %1 : %2"
+
+#: src/core/shelfdatabase.cpp:173
+#, kde-format
+msgid "a shelf needs a name"
+msgstr "une étagère doit avoir un nom"
+
+#: src/core/shelfdatabase.cpp:177
+#, kde-format
+msgid "%1 is not a folder"
+msgstr "%1 n'est pas un dossier"
+
+#: src/core/shelfdatabase.cpp:185 src/core/shelfdatabase.cpp:199
+#, kde-format
+msgid "a shelf named \"%1\" already exists"
+msgstr "une étagère nommée « %1 » existe déjà"
+
+#: src/core/shelfedits.cpp:82
+#, kde-format
+msgid "no book %1"
+msgstr "aucun livre %1"
+
+#: src/core/shelfedits.cpp:94
+#, kde-format
+msgid "cannot save the book %1"
+msgstr "impossible d'enregistrer le livre %1"
+
+#: src/core/shelfedits.cpp:125
+#, kde-format
+msgid "cannot save the series"
+msgstr "impossible d'enregistrer la série"
+
+#: src/core/shelfedits.cpp:166 src/core/shelfedits.cpp:170
+#, kde-format
+msgid "%1 is not a Kobold shelf edits file"
+msgstr "%1 n'est pas un fichier de modifications d'étagères Kobold"
+
+#: src/core/shelfedits.cpp:222
+#, kde-format
+msgid "cannot save the imported values"
+msgstr "impossible d'enregistrer les valeurs importées"
+
+#: src/core/shelffolder.cpp:23
+#, kde-format
+msgctxt "@info folder and shelf name"
+msgid "Kobold Library"
+msgstr "Bibliothèque Kobold"
+
+#: src/core/shelffolder.cpp:32
+#, kde-format
+msgid "cannot create %1"
+msgstr "impossible de créer %1"
+
+#: src/core/shelfscanner.cpp:149
+#, kde-format
+msgid "unknown shelf"
+msgstr "étagère inconnue"
+
+#: src/core/shelfscanner.cpp:189
+#, kde-format
+msgid "the folder of this shelf cannot be read; is the share mounted?"
+msgstr "le dossier de cette étagère est illisible ; le partage est-il monté ?"
+
+#: src/core/syncexecutor.cpp:62
+#, kde-format
+msgid "cannot flush %1 to the device"
+msgstr "impossible d'écrire %1 jusqu'au bout sur l'appareil"
+
+#: src/core/syncexecutor.cpp:92
+#, kde-format
+msgid "cannot rename %1 to %2"
+msgstr "impossible de renommer %1 en %2"
+
+#: src/core/syncexecutor.cpp:124
+#, kde-format
+msgid "cannot delete %1"
+msgstr "impossible de supprimer %1"
+
+#: src/core/syncexecutor.cpp:189
+#, kde-format
+msgid ""
+"the Kobo was synced from %1, not %2; use --force-url-change to switch servers"
+msgstr ""
+"le Kobo a été synchronisé depuis %1, pas %2 ; utilisez --force-url-change "
+"pour changer de serveur"
+
+#: src/core/syncexecutor.cpp:213
+#, kde-format
+msgid "missing on the computer"
+msgstr "absent de l'ordinateur"
+
+#: src/core/syncexecutor.cpp:235
+#, kde-format
+msgid "Fetching metadata of 1 book from Komga…"
+msgid_plural "Fetching metadata of %1 books from Komga…"
+msgstr[0] "Récupération des métadonnées de %1 livre depuis Komga…"
+msgstr[1] "Récupération des métadonnées de %1 livres depuis Komga…"
+
+#: src/core/syncexecutor.cpp:297
+#, kde-format
+msgid "cannot read the series reading direction: %1"
+msgstr "impossible de lire le sens de lecture de la série : %1"
+
+#: src/core/syncexecutor.cpp:326
+#, kde-format
+msgid ""
+"Kobold's record on this Kobo was empty (the Kobo was probably unplugged "
+"while it was written); its books found in their folder are taken back and "
+"copied again."
+msgstr ""
+"Le registre de Kobold sur cette Kobo était vide (la Kobo a sans doute été "
+"débranchée pendant son écriture) ; ses livres trouvés dans leur dossier sont "
+"repris et copiés de nouveau."
+
+#: src/core/syncexecutor.cpp:465
+#, kde-format
+msgid "left on the Kobo for now"
+msgstr "laissé sur le Kobo pour l'instant"
+
+#: src/core/syncexecutor.cpp:478
+#, kde-format
+msgid "cannot create a temporary directory: %1"
+msgstr "impossible de créer un dossier temporaire : %1"
+
+#: src/core/syncexecutor.cpp:558
+#, kde-format
+msgid "The series could not be set in the Kobo's library: %1"
+msgstr "La série n'a pas pu être définie dans la bibliothèque de la Kobo : %1"
+
+#: src/core/syncexecutor.cpp:561
+#, kde-format
+msgid "Series set for 1 book in the Kobo's library."
+msgid_plural "Series set for %1 books in the Kobo's library."
+msgstr[0] "Série définie pour %1 livre dans la bibliothèque de la Kobo."
+msgstr[1] "Série définie pour %1 livres dans la bibliothèque de la Kobo."
+
+#: src/core/syncexecutor.cpp:570
+#, kde-format
+msgid "Removing %1"
+msgstr "Suppression de %1"
+
+#: src/core/syncexecutor.cpp:572
+#, kde-format
+msgid "cannot delete the file"
+msgstr "impossible de supprimer le fichier"
+
+#: src/core/syncexecutor.cpp:605
+#, kde-format
+msgid "%1 is selected again"
+msgstr "%1 est de nouveau sélectionné"
+
+#: src/core/syncexecutor.cpp:607
+#, kde-format
+msgid "Renaming a hidden book"
+msgstr "Renommage d'un livre caché"
+
+#: src/core/syncexecutor.cpp:609
+#, kde-format
+msgid "Renaming %1 to %2"
+msgstr "Renommage de %1 en %2"
+
+#: src/core/syncexecutor.cpp:636
+#, kde-format
+msgid "Downloading %1"
+msgstr "Téléchargement de %1"
+
+#: src/core/syncexecutor.cpp:640
+#, kde-format
+msgid "Reading %1"
+msgstr "Lecture de %1"
+
+#: src/core/syncexecutor.cpp:666
+#, kde-format
+msgid "Converting %1 with KCC (%2, right to left)"
+msgstr "Conversion de %1 avec KCC (%2, de droite à gauche)"
+
+#: src/core/syncexecutor.cpp:667
+#, kde-format
+msgid "Converting %1 with KCC (%2, left to right)"
+msgstr "Conversion de %1 avec KCC (%2, de gauche à droite)"
+
+#: src/core/syncexecutor.cpp:721
+#, kde-format
+msgid "Converting %1"
+msgstr "Conversion de %1"
+
+#: src/core/syncexecutor.cpp:781
+#, kde-format
+msgid ""
+"The series could not be written into %1 (%2); the Kobo's library gets it at "
+"the next sync."
+msgstr ""
+"La série n'a pas pu être écrite dans %1 (%2) ; la bibliothèque de la Kobo la "
+"recevra à la prochaine synchronisation."
+
+#: src/core/syncexecutor.cpp:799
+#, kde-format
+msgid "%1 already exists on the device"
+msgstr "%1 existe déjà sur l'appareil"
+
+#: src/core/syncexecutor.cpp:805
+#, kde-format
+msgid "cannot create the folder for %1"
+msgstr "impossible de créer le dossier de %1"
+
+#: src/core/syncexecutor.cpp:811
+#, kde-format
+msgid "not enough free space on the device (%1 needed)"
+msgstr "pas assez d'espace libre sur l'appareil (%1 nécessaires)"
+
+#: src/core/syncexecutor.cpp:816
+#, kde-format
+msgid "Copying %1"
+msgstr "Copie de %1"
+
+#: src/core/syncexecutor.cpp:834
+#, kde-format
+msgid "cannot rename %1"
+msgstr "impossible de renommer %1"
+
+#: src/core/syncplanner.cpp:66
+#, kde-format
+msgid "synced by Komga"
+msgstr "synchronisé par Komga"
+
+#: src/core/syncplanner.cpp:69
+#, kde-format
+msgctxt "@item unknown media type"
+msgid "unknown"
+msgstr "inconnu"
+
+#: src/core/syncplanner.cpp:69
+#, kde-format
+msgid "unsupported format (%1)"
+msgstr "format non pris en charge (%1)"
+
+#: src/core/syncplanner.cpp:72
+#, kde-format
+msgid "not ready in Komga (status %1)"
+msgstr "pas prêt dans Komga (état %1)"
+
+#: src/core/syncplanner.cpp:72
+#, kde-format
+msgctxt "@item unknown media status"
+msgid "unknown"
+msgstr "inconnu"
+
+#: src/core/syncplanner.cpp:75
+#, kde-format
+msgid "comics cannot be converted for this device"
+msgstr "les BD ne peuvent pas être converties pour cet appareil"
+
+#: src/core/syncplanner.cpp:159
+#, kde-format
+msgid "not in Komga"
+msgstr "absent de Komga"
+
+#: src/core/syncplanner.cpp:159
+#, kde-format
+msgid "not on its shelf"
+msgstr "absent de son étagère"
+
+#: src/core/syncplanner.cpp:162
+#, kde-format
+msgid "now synced by Komga"
+msgstr "désormais synchronisé par Komga"
+
+#: src/core/syncplanner.cpp:187 src/core/syncplanner.cpp:264
+#, kde-format
+msgid "no free file name on the device"
+msgstr "aucun nom de fichier libre sur l'appareil"
+
+#: src/core/syncplanner.cpp:201
+#, kde-format
+msgid "file changed in Komga"
+msgstr "fichier modifié dans Komga"
+
+#: src/core/syncplanner.cpp:204
+#, kde-format
+msgid "profile changed"
+msgstr "profil modifié"
+
+#: src/core/syncplanner.cpp:209
+#, kde-format
+msgid "reading direction changed"
+msgstr "sens de lecture modifié"
+
+#: src/core/syncplanner.cpp:212
+#, kde-format
+msgid "file missing on the device"
+msgstr "fichier absent de l'appareil"
+
+#: src/core/syncplanner.cpp:214
+#, kde-format
+msgid "file name changed"
+msgstr "nom de fichier modifié"
+
+#: src/core/syncplanner.cpp:216
+#, kde-format
+msgid "selected again"
+msgstr "de nouveau sélectionné"
+
+#: src/core/syncplanner.cpp:235
+#, kde-format
+msgid "metadata not available"
+msgstr "métadonnées non disponibles"
+
+#: src/services/aboutdata.cpp:14
+#, kde-format
+msgid "Kobold"
+msgstr "Kobold"
+
+#: src/services/aboutdata.cpp:16
+#, kde-format
+msgid "Synchronize Komga books with a Kobo e-reader"
+msgstr "Synchroniser les livres de Komga avec une liseuse Kobo"
+
+#: src/services/aboutdata.cpp:21
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author and maintainer"
+msgstr "Auteur et mainteneur"
+
+#: src/services/aboutdata.cpp:26
+#, kde-format
+msgctxt "@info:credit"
+msgid "AI pair programmer: specifications and code"
+msgstr "Programmeuse IA en binôme : spécifications et code"
+
+#: src/services/aboutdata.cpp:30
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kira@kodara.me"
+
+#: src/services/aboutdata.cpp:30
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kira"
+
+#: src/services/comicsetup.cpp:35
+#, kde-format
+msgid "kcc not installed; install it with: paru -S kcc"
+msgstr "kcc n'est pas installé ; installez-le avec : paru -S kcc"
+
+#: src/services/comicsetup.cpp:45
+#, kde-format
+msgid "unknown Kobo model %1; run: kobold config set-profile <profile>"
+msgstr ""
+"modèle de Kobo %1 inconnu ; lancez : kobold config set-profile <profil>"
+
+#: src/services/comicsetup.cpp:46
+#, kde-format
+msgid "Kobo model unknown (%1); run: kobold config set-profile <profile>"
+msgstr ""
+"Modèle de Kobo inconnu (%1) ; lancez : kobold config set-profile <profil>"
+
+#: src/services/comicsetup.cpp:48
+#, kde-format
+msgid "KCC %1 has no profile %2"
+msgstr "KCC %1 n'a pas de profil %2"
+
+#: src/services/diagnosticsrunner.cpp:71
+#, kde-format
+msgid "kepubify not found"
+msgstr "kepubify introuvable"
+
+#: src/services/diagnosticsrunner.cpp:75
+#, kde-format
+msgid "kepubify %1"
+msgstr "kepubify %1"
+
+#: src/services/diagnosticsrunner.cpp:84
+#, kde-format
+msgid "Qt SQLite driver"
+msgstr "Pilote SQLite de Qt"
+
+#: src/services/diagnosticsrunner.cpp:86
+#, kde-format
+msgid "Qt SQLite driver missing"
+msgstr "Pilote SQLite de Qt manquant"
+
+#: src/services/diagnosticsrunner.cpp:95
+#, kde-format
+msgid "Komga URL %1"
+msgstr "URL de Komga : %1"
+
+#: src/services/diagnosticsrunner.cpp:97
+#, kde-format
+msgid "invalid Komga URL"
+msgstr "URL de Komga non valable"
+
+#: src/services/diagnosticsrunner.cpp:103
+#, kde-format
+msgid "API key stored in the system keychain"
+msgstr "Clé d'API enregistrée dans le trousseau du système"
+
+#: src/services/diagnosticsrunner.cpp:107
+#, kde-format
+msgid "system keychain reachable"
+msgstr "trousseau du système accessible"
+
+#: src/services/diagnosticsrunner.cpp:108
+#, kde-format
+msgid "no API key stored"
+msgstr "aucune clé d'API enregistrée"
+
+#: src/services/diagnosticsrunner.cpp:111
+#, kde-format
+msgid "install and enable KWallet or another Secret Service provider"
+msgstr "installez et activez KWallet ou un autre fournisseur Secret Service"
+
+#: src/services/diagnosticsrunner.cpp:114
+#, kde-format
+msgid "Komga access not checked without an API key"
+msgstr "accès à Komga non vérifié sans clé d'API"
+
+#: src/services/diagnosticsrunner.cpp:126
+#, kde-format
+msgid "Komga reachable, signed in as %1"
+msgstr "Komga accessible, connecté en tant que %1"
+
+#: src/services/diagnosticsrunner.cpp:128
+#, kde-format
+msgid "check the URL, the network and the API key"
+msgstr "vérifiez l'URL, le réseau et la clé d'API"
+
+#: src/services/diagnosticsrunner.cpp:140
+#, kde-format
+msgid "Kobo %1 (%2) at %3"
+msgstr "Kobo %1 (%2) à %3"
+
+#: src/services/diagnosticsrunner.cpp:142
+#, kde-format
+msgid "plug in the Kobo, or pass --kobo or --device"
+msgstr "branchez le Kobo, ou indiquez --kobo ou --device"
+
+#: src/services/diagnosticsrunner.cpp:151
+#, kde-format
+msgid "7z not found, comics cannot be converted"
+msgstr "7z introuvable, les BD ne peuvent pas être converties"
+
+#: src/services/diagnosticsrunner.cpp:156
+#, kde-format
+msgid "kcc-c2e not found, comics will be skipped"
+msgstr "kcc-c2e introuvable, les BD seront ignorées"
+
+#: src/services/diagnosticsrunner.cpp:160
+#, kde-format
+msgid "kcc-c2e %1"
+msgstr "kcc-c2e %1"
+
+#: src/services/diagnosticsrunner.cpp:187
+#, kde-format
+msgid "no comic profile for this Kobo, %1"
+msgstr "aucun profil BD pour ce Kobo, %1"
+
+#: src/services/diagnosticsrunner.cpp:190
+#, kde-format
+msgid "comic profile %1 (%2) for %3"
+msgstr "profil BD %1 (%2) pour %3"
+
+#: src/services/diagnosticsrunner.cpp:211
+#, kde-format
+msgid "Selection: %1"
+msgstr "Sélection : %1"
+
+#: src/services/diagnosticsrunner.cpp:227
+#, kde-format
+msgid ""
+"Selection: %1 direct book(s), %2 followed series, %3 collection(s), %4 read "
+"list(s)"
+msgstr ""
+"Sélection : %1 livre(s) direct(s), %2 série(s) suivie(s), %3 collection(s), "
+"%4 liste(s) de lecture"
+
+#: src/services/diagnosticsrunner.cpp:242
+#, kde-format
+msgid "Selection: 1 book"
+msgid_plural "Selection: %1 books"
+msgstr[0] "Sélection : %1 livre"
+msgstr[1] "Sélection : %1 livres"
+
+#: src/services/diagnosticsrunner.cpp:247 src/services/syncrunner.cpp:147
+#, kde-format
+msgid "  from the followed %2: 1 book"
+msgid_plural "  from the followed %2: %1 books"
+msgstr[0] "  par le suivi de %2 : %1 livre"
+msgstr[1] "  par le suivi de %2 : %1 livres"
+
+#: src/services/diagnosticsrunner.cpp:266
+#, kde-format
+msgid "On the Kobo: 1 book placed by Kobold"
+msgid_plural "On the Kobo: %1 books placed by Kobold"
+msgstr[0] "Sur le Kobo : %1 livre placé par Kobold"
+msgstr[1] "Sur le Kobo : %1 livres placés par Kobold"
+
+#: src/services/diagnosticsrunner.cpp:289
+#, kde-format
+msgid "Pending sync: none, the Kobo is up to date"
+msgstr "Synchronisation en attente : aucune, le Kobo est à jour"
+
+#: src/services/diagnosticsrunner.cpp:291
+#, kde-format
+msgid ""
+"Pending sync: %1 to add, %2 to update, %3 to remove (kobold sync --dry-run "
+"for details)"
+msgstr ""
+"Synchronisation en attente : %1 à ajouter, %2 à mettre à jour, %3 à retirer "
+"(kobold sync --dry-run pour le détail)"
+
+#: src/services/kobomounter.cpp:26
+#, kde-format
+msgid "Kobo (not mounted)"
+msgstr "Kobo (non monté)"
+
+#: src/services/kobomounter.cpp:70
+#, kde-format
+msgid "the Kobo could not be mounted"
+msgstr "le Kobo n'a pas pu être monté"
+
+#: src/services/kobomounter.cpp:98
+#, kde-format
+msgid "no mounted Kobo at %1"
+msgstr "aucun Kobo monté à %1"
+
+#: src/services/kobomounter.cpp:109
+#, kde-format
+msgid "The Kobo was ejected; it indexes its books now and can be unplugged."
+msgstr "Le Kobo a été éjecté ; il indexe ses livres et peut être débranché."
+
+#: src/services/kobosyncrunner.cpp:149
+#, kde-format
+msgid "Komga sync on %1: installed; connect the Kobo to check it."
+msgstr ""
+"Synchronisation Komga sur %1 : installée ; branchez le Kobo pour la vérifier."
+
+#: src/services/kobosyncrunner.cpp:149 src/services/kobosyncrunner.cpp:161
+#, kde-format
+msgid "Komga sync on %1: not installed."
+msgstr "Synchronisation Komga sur %1 : non installée."
+
+#: src/services/kobosyncrunner.cpp:163
+#, kde-format
+msgid "The Kobo points to %1, set up outside Kobold."
+msgstr "Le Kobo pointe vers %1, configuré en dehors de Kobold."
+
+#: src/services/kobosyncrunner.cpp:172
+#, kde-format
+msgid "The Komga sync key of %1 is missing."
+msgstr "La clé de synchronisation Komga de %1 est manquante."
+
+#: src/services/kobosyncrunner.cpp:180
+#, kde-format
+msgid "The Komga sync endpoint is missing on %1."
+msgstr "Le point d'accès de synchronisation Komga est absent de %1."
+
+#: src/services/kobosyncrunner.cpp:182
+#, kde-format
+msgid "The Komga sync endpoint on %1 does not match Kobold's settings."
+msgstr ""
+"Le point d'accès de synchronisation Komga de %1 ne correspond pas à la "
+"configuration de Kobold."
+
+#: src/services/kobosyncrunner.cpp:185 src/services/kobosyncrunner.cpp:196
+#, kde-format
+msgid "Endpoint: %1"
+msgstr "Point d'accès : %1"
+
+#: src/services/kobosyncrunner.cpp:185 src/services/kobosyncrunner.cpp:572
+#, kde-format
+msgctxt "@info no endpoint"
+msgid "none"
+msgstr "aucun"
+
+#: src/services/kobosyncrunner.cpp:199
+#, kde-format
+msgid "Komga refused the sync key of %1."
+msgstr "Komga a refusé la clé de synchronisation de %1."
+
+#: src/services/kobosyncrunner.cpp:204
+#, kde-format
+msgid "Komga sync on %1: installed; the key could not be checked (%2)."
+msgstr ""
+"Synchronisation Komga sur %1 : installée ; la clé n'a pas pu être vérifiée "
+"(%2)."
+
+#: src/services/kobosyncrunner.cpp:208
+#, kde-format
+msgid "Komga sync on %1: installed and working."
+msgstr "Synchronisation Komga sur %1 : installée et fonctionnelle."
+
+#: src/services/kobosyncrunner.cpp:234
+#, kde-format
+msgid "%1 uses plain http: the sync key travels in clear over the network."
+msgstr ""
+"%1 utilise http sans chiffrement : la clé de synchronisation circule en "
+"clair sur le réseau."
+
+#: src/services/kobosyncrunner.cpp:242
+#, kde-format
+msgid "Komga sync installed on %1. Eject the Kobo so that it uses it."
+msgstr ""
+"Synchronisation Komga installée sur %1. Éjectez le Kobo pour qu'il l'utilise."
+
+#: src/services/kobosyncrunner.cpp:258
+#, kde-format
+msgid "A Komga API key would be created for %1."
+msgstr "Une clé d'API Komga serait créée pour %1."
+
+#: src/services/kobosyncrunner.cpp:282
+#, kde-format
+msgid ""
+"Komga sync removed from %1. Eject the Kobo so that it uses the Kobo Store "
+"again."
+msgstr ""
+"Synchronisation Komga retirée de %1. Éjectez le Kobo pour qu'il utilise de "
+"nouveau la boutique Kobo."
+
+#: src/services/kobosyncrunner.cpp:287
+#, kde-format
+msgid ""
+"The sync key is kept for a later install; delete it with: kobold kobo-sync "
+"uninstall --delete-key"
+msgstr ""
+"La clé de synchronisation est gardée pour une installation future ; "
+"supprimez-la avec : kobold kobo-sync uninstall --delete-key"
+
+#: src/services/kobosyncrunner.cpp:297
+#, kde-format
+msgid "The sync key of %1 was deleted."
+msgstr "La clé de synchronisation de %1 a été supprimée."
+
+#: src/services/kobosyncrunner.cpp:302
+#, kde-format
+msgid ""
+"The id of the sync key is unknown; delete it in Komga under My Account, API "
+"Keys."
+msgstr ""
+"L'identifiant de la clé de synchronisation est inconnu ; supprimez-la dans "
+"Komga, sous Mon compte, Clés d'API."
+
+#: src/services/kobosyncrunner.cpp:308
+#, kde-format
+msgid "cannot delete the sync key in Komga: %1"
+msgstr "impossible de supprimer la clé de synchronisation dans Komga : %1"
+
+#: src/services/kobosyncrunner.cpp:323
+#, kde-format
+msgid "no sync key for %1; run: kobold kobo-sync set-key --create"
+msgstr ""
+"aucune clé de synchronisation pour %1 ; lancez : kobold kobo-sync set-key --"
+"create"
+
+#: src/services/kobosyncrunner.cpp:335
+#, kde-format
+msgid "Komga sync installed again on %1. Eject the Kobo so that it uses it."
+msgstr ""
+"Synchronisation Komga réinstallée sur %1. Éjectez le Kobo pour qu'il "
+"l'utilise."
+
+#: src/services/kobosyncrunner.cpp:345
+#, kde-format
+msgid "give the new key on standard input, or pass --create"
+msgstr "donnez la nouvelle clé sur l'entrée standard, ou indiquez --create"
+
+#: src/services/kobosyncrunner.cpp:351
+#, kde-format
+msgid "A new Komga API key would be created for %1."
+msgstr "Une nouvelle clé d'API Komga serait créée pour %1."
+
+#: src/services/kobosyncrunner.cpp:352
+#, kde-format
+msgid "The given key would be stored for %1."
+msgstr "La clé donnée serait enregistrée pour %1."
+
+#: src/services/kobosyncrunner.cpp:358
+#, kde-format
+msgid "New sync key stored for %1."
+msgstr "Nouvelle clé de synchronisation enregistrée pour %1."
+
+#: src/services/kobosyncrunner.cpp:361
+#, kde-format
+msgid "%1 is not connected: reinstall the endpoint once it is."
+msgstr ""
+"%1 n'est pas connecté : réinstallez le point d'accès une fois qu'il le sera."
+
+#: src/services/kobosyncrunner.cpp:372
+#, kde-format
+msgid ""
+"The former key still exists in Komga; delete it under My Account, API Keys, "
+"or pass --delete-old."
+msgstr ""
+"L'ancienne clé existe toujours dans Komga ; supprimez-la sous Mon compte, "
+"Clés d'API, ou indiquez --delete-old."
+
+#: src/services/kobosyncrunner.cpp:379
+#, kde-format
+msgid "cannot delete the former key in Komga: %1"
+msgstr "impossible de supprimer l'ancienne clé dans Komga : %1"
+
+#: src/services/kobosyncrunner.cpp:382
+#, kde-format
+msgid "The former key was deleted in Komga."
+msgstr "L'ancienne clé a été supprimée dans Komga."
+
+#: src/services/kobosyncrunner.cpp:393
+#, kde-format
+msgid ""
+"the id of the sync key of %1 is unknown; force a full sync in Komga under My "
+"Account, API Keys"
+msgstr ""
+"l'identifiant de la clé de synchronisation de %1 est inconnu ; forcez une "
+"synchronisation complète dans Komga, sous Mon compte, Clés d'API"
+
+#: src/services/kobosyncrunner.cpp:397
+#, kde-format
+msgid "The sync points of %1 would be deleted."
+msgstr "Les points de synchronisation de %1 seraient supprimés."
+
+#: src/services/kobosyncrunner.cpp:404
+#, kde-format
+msgid "cannot reset the sync of %1: %2"
+msgstr "impossible de réinitialiser la synchronisation de %1 : %2"
+
+#: src/services/kobosyncrunner.cpp:407
+#, kde-format
+msgid "%1 will download every book again at its next sync."
+msgstr ""
+"%1 téléchargera de nouveau tous les livres à sa prochaine synchronisation."
+
+#: src/services/kobosyncrunner.cpp:430
+#, kde-format
+msgid "Komga refused this key; it was not stored"
+msgstr "Komga a refusé cette clé ; elle n'a pas été enregistrée"
+
+#: src/services/kobosyncrunner.cpp:447
+#, kde-format
+msgctxt "@info API key comment: Kobo name, serial number"
+msgid "Kobold – %1 (%2)"
+msgstr "Kobold – %1 (%2)"
+
+#: src/services/kobosyncrunner.cpp:462
+#, kde-format
+msgid ""
+"the Komga user %1 lacks the role %2 needed for Kobo sync; an administrator "
+"can grant it in Komga"
+msgstr ""
+"il manque à l'utilisateur Komga %1 le rôle %2 nécessaire à la "
+"synchronisation Kobo ; un administrateur peut l'accorder dans Komga"
+
+#: src/services/kobosyncrunner.cpp:479
+#, kde-format
+msgid "Komga refused the email and password"
+msgstr "Komga a refusé le courriel et le mot de passe"
+
+#: src/services/kobosyncrunner.cpp:493
+#, kde-format
+msgid "cannot create a Komga API key: %1"
+msgstr "impossible de créer une clé d'API Komga : %1"
+
+#: src/services/kobosyncrunner.cpp:496
+#, kde-format
+msgid "Komga API key \"%1\" created."
+msgstr "Clé d'API Komga « %1 » créée."
+
+#: src/services/kobosyncrunner.cpp:520
+#, kde-format
+msgid "no Komga API key was created"
+msgstr "aucune clé d'API Komga n'a été créée"
+
+#: src/services/kobosyncrunner.cpp:528
+#, kde-format
+msgid "cannot store the sync key: %1"
+msgstr "impossible d'enregistrer la clé de synchronisation : %1"
+
+#: src/services/kobosyncrunner.cpp:572
+#, kde-format
+msgid "Current: api_endpoint=%1"
+msgstr "Actuel :  api_endpoint=%1"
+
+#: src/services/kobosyncrunner.cpp:573
+#, kde-format
+msgid "New:     api_endpoint=%1"
+msgstr "Nouveau : api_endpoint=%1"
+
+#: src/services/kobosyncrunner.cpp:574
+#, kde-format
+msgid "Dry run: %1 was not changed."
+msgstr "Simulation : %1 n'a pas été modifié."
+
+#: src/services/kobotarget.cpp:38
+#, kde-format
+msgid "cannot identify the Kobo at %1: %2"
+msgstr "impossible d'identifier le Kobo à %1 : %2"
+
+#: src/services/kobotarget.cpp:86 src/services/kobotarget.cpp:124
+#, kde-format
+msgid "unknown Kobo \"%1\"; known Kobos: %2"
+msgstr "Kobo « %1 » inconnu ; Kobo connus : %2"
+
+#: src/services/kobotarget.cpp:114
+#, kde-format
+msgid "no Kobo known yet; plug one in, or pass --device <path>"
+msgstr ""
+"aucun Kobo connu pour l'instant ; branchez-en un, ou indiquez --device "
+"<chemin>"
+
+#: src/services/kobotarget.cpp:116
+#, kde-format
+msgid "several Kobo devices; pass --kobo <name> (known Kobos: %1)"
+msgstr "plusieurs Kobo ; indiquez --kobo <nom> (Kobo connus : %1)"
+
+#: src/services/kobotarget.cpp:128
+#, kde-format
+msgid "the Kobo \"%1\" is not connected"
+msgstr "le Kobo « %1 » n'est pas connecté"
+
+#: src/services/kobotarget.cpp:136
+#, kde-format
+msgid ""
+"several Kobo devices connected; pass --kobo <name> or --all (known Kobos: %1)"
+msgstr ""
+"plusieurs Kobo connectés ; indiquez --kobo <nom> ou --all (Kobo connus : %1)"
+
+#: src/services/komgasession.cpp:77
+#, kde-format
+msgid "no Komga API key; run: kobold config set-api-key"
+msgstr "aucune clé d'API Komga ; lancez : kobold config set-api-key"
+
+#: src/services/parentallock.cpp:56
+#, kde-format
+msgid "Too many wrong PINs; try again in 1 second."
+msgid_plural "Too many wrong PINs; try again in %1 seconds."
+msgstr[0] "Trop de NIP erronés ; réessayez dans %1 seconde."
+msgstr[1] "Trop de NIP erronés ; réessayez dans %1 secondes."
+
+#: src/services/parentallock.cpp:62
+#, kde-format
+msgid "No parental PIN is set."
+msgstr "Aucun NIP parental n'est défini."
+
+#: src/services/parentallock.cpp:63
+#, kde-format
+msgid "Cannot read the parental PIN: %1"
+msgstr "Impossible de lire le NIP parental : %1"
+
+#: src/services/parentallock.cpp:71
+#, kde-format
+msgid "Wrong PIN."
+msgstr "NIP erroné."
+
+#: src/services/parentallock.cpp:120
+#, kde-format
+msgid "The PIN must have 4 to 8 digits."
+msgstr "Le NIP doit avoir de 4 à 8 chiffres."
+
+#: src/services/parentallock.cpp:125
+#, kde-format
+msgid "Cannot store the parental PIN: %1"
+msgstr "Impossible d'enregistrer le NIP parental : %1"
+
+#: src/services/parentallock.cpp:166
+#, kde-format
+msgid "Unlock with the PIN first."
+msgstr "Déverrouillez d'abord avec le NIP."
+
+#: src/services/parentallock.cpp:170
+#, kde-format
+msgid "The age must be between 1 and 21, or 0 to turn the age rule off."
+msgstr "L'âge doit être entre 1 et 21, ou 0 pour désactiver la règle d'âge."
+
+#: src/services/progressrunner.cpp:33
+#, kde-format
+msgid ""
+"the Qt SQLite driver is missing; install it with: sudo pacman -S qt6-base"
+msgstr ""
+"le pilote SQLite de Qt est manquant ; installez-le avec : sudo pacman -S qt6-"
+"base"
+
+#: src/services/progressrunner.cpp:51
+#, kde-format
+msgid "Kobo: %1 at %2"
+msgstr "Kobo : %1 à %2"
+
+#: src/services/progressrunner.cpp:72
+#, kde-format
+msgid "finished"
+msgstr "terminé"
+
+#: src/services/progressrunner.cpp:72
+#, kde-format
+msgid "page %1"
+msgstr "page %1"
+
+#: src/services/progressrunner.cpp:81
+#, kde-format
+msgid ""
+"Dry run: %1 update(s) would be sent, %2 unchanged, %3 not placed by Kobold."
+msgstr ""
+"Simulation : %1 mise(s) à jour serai(en)t envoyée(s), %2 inchangé(s), %3 non "
+"placé(s) par Kobold."
+
+#: src/services/progressrunner.cpp:83
+#, kde-format
+msgid "Updated %1, unchanged %2, unmatched %3, failed %4."
+msgstr ""
+"Mis à jour : %1, inchangés : %2, sans correspondance : %3, échecs : %4."
+
+#: src/services/progressrunner.cpp:86
+#, kde-format
+msgid "1 book from a shelf or the computer keeps its progress on the Kobo."
+msgid_plural ""
+"%1 books from shelves or the computer keep their progress on the Kobo."
+msgstr[0] ""
+"%1 livre d'une étagère ou de l'ordinateur garde sa progression sur le Kobo."
+msgstr[1] ""
+"%1 livres d'étagères ou de l'ordinateur gardent leur progression sur le Kobo."
+
+#: src/services/syncrunner.cpp:47
+#, kde-format
+msgid "Kobo: %1 (%2)"
+msgstr "Kobo : %1 (%2)"
+
+#: src/services/syncrunner.cpp:64
+#, kde-format
+msgid "%1; install it with: paru -S kepubify"
+msgstr "%1 ; installez-le avec : paru -S kepubify"
+
+#: src/services/syncrunner.cpp:129
+#, kde-format
+msgid "Mount point: %1"
+msgstr "Point de montage : %1"
+
+#: src/services/syncrunner.cpp:135
+#, kde-format
+msgid "cannot back up the Kobo's database: %1"
+msgstr "impossible de sauvegarder la base de données du Kobo : %1"
+
+#: src/services/syncrunner.cpp:139
+#, kde-format
+msgid "Database backed up to %1"
+msgstr "Base de données sauvegardée dans %1"
+
+#: src/services/syncrunner.cpp:141
+#, kde-format
+msgid "Komga: %1 (%2 selected book(s))"
+msgstr "Komga : %1 (%2 livre(s) sélectionné(s))"
+
+#: src/services/syncrunner.cpp:143
+#, kde-format
+msgid "Local files: 1"
+msgid_plural "Local files: %1"
+msgstr[0] "Fichiers locaux : %1"
+msgstr[1] "Fichiers locaux : %1"
+
+#: src/services/syncrunner.cpp:150
+#, kde-format
+msgid "Comics: skipped (%1)"
+msgstr "BD : ignorées (%1)"
+
+#: src/services/syncrunner.cpp:152
+#, kde-format
+msgid "Comics: KCC %1, profile %2 for %3"
+msgstr "BD : KCC %1, profil %2 pour %3"
+
+#: src/services/syncrunner.cpp:156
+#, kde-format
+msgid "EPUB books: synced by Komga"
+msgstr "Livres EPUB : synchronisés par Komga"
+
+#: src/services/syncrunner.cpp:183
+#, kde-format
+msgid "Sending the reading progress of 1 EPUB book before Komga takes it over…"
+msgid_plural ""
+"Sending the reading progress of %1 EPUB books before Komga takes them over…"
+msgstr[0] ""
+"Envoi de la progression de lecture de %1 livre EPUB avant que Komga le "
+"prenne en charge…"
+msgstr[1] ""
+"Envoi de la progression de lecture de %1 livres EPUB avant que Komga les "
+"prenne en charge…"
+
+#: src/services/syncrunner.cpp:194
+#, kde-format
+msgid ""
+"the reading progress could not be sent; EPUB books were left on the Kobo"
+msgstr ""
+"la progression de lecture n'a pas pu être envoyée ; les livres EPUB sont "
+"restés sur le Kobo"
+
+#: src/services/syncrunner.cpp:195
+#, kde-format
+msgid "%1; EPUB books were left on the Kobo"
+msgstr "%1 ; les livres EPUB sont restés sur le Kobo"
+
+#: src/services/syncrunner.cpp:256
+#, kde-format
+msgid "Sync cancelled; nothing was changed."
+msgstr "Synchronisation annulée ; rien n'a été modifié."
+
+#: src/services/syncrunner.cpp:267
+#, kde-format
+msgid "Nothing to do: the Kobo is up to date."
+msgstr "Rien à faire : le Kobo est à jour."
+
+#: src/services/syncrunner.cpp:269
+#, kde-format
+msgid "Planned changes (dry run, nothing modified):"
+msgstr "Changements prévus (simulation, rien n'est modifié) :"
+
+#: src/services/syncrunner.cpp:297
+#, kde-format
+msgid "Removals to confirm (default answer):"
+msgstr "Retraits à confirmer (réponse par défaut) :"
+
+#: src/services/syncrunner.cpp:302
+#, kde-format
+msgid "  - %1: left the selection; Komga still has it (Remove)"
+msgstr "  - %1 : sorti de la sélection ; Komga l'a toujours (Retirer)"
+
+#: src/services/syncrunner.cpp:305
+#, kde-format
+msgid "  - %1: left the selection; the computer still has it (Remove)"
+msgstr "  - %1 : sorti de la sélection ; l'ordinateur l'a toujours (Retirer)"
+
+#: src/services/syncrunner.cpp:308
+#, kde-format
+msgid "  - %1: no longer on its shelf; this is the only copy (Keep)"
+msgstr "  - %1 : n'est plus sur son étagère ; c'est la seule copie (Garder)"
+
+#: src/services/syncrunner.cpp:309
+#, kde-format
+msgid "  - %1: no longer in Komga; this is the only copy (Keep)"
+msgstr "  - %1 : n'est plus dans Komga ; c'est la seule copie (Garder)"
+
+#: src/services/syncrunner.cpp:312
+#, kde-format
+msgid "  - %1: missing on the computer; this is the only copy (Keep)"
+msgstr "  - %1 : absent de l'ordinateur ; c'est la seule copie (Garder)"
+
+#: src/services/syncrunner.cpp:323
+#, kde-format
+msgid "  Skipped %1: %2"
+msgstr "  Ignoré %1 : %2"
+
+#: src/services/syncrunner.cpp:335
+#, kde-format
+msgid "Taken out of the selection: %1"
+msgstr "Retiré de la sélection : %1"
+
+#: src/services/syncrunner.cpp:343
+#, kde-format
+msgid ""
+"Left on the Kobo for now (pass --remove-deselected or --remove-missing to "
+"remove them):"
+msgstr ""
+"Laissés sur le Kobo pour l'instant (indiquez --remove-deselected ou --remove-"
+"missing pour les retirer) :"
+
+#: src/services/syncrunner.cpp:348
+#, kde-format
+msgid "Added %1, updated %2, removed %3, kept %4, skipped %5, failed %6."
+msgstr ""
+"Ajoutés : %1, mis à jour : %2, retirés : %3, gardés : %4, ignorés : %5, "
+"échecs : %6."
+
+#: src/services/syncrunner.cpp:358
+#, kde-format
+msgid "Eject the Kobo so that it indexes the changes."
+msgstr "Éjectez le Kobo pour qu'il indexe les changements."
+
+#: src/app/qml/AppearanceSettingsPage.qml:14
+msgctxt "@title"
+msgid "Appearance"
+msgstr "Apparence"
+
+#: src/app/qml/AppearanceSettingsPage.qml:17
+msgctxt "@title:group"
+msgid "Application Icon"
+msgstr "Icône de l'application"
+
+#: src/app/qml/AppearanceSettingsPage.qml:28
+msgctxt "@item:inlistbox application icon"
+msgid "Peeking Kobold"
+msgstr "Kobold aux aguets"
+
+#: src/app/qml/AppearanceSettingsPage.qml:29
+msgctxt "@item:inlistbox application icon"
+msgid "Sync"
+msgstr "Synchro"
+
+#: src/app/qml/AppearanceSettingsPage.qml:30
+msgctxt "@item:inlistbox application icon"
+msgid "Kobold"
+msgstr "Kobold"
+
+#: src/app/qml/AppearanceSettingsPage.qml:72
+msgid ""
+"The window and the About page change at once. The launcher and the task "
+"manager may need a moment, or a new session."
+msgstr ""
+"La fenêtre et la page À propos changent tout de suite. Le lanceur et le "
+"gestionnaire de tâches peuvent demander un moment, ou une nouvelle session."
+
+#: src/app/qml/CacheSettingsPage.qml:11
+msgctxt "@title"
+msgid "Cover Cache"
+msgstr "Cache des couvertures"
+
+#: src/app/qml/CacheSettingsPage.qml:14
+msgctxt "@title:group"
+msgid "Covers"
+msgstr "Couvertures"
+
+#: src/app/qml/CacheSettingsPage.qml:19
+msgid "Size on disk"
+msgstr "Taille sur le disque"
+
+#: src/app/qml/CacheSettingsPage.qml:26
+msgctxt "@action:button"
+msgid "Clear Cover Cache"
+msgstr "Vider le cache des couvertures"
+
+#: src/app/qml/CacheSettingsPage.qml:27
+msgid "Covers are downloaded again from Komga when needed."
+msgstr "Les couvertures sont téléchargées à nouveau depuis Komga au besoin."
+
+#: src/app/qml/ContentPane.qml:38
+msgid "Choose a series in the sidebar"
+msgstr "Choisir une série dans la barre latérale"
+
+#: src/app/qml/ContentPane.qml:39
+msgid ""
+"Check books, or follow the whole series, to put them on the current Kobo."
+msgstr ""
+"Cocher des livres, ou suivre toute la série, pour les mettre sur le Kobo "
+"actuel."
+
+#: src/app/qml/ContentPane.qml:96
+msgctxt "@action:button"
+msgid "Edit Series…"
+msgstr "Modifier la série…"
+
+#: src/app/qml/ContentPane.qml:102 src/app/qml/ShelfEditorDialog.qml:229
+msgctxt "@action:button"
+msgid "Find Metadata…"
+msgstr "Chercher les métadonnées…"
+
+#: src/app/qml/ContentPane.qml:117
+msgctxt "@option:check"
+msgid "Follow this series on %1"
+msgstr "Suivre cette série sur %1"
+
+#: src/app/qml/ContentPane.qml:118
+msgctxt "@option:check"
+msgid "Follow on %1"
+msgstr "Suivre sur %1"
+
+#: src/app/qml/ContentPane.qml:130
+msgctxt "@label:textbox"
+msgid "Volumes:"
+msgstr "Tomes :"
+
+#: src/app/qml/ContentPane.qml:138
+msgid "All"
+msgstr "Tous"
+
+#: src/app/qml/ContentPane.qml:142
+msgid ""
+"Leave empty for every volume, or enter a range such as 1-10 or 1-3,7,10-"
+msgstr ""
+"Laisser vide pour tous les tomes, ou saisir une plage comme 1-10 ou 1-3,7,10-"
+
+#: src/app/qml/ContentPane.qml:150 src/app/qml/KoboBooksWindow.qml:442
+msgctxt "@action:button"
+msgid "Apply"
+msgstr "Appliquer"
+
+#: src/app/qml/ContentPane.qml:219
+msgctxt "@action:button"
+msgid "Edit Book…"
+msgstr "Modifier le livre…"
+
+#: src/app/qml/ContentPane.qml:232
+msgid "Loading books…"
+msgstr "Chargement des livres…"
+
+#: src/app/qml/ContentPane.qml:232 src/app/qml/KoboBooksWindow.qml:240
+msgid "No books"
+msgstr "Aucun livre"
+
+#: src/app/qml/DiagnosticsPage.qml:11
+msgctxt "@title"
+msgid "Diagnostics"
+msgstr "Diagnostic"
+
+#: src/app/qml/DiagnosticsPage.qml:16
+msgctxt "@title:group"
+msgid "Checks"
+msgstr "Vérifications"
+
+#: src/app/qml/DiagnosticsPage.qml:35
+msgid "Checking…"
+msgstr "Vérification…"
+
+#: src/app/qml/DiagnosticsPage.qml:35
+msgctxt "@action:button"
+msgid "Run Again"
+msgstr "Relancer"
+
+#: src/app/qml/KoboBooksWindow.qml:16
+msgctxt "@title:window"
+msgid "Books on %1"
+msgstr "Livres sur %1"
+
+#: src/app/qml/KoboBooksWindow.qml:37
+msgctxt "@title:tab"
+msgid "Books"
+msgstr "Livres"
+
+#: src/app/qml/KoboBooksWindow.qml:40
+msgctxt "@title:tab"
+msgid "History"
+msgstr "Historique"
+
+#: src/app/qml/KoboBooksWindow.qml:43
+msgctxt "@title:tab"
+msgid "Backups"
+msgstr "Sauvegardes"
+
+#: src/app/qml/KoboBooksWindow.qml:56
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Actualiser"
+
+#: src/app/qml/KoboBooksWindow.qml:80 src/app/qml/SyncProgressDialog.qml:126
+msgctxt "@action:button"
+msgid "Eject Now"
+msgstr "Éjecter maintenant"
+
+#: src/app/qml/KoboBooksWindow.qml:112
+msgctxt "@item:inlistbox origin filter"
+msgid "All origins"
+msgstr "Toutes les origines"
+
+#: src/app/qml/KoboBooksWindow.qml:125
+msgctxt "@item:inlistbox visibility filter"
+msgid "Shown and hidden"
+msgstr "Affichés et masqués"
+
+#: src/app/qml/KoboBooksWindow.qml:126
+msgctxt "@item:inlistbox visibility filter"
+msgid "Shown"
+msgstr "Affichés"
+
+#: src/app/qml/KoboBooksWindow.qml:127
+msgctxt "@item:inlistbox visibility filter"
+msgid "Hidden"
+msgstr "Masqués"
+
+#: src/app/qml/KoboBooksWindow.qml:226
+msgctxt "@info:tooltip"
+msgid "Hidden on the Kobo"
+msgstr "Masqué sur le Kobo"
+
+#: src/app/qml/KoboBooksWindow.qml:226
+msgctxt "@info:tooltip"
+msgid "Shown on the Kobo"
+msgstr "Affiché sur le Kobo"
+
+#: src/app/qml/KoboBooksWindow.qml:240
+msgid "No book matches the filters"
+msgstr "Aucun livre ne correspond aux filtres"
+
+#: src/app/qml/KoboBooksWindow.qml:259
+msgid "1 hidden"
+msgid_plural "%1 hidden"
+msgstr[0] "%1 masqué"
+msgstr[1] "%1 masqués"
+
+#: src/app/qml/KoboBooksWindow.qml:260
+msgid "1 checked"
+msgid_plural "%1 checked"
+msgstr[0] "%1 coché"
+msgstr[1] "%1 cochés"
+
+#: src/app/qml/KoboBooksWindow.qml:262
+msgid "1 left out by parental control"
+msgid_plural "%1 left out by parental control"
+msgstr[0] "%1 écarté par le contrôle parental"
+msgstr[1] "%1 écartés par le contrôle parental"
+
+#: src/app/qml/KoboBooksWindow.qml:269
+msgctxt "@action:button"
+msgid "Check All Shown"
+msgstr "Cocher tous les affichés"
+
+#: src/app/qml/KoboBooksWindow.qml:276
+msgctxt "@action:button"
+msgid "Uncheck"
+msgstr "Décocher"
+
+#: src/app/qml/KoboBooksWindow.qml:295
+msgctxt "@action:button"
+msgid "Hide"
+msgstr "Masquer"
+
+#: src/app/qml/KoboBooksWindow.qml:296
+msgctxt "@action:button"
+msgid "Show"
+msgstr "Afficher"
+
+#: src/app/qml/KoboBooksWindow.qml:297
+msgctxt "@action:button"
+msgid "Mark as Read"
+msgstr "Marquer comme lu"
+
+#: src/app/qml/KoboBooksWindow.qml:298
+msgctxt "@action:button"
+msgid "Mark as Unread"
+msgstr "Marquer comme non lu"
+
+#: src/app/qml/KoboBooksWindow.qml:299
+msgctxt "@action:button"
+msgid "Delete…"
+msgstr "Supprimer…"
+
+#: src/app/qml/KoboBooksWindow.qml:345
+msgctxt "@info date, undo"
+msgid "%1 · undo"
+msgstr "%1 · annulation"
+
+#: src/app/qml/KoboBooksWindow.qml:346
+msgctxt "@info date, undone"
+msgid "%1 · undone"
+msgstr "%1 · annulé"
+
+#: src/app/qml/KoboBooksWindow.qml:359
+msgctxt "@action:button"
+msgid "Undo"
+msgstr "Annuler"
+
+#: src/app/qml/KoboBooksWindow.qml:371
+msgid "No change yet"
+msgstr "Aucun changement pour l'instant"
+
+#: src/app/qml/KoboBooksWindow.qml:372
+msgid "Changes made here are listed with a way to undo them."
+msgstr "Les changements faits ici sont listés, avec un moyen de les annuler."
+
+#: src/app/qml/KoboBooksWindow.qml:402
+msgctxt "@action:button"
+msgid "Restore…"
+msgstr "Restaurer…"
+
+#: src/app/qml/KoboBooksWindow.qml:414
+msgid "No backup yet"
+msgstr "Aucune sauvegarde pour l'instant"
+
+#: src/app/qml/KoboBooksWindow.qml:415
+msgid "The Kobo's database is backed up before every change."
+msgstr "La base de données du Kobo est sauvegardée avant chaque changement."
+
+#: src/app/qml/KoboBooksWindow.qml:433
+msgid ""
+"Kobo Store books are left out: the store would bring them back; hide them "
+"instead. Files are kept with the backup, so that Undo can bring them back. A "
+"book still selected in Kobold, or synced by Komga, comes back at the next "
+"sync."
+msgstr ""
+"Les livres de la boutique Kobo sont exclus : la boutique les remettrait ; "
+"masque-les plutôt. Les fichiers sont gardés avec la sauvegarde, pour "
+"qu'Annuler puisse les remettre. Un livre encore sélectionné dans Kobold, ou "
+"synchronisé par Komga, revient à la prochaine synchronisation."
+
+#: src/app/qml/KoboBooksWindow.qml:442
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Supprimer"
+
+#: src/app/qml/KoboBooksWindow.qml:450 src/app/qml/KoboBooksWindow.qml:480
+#: src/app/qml/KoboPane.qml:245 src/app/qml/KobosSettingsPage.qml:48
+#: src/app/qml/KomgaSignInDialog.qml:97 src/app/qml/ParentalPinDialog.qml:123
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/app/qml/KoboBooksWindow.qml:464
+msgid ""
+"The Kobo's database will be replaced by the backup of %1. The current one is "
+"backed up first."
+msgstr ""
+"La base de données du Kobo sera remplacée par la sauvegarde du %1. "
+"L'actuelle est d'abord sauvegardée."
+
+#: src/app/qml/KoboBooksWindow.qml:468
+msgctxt "@title:dialog"
+msgid "Restore Backup"
+msgstr "Restaurer une sauvegarde"
+
+#: src/app/qml/KoboBooksWindow.qml:472
+msgctxt "@action:button"
+msgid "Restore"
+msgstr "Restaurer"
+
+#: src/app/qml/KoboPane.qml:40
+msgid "No Kobo"
+msgstr "Aucun Kobo"
+
+#: src/app/qml/KoboPane.qml:46
+msgid "1 book selected"
+msgid_plural "%1 books selected"
+msgstr[0] "%1 livre sélectionné"
+msgstr[1] "%1 livres sélectionnés"
+
+#: src/app/qml/KoboPane.qml:46
+msgid "Plug in a Kobo to start."
+msgstr "Branchez un Kobo pour commencer."
+
+#: src/app/qml/KoboPane.qml:81
+msgctxt "@title:group"
+msgid "Followed"
+msgstr "Suivis"
+
+#: src/app/qml/KoboPane.qml:98
+msgctxt "@action:button"
+msgid "Stop Following"
+msgstr "Ne plus suivre"
+
+#: src/app/qml/KoboPane.qml:109
+msgctxt "@title:group"
+msgid "Books"
+msgstr "Livres"
+
+#: src/app/qml/KoboPane.qml:124 src/app/qml/KoboPane.qml:163
+msgctxt "@action:button"
+msgid "Remove from Selection"
+msgstr "Retirer de la sélection"
+
+#: src/app/qml/KoboPane.qml:137
+msgctxt "@title:group"
+msgid "Local Files"
+msgstr "Fichiers locaux"
+
+#: src/app/qml/KoboPane.qml:142
+msgctxt "@action:button"
+msgid "Add Files…"
+msgstr "Ajouter des fichiers…"
+
+#: src/app/qml/KoboPane.qml:162
+msgid "Missing on the computer"
+msgstr "Absent de l'ordinateur"
+
+#: src/app/qml/KoboPane.qml:171
+msgctxt "@title:group"
+msgid "Kept on the Kobo"
+msgstr "Gardés sur le Kobo"
+
+#: src/app/qml/KoboPane.qml:186
+msgctxt "@action:button"
+msgid "Remove Now"
+msgstr "Retirer maintenant"
+
+#: src/app/qml/KoboPane.qml:199
+msgid "Nothing selected yet"
+msgstr "Rien n'est sélectionné pour l'instant"
+
+#: src/app/qml/KoboPane.qml:200
+msgid "Check books or follow series in the content pane."
+msgstr "Cochez des livres ou suivez des séries dans le panneau central."
+
+#: src/app/qml/KoboPane.qml:212
+msgctxt "@title:window"
+msgid "Add Files to the Selection"
+msgstr "Ajouter des fichiers à la sélection"
+
+#: src/app/qml/KoboPane.qml:214
+msgid "Books (*.epub *.pdf *.cbz *.cbr)"
+msgstr "Livres (*.epub *.pdf *.cbz *.cbr)"
+
+#: src/app/qml/KoboPane.qml:229
+msgctxt "@title:dialog"
+msgid "Remove from the Kobo?"
+msgstr "Retirer du Kobo ?"
+
+#: src/app/qml/KoboPane.qml:230
+msgid "%1 will be deleted from the Kobo now."
+msgstr "%1 sera supprimé du Kobo maintenant."
+
+#: src/app/qml/KoboPane.qml:234 src/app/qml/RemovalDialog.qml:114
+msgctxt "@action:button"
+msgid "Remove"
+msgstr "Retirer"
+
+#: src/app/qml/KobosSettingsPage.qml:15
+msgctxt "@title"
+msgid "Kobos"
+msgstr "Kobo"
+
+#: src/app/qml/KobosSettingsPage.qml:34
+msgctxt "@title:dialog"
+msgid "Force Full Sync"
+msgstr "Forcer une synchronisation complète"
+
+#: src/app/qml/KobosSettingsPage.qml:35
+msgid "%1 will download every book again from Komga at its next sync."
+msgstr ""
+"%1 téléchargera de nouveau tous les livres de Komga à sa prochaine "
+"synchronisation."
+
+#: src/app/qml/KobosSettingsPage.qml:39
+msgctxt "@action:button"
+msgid "Force Full Sync"
+msgstr "Forcer la synchronisation complète"
+
+#: src/app/qml/KobosSettingsPage.qml:77
+msgctxt "@option:check"
+msgid "Eject after sync"
+msgstr "Éjecter après la synchronisation"
+
+#: src/app/qml/KobosSettingsPage.qml:78
+msgid "A sync that changed a Kobo ejects it, so that it indexes its books."
+msgstr ""
+"Une synchronisation qui a modifié un Kobo l'éjecte, pour qu'il indexe ses "
+"livres."
+
+#: src/app/qml/KobosSettingsPage.qml:84
+msgctxt "@option:check"
+msgid "Set series when a Kobo is connected"
+msgstr "Définir les séries au branchement d'une Kobo"
+
+#: src/app/qml/KobosSettingsPage.qml:85
+msgid ""
+"The Kobo groups books by series only once it has imported them: Kobold sets "
+"their series as soon as the Kobo is connected again, after a backup of its "
+"database."
+msgstr ""
+"La Kobo ne regroupe les livres par série qu'une fois importés : Kobold "
+"définit leur série dès que la Kobo est rebranchée, après une sauvegarde de "
+"sa base de données."
+
+#: src/app/qml/KobosSettingsPage.qml:91
+msgctxt "@option:check"
+msgid "Show the steps to group new books by series"
+msgstr "Afficher les étapes pour regrouper les nouveaux livres par série"
+
+#: src/app/qml/KobosSettingsPage.qml:92
+msgid ""
+"After a sync that copied books of a series, explains how to reconnect the "
+"Kobo so that they are grouped."
+msgstr ""
+"Après une synchronisation qui a copié des livres d'une série, explique "
+"comment rebrancher la Kobo pour qu'ils soient regroupés."
+
+#: src/app/qml/KobosSettingsPage.qml:115
+msgid "Komga is not ready."
+msgstr "Komga n'est pas prêt."
+
+#: src/app/qml/KobosSettingsPage.qml:133
+msgid "Serial %1, connected"
+msgstr "N° de série %1, connecté"
+
+#: src/app/qml/KobosSettingsPage.qml:133
+msgid "Serial %1, not connected"
+msgstr "N° de série %1, non connecté"
+
+#: src/app/qml/KobosSettingsPage.qml:149
+#: src/app/qml/ShelvesSettingsPage.qml:137
+msgctxt "@action:button"
+msgid "Rename"
+msgstr "Renommer"
+
+#: src/app/qml/KobosSettingsPage.qml:169
+msgctxt "@label:listbox"
+msgid "Comic profile:"
+msgstr "Profil BD :"
+
+#: src/app/qml/KobosSettingsPage.qml:170
+msgctxt "@item:inlistbox"
+msgid "Automatic (from the model)"
+msgstr "Automatique (selon le modèle)"
+
+#: src/app/qml/KobosSettingsPage.qml:172
+msgid "Comics are converted with the KCC profile %1."
+msgstr "Les BD sont converties avec le profil KCC %1."
+
+#: src/app/qml/KobosSettingsPage.qml:172
+msgid "No profile: comics are skipped for this Kobo."
+msgstr "Aucun profil : les BD sont ignorées pour ce Kobo."
+
+#: src/app/qml/KobosSettingsPage.qml:180
+msgctxt "@action:button"
+msgid "Manage Books on the Kobo…"
+msgstr "Gérer les livres du Kobo…"
+
+#: src/app/qml/KobosSettingsPage.qml:181
+msgid ""
+"See every book of the Kobo, hide or show them, with a backup and a way to "
+"undo."
+msgstr ""
+"Voir tous les livres du Kobo, les masquer ou les afficher, avec une "
+"sauvegarde et un moyen d'annuler."
+
+#: src/app/qml/KobosSettingsPage.qml:188
+msgctxt "@option:check"
+msgid "Back up the database before each sync"
+msgstr "Sauvegarder la base de données avant chaque synchronisation"
+
+#: src/app/qml/KobosSettingsPage.qml:189
+msgid "Backups older than 90 days are removed; the five most recent are kept."
+msgstr ""
+"Les sauvegardes de plus de 90 jours sont supprimées ; les cinq plus récentes "
+"sont gardées."
+
+#: src/app/qml/KobosSettingsPage.qml:198
+msgctxt "@label Komga sync: state"
+msgid "Komga sync: %1"
+msgstr "Synchronisation Komga : %1"
+
+#: src/app/qml/KobosSettingsPage.qml:199
+msgid "Installed"
+msgstr "Installée"
+
+#: src/app/qml/KobosSettingsPage.qml:199
+msgid "Not installed"
+msgstr "Non installée"
+
+#: src/app/qml/KobosSettingsPage.qml:201
+msgid ""
+"EPUB books come from Komga over Wi-Fi; comics and PDF stay with Kobold. The "
+"selection does not apply to EPUB books."
+msgstr ""
+"Les livres EPUB arrivent de Komga par Wi-Fi ; les BD et les PDF restent "
+"gérés par Kobold. La sélection ne s'applique pas aux livres EPUB."
+
+#: src/app/qml/KobosSettingsPage.qml:208
+msgctxt "@action:button"
+msgid "Install"
+msgstr "Installer"
+
+#: src/app/qml/KobosSettingsPage.qml:217 src/app/qml/MainPage.qml:211
+msgctxt "@action:button"
+msgid "Reinstall"
+msgstr "Réinstaller"
+
+#: src/app/qml/KobosSettingsPage.qml:226
+msgctxt "@action:button"
+msgid "Uninstall"
+msgstr "Désinstaller"
+
+#: src/app/qml/KobosSettingsPage.qml:235 src/app/qml/MainPage.qml:211
+msgctxt "@action:button"
+msgid "Change Key…"
+msgstr "Changer de clé…"
+
+#: src/app/qml/KobosSettingsPage.qml:236
+msgid ""
+"Creates a new Komga key for this Kobo; the former one can then be deleted in "
+"Komga."
+msgstr ""
+"Crée une nouvelle clé Komga pour ce Kobo ; l'ancienne peut ensuite être "
+"supprimée dans Komga."
+
+#: src/app/qml/KobosSettingsPage.qml:244
+msgctxt "@action:button"
+msgid "Force Full Sync…"
+msgstr "Forcer une synchronisation complète…"
+
+#: src/app/qml/KobosSettingsPage.qml:245
+msgid "The Kobo downloads every book again from Komga."
+msgstr "Le Kobo télécharge de nouveau tous les livres de Komga."
+
+#: src/app/qml/KobosSettingsPage.qml:257
+msgid "Working…"
+msgstr "En cours…"
+
+#: src/app/qml/KobosSettingsPage.qml:270
+msgid "No Kobo known yet. Plug one in, then use Look for Kobos in the toolbar."
+msgstr ""
+"Aucun Kobo connu pour l'instant. Branchez-en un, puis utilisez « Chercher "
+"des Kobo » dans la barre d'outils."
+
+#: src/app/qml/KomgaMessage.qml:21
+msgctxt "@action:button"
+msgid "Open Settings…"
+msgstr "Ouvrir la configuration…"
+
+#: src/app/qml/KomgaSettingsPage.qml:12
+msgctxt "@title"
+msgid "Komga"
+msgstr "Komga"
+
+#: src/app/qml/KomgaSettingsPage.qml:15
+msgctxt "@title:group"
+msgid "Server"
+msgstr "Serveur"
+
+#: src/app/qml/KomgaSettingsPage.qml:22
+msgctxt "@label:textbox"
+msgid "Server URL:"
+msgstr "URL du serveur :"
+
+#: src/app/qml/KomgaSettingsPage.qml:35
+msgctxt "@action:button"
+msgid "Save URL"
+msgstr "Enregistrer l'URL"
+
+#: src/app/qml/KomgaSettingsPage.qml:37
+msgid "For example %1"
+msgstr "Par exemple %1"
+
+#: src/app/qml/KomgaSettingsPage.qml:56
+msgctxt "@title:group"
+msgid "API Key"
+msgstr "Clé d'API"
+
+#: src/app/qml/KomgaSettingsPage.qml:61
+msgid "Status"
+msgstr "État"
+
+#: src/app/qml/KomgaSettingsPage.qml:62
+msgid "Connected as %1"
+msgstr "Connecté en tant que %1"
+
+#: src/app/qml/KomgaSettingsPage.qml:70
+msgctxt "@label:textbox"
+msgid "New API key:"
+msgstr "Nouvelle clé d'API :"
+
+#: src/app/qml/KomgaSettingsPage.qml:74
+msgctxt "@action:button"
+msgid "Check and Save"
+msgstr "Vérifier et enregistrer"
+
+#: src/app/qml/KomgaSettingsPage.qml:75
+msgid "Create one in Komga under My Account, API Keys"
+msgstr "Créez-en une dans Komga, sous Mon compte, Clés d'API"
+
+#: src/app/qml/KomgaSettingsPage.qml:79
+msgid "Checking the key with Komga…"
+msgstr "Vérification de la clé auprès de Komga…"
+
+#: src/app/qml/KomgaSignInDialog.qml:17
+msgctxt "@title:dialog"
+msgid "Sign In to Komga"
+msgstr "Connexion à Komga"
+
+#: src/app/qml/KomgaSignInDialog.qml:61
+msgid ""
+"Komga needs your email and password to create the Kobo's key. They are used "
+"once and not kept."
+msgstr ""
+"Komga a besoin de votre courriel et de votre mot de passe pour créer la clé "
+"du Kobo. Ils servent une seule fois et ne sont pas gardés."
+
+#: src/app/qml/KomgaSignInDialog.qml:65
+msgctxt "@label:textbox"
+msgid "Email:"
+msgstr "Courriel :"
+
+#: src/app/qml/KomgaSignInDialog.qml:78
+msgctxt "@label:textbox"
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: src/app/qml/KomgaSignInDialog.qml:91
+msgctxt "@action:button"
+msgid "Sign In"
+msgstr "Se connecter"
+
+#: src/app/qml/Main.qml:33
+msgctxt "@action:button"
+msgid "Komga"
+msgstr "Komga"
+
+#: src/app/qml/Main.qml:39
+msgctxt "@action:button"
+msgid "Shelves"
+msgstr "Étagères"
+
+#: src/app/qml/Main.qml:45
+msgctxt "@action:button"
+msgid "Kobos"
+msgstr "Kobo"
+
+#: src/app/qml/Main.qml:51
+msgctxt "@action:button"
+msgid "Diagnostics"
+msgstr "Diagnostic"
+
+#: src/app/qml/Main.qml:57
+msgctxt "@action:button"
+msgid "Parental Control"
+msgstr "Contrôle parental"
+
+#: src/app/qml/Main.qml:63
+msgctxt "@action:button"
+msgid "Appearance"
+msgstr "Apparence"
+
+#: src/app/qml/Main.qml:69
+msgctxt "@action:button"
+msgid "Cover Cache"
+msgstr "Cache des couvertures"
+
+#: src/app/qml/Main.qml:75
+msgctxt "@action:button"
+msgid "About Kobold"
+msgstr "À propos de Kobold"
+
+#: src/app/qml/Main.qml:78 src/app/qml/Main.qml:85
+msgctxt "@title:group"
+msgid "About"
+msgstr "À propos"
+
+#: src/app/qml/Main.qml:82
+msgctxt "@action:button"
+msgid "About KDE"
+msgstr "À propos de KDE"
+
+#: src/app/qml/Main.qml:103
+msgctxt "@title:dialog"
+msgid "Operation in Progress"
+msgstr "Opération en cours"
+
+#: src/app/qml/Main.qml:104
+msgid ""
+"Kobold is still working with the Kobo. Quitting now may leave the sync "
+"unfinished."
+msgstr ""
+"Kobold travaille encore avec le Kobo. Quitter maintenant risque de laisser "
+"la synchronisation inachevée."
+
+#: src/app/qml/Main.qml:108
+msgctxt "@action:button"
+msgid "Quit Anyway"
+msgstr "Quitter quand même"
+
+#: src/app/qml/Main.qml:116
+msgctxt "@action:button"
+msgid "Keep Running"
+msgstr "Continuer"
+
+#: src/app/qml/MainPage.qml:42
+msgid "No Kobo known yet"
+msgstr "Aucun Kobo connu"
+
+#: src/app/qml/MainPage.qml:47
+msgid "Current Kobo"
+msgstr "Kobo actuel"
+
+#: src/app/qml/MainPage.qml:48
+msgid "The Kobo whose selection is shown and synced"
+msgstr "Le Kobo dont la sélection est affichée et synchronisée"
+
+#: src/app/qml/MainPage.qml:59
+msgctxt "@item Kobo name — model"
+msgid "%1 — %2"
+msgstr "%1 — %2"
+
+#: src/app/qml/MainPage.qml:59
+msgctxt "@item Kobo name — model"
+msgid "%1 — %2 (connected)"
+msgstr "%1 — %2 (connecté)"
+
+#: src/app/qml/MainPage.qml:66
+msgctxt "@action:button"
+msgid "Look for Kobos"
+msgstr "Chercher des Kobo"
+
+#: src/app/qml/MainPage.qml:77
+msgid "Plug in a Kobo"
+msgstr "Branchez un Kobo"
+
+#: src/app/qml/MainPage.qml:78
+msgid "Connected"
+msgstr "Connecté"
+
+#: src/app/qml/MainPage.qml:79
+msgid "Plugged in, not mounted"
+msgstr "Branché, non monté"
+
+#: src/app/qml/MainPage.qml:80
+msgid "Not connected"
+msgstr "Non connecté"
+
+#: src/app/qml/MainPage.qml:87
+msgctxt "@action:button"
+msgid "Mount"
+msgstr "Monter"
+
+#: src/app/qml/MainPage.qml:96
+msgctxt "@action:button"
+msgid "Eject"
+msgstr "Éjecter"
+
+#: src/app/qml/MainPage.qml:101
+msgid "Unmount and power off the Kobo, so that it indexes its books"
+msgstr "Démonter et mettre hors tension le Kobo, pour qu'il indexe ses livres"
+
+#: src/app/qml/MainPage.qml:110
+msgctxt "@action:button"
+msgid "Sync"
+msgstr "Synchroniser"
+
+#: src/app/qml/MainPage.qml:113
+msgid "Copy the selection to %1 and remove deselected books"
+msgstr "Copier la sélection sur %1 et retirer les livres désélectionnés"
+
+#: src/app/qml/MainPage.qml:117
+msgctxt "@action:button"
+msgid "Preview"
+msgstr "Aperçu"
+
+#: src/app/qml/MainPage.qml:120
+msgid "Show what a sync would change, without changing anything"
+msgstr "Montrer ce qu'une synchronisation changerait, sans rien modifier"
+
+#: src/app/qml/MainPage.qml:125
+msgctxt "@action:button"
+msgid "Lock"
+msgstr "Verrouiller"
+
+#: src/app/qml/MainPage.qml:125 src/app/qml/ParentalPinDialog.qml:117
+msgctxt "@action:button"
+msgid "Unlock"
+msgstr "Déverrouiller"
+
+#: src/app/qml/MainPage.qml:127
+msgid "Adult content is hidden; enter the PIN to show it"
+msgstr "Le contenu adulte est caché ; saisissez le NIP pour l'afficher"
+
+#: src/app/qml/MainPage.qml:127
+msgid "Hide adult content again"
+msgstr "Cacher de nouveau le contenu adulte"
+
+#: src/app/qml/MainPage.qml:132
+msgctxt "@action:inmenu"
+msgid "Send Reading Progress"
+msgstr "Envoyer la progression de lecture"
+
+#: src/app/qml/MainPage.qml:139
+msgctxt "@action:inmenu"
+msgid "Preview Reading Progress"
+msgstr "Aperçu de la progression de lecture"
+
+#: src/app/qml/MainPage.qml:146
+msgctxt "@action:inmenu"
+msgid "Sync All Connected Kobos"
+msgstr "Synchroniser tous les Kobo connectés"
+
+#: src/app/qml/MainPage.qml:153
+msgctxt "@action:inmenu"
+msgid "Eject Kobo"
+msgstr "Éjecter le Kobo"
+
+#: src/app/qml/MainPage.qml:160
+msgctxt "@action:inmenu"
+msgid "Reload Library"
+msgstr "Recharger la bibliothèque"
+
+#: src/app/qml/MainPage.qml:167
+msgctxt "@action:inmenu"
+msgid "Show Kobo Panel"
+msgstr "Afficher le panneau du Kobo"
+
+#: src/app/qml/MainPage.qml:175
+msgctxt "@action:button"
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: src/app/qml/MainPage.qml:180
+msgctxt "@action:inmenu"
+msgid "Settings…"
+msgstr "Configurer Kobold…"
+
+#: src/app/qml/MainPage.qml:185
+msgctxt "@action:inmenu"
+msgid "About Kobold"
+msgstr "À propos de Kobold"
+
+#: src/app/qml/ParentalPinDialog.qml:29
+msgid "The two PINs differ."
+msgstr "Les deux NIP sont différents."
+
+#: src/app/qml/ParentalPinDialog.qml:42
+msgctxt "@title:dialog"
+msgid "Choose a Parental PIN"
+msgstr "Choisir un NIP parental"
+
+#: src/app/qml/ParentalPinDialog.qml:43
+msgctxt "@title:dialog"
+msgid "Turn Off Parental Control"
+msgstr "Désactiver le contrôle parental"
+
+#: src/app/qml/ParentalPinDialog.qml:44
+msgctxt "@title:dialog"
+msgid "Unlock Adult Content"
+msgstr "Déverrouiller le contenu adulte"
+
+#: src/app/qml/ParentalPinDialog.qml:78
+msgid ""
+"The PIN has 4 to 8 digits. It is needed to show adult content and to change "
+"these settings."
+msgstr ""
+"Le NIP a de 4 à 8 chiffres. Il faut le saisir pour afficher le contenu "
+"adulte et pour modifier ces réglages."
+
+#: src/app/qml/ParentalPinDialog.qml:79
+msgid "Enter the parental PIN."
+msgstr "Saisissez le NIP parental."
+
+#: src/app/qml/ParentalPinDialog.qml:86
+msgctxt "@info:placeholder"
+msgid "PIN"
+msgstr "NIP"
+
+#: src/app/qml/ParentalPinDialog.qml:97
+msgctxt "@info:placeholder"
+msgid "PIN again"
+msgstr "NIP de nouveau"
+
+#: src/app/qml/ParentalPinDialog.qml:115
+msgctxt "@action:button"
+msgid "Turn On"
+msgstr "Activer"
+
+#: src/app/qml/ParentalPinDialog.qml:116
+msgctxt "@action:button"
+msgid "Turn Off"
+msgstr "Désactiver"
+
+#: src/app/qml/ParentalSettingsPage.qml:14
+msgctxt "@title"
+msgid "Parental Control"
+msgstr "Contrôle parental"
+
+#: src/app/qml/ParentalSettingsPage.qml:29
+msgid "Parental control is off"
+msgstr "Le contrôle parental est désactivé"
+
+#: src/app/qml/ParentalSettingsPage.qml:30
+msgid "Adult content is hidden"
+msgstr "Le contenu adulte est caché"
+
+#: src/app/qml/ParentalSettingsPage.qml:31
+msgid "Adult content is shown until Kobold is locked again"
+msgstr "Le contenu adulte est affiché jusqu'au prochain verrouillage de Kobold"
+
+#: src/app/qml/ParentalSettingsPage.qml:32
+msgid ""
+"Adult series are hidden in Kobold until the PIN is entered. Nothing changes "
+"on the Kobos: hidden books stay in the selections and keep syncing. This is "
+"not a security barrier; to really restrict content, give the person a Komga "
+"account with an age restriction."
+msgstr ""
+"Les séries adultes sont cachées dans Kobold tant que le NIP n'est pas saisi. "
+"Rien ne change sur les Kobo : les livres cachés restent dans les sélections "
+"et continuent d'être synchronisés. Ce n'est pas une barrière de sécurité ; "
+"pour vraiment restreindre le contenu, donnez à la personne un compte Komga "
+"avec une restriction d'âge."
+
+#: src/app/qml/ParentalSettingsPage.qml:41
+msgctxt "@action:button"
+msgid "Turn On…"
+msgstr "Activer…"
+
+#: src/app/qml/ParentalSettingsPage.qml:48
+msgctxt "@action:button"
+msgid "Unlock…"
+msgstr "Déverrouiller…"
+
+#: src/app/qml/ParentalSettingsPage.qml:49
+msgid "Needed to change these settings."
+msgstr "Nécessaire pour modifier ces réglages."
+
+#: src/app/qml/ParentalSettingsPage.qml:56
+msgctxt "@action:button"
+msgid "Lock Now"
+msgstr "Verrouiller maintenant"
+
+#: src/app/qml/ParentalSettingsPage.qml:63
+msgctxt "@action:button"
+msgid "Turn Off…"
+msgstr "Désactiver…"
+
+#: src/app/qml/ParentalSettingsPage.qml:70
+msgctxt "@title:group"
+msgid "Adult Content"
+msgstr "Contenu adulte"
+
+#: src/app/qml/ParentalSettingsPage.qml:81
+msgctxt "@label:spinbox"
+msgid "Age rating from:"
+msgstr "Classification à partir de :"
+
+#: src/app/qml/ParentalSettingsPage.qml:85
+msgctxt "@item:inrange age rule off"
+msgid "Off"
+msgstr "Désactivée"
+
+#: src/app/qml/ParentalSettingsPage.qml:94
+msgctxt "@label:textbox"
+msgid "Genres containing (separated by commas):"
+msgstr "Genres contenant (séparés par des virgules) :"
+
+#: src/app/qml/ParentalSettingsPage.qml:109
+msgctxt "@label:spinbox"
+msgid "Lock again after (minutes):"
+msgstr "Verrouiller de nouveau après (minutes) :"
+
+#: src/app/qml/ParentalSettingsPage.qml:113
+msgctxt "@item:inrange lock only on quit"
+msgid "Only when quitting"
+msgstr "Seulement en quittant"
+
+#: src/app/qml/ParentalSettingsPage.qml:119
+msgctxt "@title:group"
+msgid "Komga Genres"
+msgstr "Genres de Komga"
+
+#: src/app/qml/ParentalSettingsPage.qml:135
+msgid "Adult: hidden while locked"
+msgstr "Adulte : caché tant que c'est verrouillé"
+
+#: src/app/qml/RemovalDialog.qml:64
+msgctxt "@title:dialog"
+msgid "Books No Longer in Their Library"
+msgstr "Livres absents de leur bibliothèque"
+
+#: src/app/qml/RemovalDialog.qml:64
+msgctxt "@title:dialog"
+msgid "Remove Books from the Kobo?"
+msgstr "Retirer des livres du Kobo ?"
+
+#: src/app/qml/RemovalDialog.qml:86
+msgid ""
+"Their library (Komga or a shelf) no longer has these books. The copy on the "
+"Kobo is the only one left."
+msgstr ""
+"Leur bibliothèque (Komga ou une étagère) n'a plus ces livres. La copie sur "
+"le Kobo est la seule qui reste."
+
+#: src/app/qml/RemovalDialog.qml:87
+msgid "These books left the selection. Komga still has them."
+msgstr "Ces livres sont sortis de la sélection. Komga les a toujours."
+
+#: src/app/qml/RemovalDialog.qml:99
+msgctxt "@info book size · position"
+msgid "%1 · %2 of %3"
+msgstr "%1 · %2 sur %3"
+
+#: src/app/qml/RemovalDialog.qml:107
+msgctxt "@option:check"
+msgid "Apply to all books no longer in their library"
+msgstr "Appliquer à tous les livres absents de leur bibliothèque"
+
+#: src/app/qml/RemovalDialog.qml:108
+msgctxt "@option:check"
+msgid "Apply to all books that left the selection"
+msgstr "Appliquer à tous les livres sortis de la sélection"
+
+#: src/app/qml/RemovalDialog.qml:119
+msgctxt "@action:button"
+msgid "Keep on the Kobo"
+msgstr "Garder sur le Kobo"
+
+#: src/app/qml/RemovalDialog.qml:124
+msgctxt "@action:button"
+msgid "Cancel Sync"
+msgstr "Annuler la synchronisation"
+
+#: src/app/qml/ShelfEditorDialog.qml:54
+msgctxt "@title:dialog"
+msgid "Edit %1"
+msgstr "Modifier %1"
+
+#: src/app/qml/ShelfEditorDialog.qml:54
+msgctxt "@title:dialog"
+msgid "Edit Series"
+msgstr "Modifier la série"
+
+#: src/app/qml/ShelfEditorDialog.qml:55
+msgctxt "@title:dialog"
+msgid "Edit Book"
+msgstr "Modifier le livre"
+
+#: src/app/qml/ShelfEditorDialog.qml:63
+msgctxt "@title:window"
+msgid "Choose the Cover"
+msgstr "Choisir la couverture"
+
+#: src/app/qml/ShelfEditorDialog.qml:64
+msgid "Images (*.jpg *.jpeg *.png *.webp)"
+msgstr "Images (*.jpg *.jpeg *.png *.webp)"
+
+#: src/app/qml/ShelfEditorDialog.qml:103
+msgid "Cover: a chosen image"
+msgstr "Couverture : une image choisie"
+
+#: src/app/qml/ShelfEditorDialog.qml:104
+msgid "Cover: page %1"
+msgstr "Couverture : page %1"
+
+#: src/app/qml/ShelfEditorDialog.qml:105
+msgid "Cover: from the file"
+msgstr "Couverture : celle du fichier"
+
+#: src/app/qml/ShelfEditorDialog.qml:120
+msgctxt "@action:button"
+msgid "Use Page"
+msgstr "Utiliser la page"
+
+#: src/app/qml/ShelfEditorDialog.qml:127
+msgctxt "@action:button"
+msgid "Image…"
+msgstr "Image…"
+
+#: src/app/qml/ShelfEditorDialog.qml:135
+msgctxt "@action:button"
+msgid "File's Cover"
+msgstr "Couverture du fichier"
+
+#: src/app/qml/ShelfEditorDialog.qml:135
+msgctxt "@action:button"
+msgid "First Book's Cover"
+msgstr "Couverture du premier livre"
+
+#: src/app/qml/ShelfEditorDialog.qml:187
+msgctxt "@action:button"
+msgid "Revert"
+msgstr "Rétablir"
+
+#: src/app/qml/ShelfEditorDialog.qml:190
+msgctxt "@info:tooltip"
+msgid "Clear the manual value: the next source shows again"
+msgstr "Effacer la valeur manuelle : la source suivante réapparaît"
+
+#: src/app/qml/ShelfEditorDialog.qml:200
+msgid "Several values"
+msgstr "Plusieurs valeurs"
+
+#: src/app/qml/ShelfEditorDialog.qml:239
+msgctxt "@action:button"
+msgid "Edit Every Volume…"
+msgstr "Modifier tous les tomes…"
+
+#: src/app/qml/ShelfEditorDialog.qml:250
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Enregistrer"
+
+#: src/app/qml/ShelfEditorDialog.qml:256 src/app/qml/ShelfLookupDialog.qml:204
+#: src/app/qml/SyncProgressDialog.qml:193
+msgctxt "@action:button"
+msgid "Close"
+msgstr "Fermer"
+
+#: src/app/qml/ShelfLookupDialog.qml:26
+msgctxt "@title:dialog"
+msgid "Find Metadata"
+msgstr "Chercher les métadonnées"
+
+#: src/app/qml/ShelfLookupDialog.qml:49
+msgid ""
+"Searches Open Library and Google Books, and ComicVine for comics when its "
+"key is set. Nothing is changed until you apply fields."
+msgstr ""
+"Cherche dans Open Library et Google Books, et dans ComicVine pour les BD "
+"quand sa clé est définie. Rien ne change tant que tu n'appliques pas de "
+"champs."
+
+#: src/app/qml/ShelfLookupDialog.qml:64
+msgctxt "@action:button"
+msgid "Search"
+msgstr "Chercher"
+
+#: src/app/qml/ShelfLookupDialog.qml:165
+msgctxt "@info current value"
+msgid "Now: %1"
+msgstr "Actuel : %1"
+
+#: src/app/qml/ShelfLookupDialog.qml:174
+msgctxt "@info found value"
+msgid "Found: %1"
+msgstr "Trouvé : %1"
+
+#: src/app/qml/ShelfLookupDialog.qml:185
+msgctxt "@option:check"
+msgid "Also give the genres and age to every volume"
+msgstr "Donner aussi les genres et l'âge à chaque tome"
+
+#: src/app/qml/ShelfLookupDialog.qml:191
+msgctxt "@action:button"
+msgid "Back to Results"
+msgstr "Retour aux résultats"
+
+#: src/app/qml/ShelfLookupDialog.qml:197
+msgctxt "@action:button"
+msgid "Apply Checked Fields"
+msgstr "Appliquer les champs cochés"
+
+#: src/app/qml/ShelvesSettingsPage.qml:15
+msgctxt "@title"
+msgid "Shelves"
+msgstr "Étagères"
+
+#: src/app/qml/ShelvesSettingsPage.qml:20
+msgctxt "@title:window"
+msgid "Choose the Shelf's Folder"
+msgstr "Choisir le dossier de l'étagère"
+
+#: src/app/qml/ShelvesSettingsPage.qml:37
+msgctxt "@action:button"
+msgid "Create a Kobold Library"
+msgstr "Créer une Bibliothèque Kobold"
+
+#: src/app/qml/ShelvesSettingsPage.qml:38
+msgid ""
+"Creates the folder \"%1\" in %2, with its own icon, and adds it as a shelf. "
+"Put books there, then rescan."
+msgstr ""
+"Crée le dossier « %1 » dans %2, avec sa propre icône, et l'ajoute comme "
+"étagère. Mets-y des livres, puis relance l'analyse."
+
+#: src/app/qml/ShelvesSettingsPage.qml:53
+msgid ""
+"A shelf is a folder of books outside Komga, on this computer or on a network "
+"share mounted by the system. Kobold reads it and never changes it."
+msgstr ""
+"Une étagère est un dossier de livres hors de Komga, sur cet ordinateur ou "
+"sur un partage réseau monté par le système. Kobold le lit et ne le modifie "
+"jamais."
+
+#: src/app/qml/ShelvesSettingsPage.qml:63
+msgctxt "@label:textbox"
+msgid "Name (optional):"
+msgstr "Nom (facultatif) :"
+
+#: src/app/qml/ShelvesSettingsPage.qml:67
+msgctxt "@action:button"
+msgid "Add Shelf…"
+msgstr "Ajouter une étagère…"
+
+#: src/app/qml/ShelvesSettingsPage.qml:68
+msgid ""
+"Choose the folder, then Kobold scans it. Without a name, the shelf takes the "
+"folder's name."
+msgstr ""
+"Choisissez le dossier, puis Kobold le scanne. Sans nom, l'étagère prend le "
+"nom du dossier."
+
+#: src/app/qml/ShelvesSettingsPage.qml:111
+msgid "Unavailable: is the share mounted?"
+msgstr "Indisponible : le partage est-il monté ?"
+
+#: src/app/qml/ShelvesSettingsPage.qml:113
+msgid "%1, scanned %2"
+msgstr "%1, scanné le %2"
+
+#: src/app/qml/ShelvesSettingsPage.qml:120
+msgctxt "@action:button"
+msgid "Rescan"
+msgstr "Rescanner"
+
+#: src/app/qml/ShelvesSettingsPage.qml:151
+msgctxt "@action:button"
+msgid "Remove Shelf"
+msgstr "Retirer l'étagère"
+
+#: src/app/qml/ShelvesSettingsPage.qml:152
+msgid "Kobold forgets this shelf; its files are not touched."
+msgstr "Kobold oublie cette étagère ; ses fichiers ne sont pas touchés."
+
+#: src/app/qml/ShelvesSettingsPage.qml:165
+msgctxt "@title:window"
+msgid "Export the Shelf Edits"
+msgstr "Exporter les modifications des étagères"
+
+#: src/app/qml/ShelvesSettingsPage.qml:168
+#: src/app/qml/ShelvesSettingsPage.qml:179
+msgid "Kobold shelf edits (*.json)"
+msgstr "Modifications d'étagères Kobold (*.json)"
+
+#: src/app/qml/ShelvesSettingsPage.qml:171
+msgid "Edits exported."
+msgstr "Modifications exportées."
+
+#: src/app/qml/ShelvesSettingsPage.qml:178
+msgctxt "@title:window"
+msgid "Import Shelf Edits"
+msgstr "Importer des modifications d'étagères"
+
+#: src/app/qml/ShelvesSettingsPage.qml:188
+msgctxt "@title:group"
+msgid "Edits and Online Lookup"
+msgstr "Modifications et recherche en ligne"
+
+#: src/app/qml/ShelvesSettingsPage.qml:195
+msgctxt "@action:button"
+msgid "Export Edits…"
+msgstr "Exporter les modifications…"
+
+#: src/app/qml/ShelvesSettingsPage.qml:196
+msgid ""
+"Your edits and the values accepted online, with their covers, in one file "
+"for another computer."
+msgstr ""
+"Tes modifications et les valeurs acceptées en ligne, avec leurs couvertures, "
+"dans un fichier pour un autre ordinateur."
+
+#: src/app/qml/ShelvesSettingsPage.qml:202
+msgctxt "@action:button"
+msgid "Import Edits…"
+msgstr "Importer des modifications…"
+
+#: src/app/qml/ShelvesSettingsPage.qml:203
+msgid ""
+"Shelves of the same name get the edits; books are found even when they moved."
+msgstr ""
+"Les étagères du même nom reçoivent les modifications ; les livres sont "
+"retrouvés même s'ils ont été déplacés."
+
+#: src/app/qml/ShelvesSettingsPage.qml:220
+msgctxt "@label:textbox"
+msgid "ComicVine API key:"
+msgstr "Clé d'API ComicVine :"
+
+#: src/app/qml/ShelvesSettingsPage.qml:227
+msgctxt "@action:button"
+msgid "Remove the Key"
+msgstr "Retirer la clé"
+
+#: src/app/qml/ShelvesSettingsPage.qml:228
+msgctxt "@action:button"
+msgid "Save the Key"
+msgstr "Enregistrer la clé"
+
+#: src/app/qml/ShelvesSettingsPage.qml:229
+msgid "A key is stored in the keychain. Comics are looked up on ComicVine."
+msgstr ""
+"Une clé est enregistrée dans le trousseau. Les BD sont cherchées sur "
+"ComicVine."
+
+#: src/app/qml/ShelvesSettingsPage.qml:230
+msgid ""
+"Optional: comics are looked up on ComicVine with your free key "
+"(comicvine.gamespot.com/api); without it, on the book sources."
+msgstr ""
+"Facultatif : les BD sont cherchées sur ComicVine avec ta clé gratuite "
+"(comicvine.gamespot.com/api) ; sans elle, dans les sources de livres."
+
+#: src/app/qml/Sidebar.qml:66
+msgid "Collapse %1"
+msgstr "Replier %1"
+
+#: src/app/qml/Sidebar.qml:66
+msgid "Expand %1"
+msgstr "Déplier %1"
+
+#: src/app/qml/Sidebar.qml:162
+msgid "Loading the library…"
+msgstr "Chargement de la bibliothèque…"
+
+#: src/app/qml/Sidebar.qml:162
+msgid "No series"
+msgstr "Aucune série"
+
+#: src/app/qml/SyncProgressDialog.qml:51
+msgid "Starting…"
+msgstr "Démarrage…"
+
+#: src/app/qml/SyncProgressDialog.qml:67
+msgctxt "@info progress"
+msgid "Step %1 of %2"
+msgstr "Étape %1 sur %2"
+
+#: src/app/qml/SyncProgressDialog.qml:82
+msgid "Sync finished. Eject the Kobo so that it indexes the changes."
+msgstr ""
+"Synchronisation terminée. Éjectez le Kobo pour qu'il indexe les changements."
+
+#: src/app/qml/SyncProgressDialog.qml:83
+msgid "Finished."
+msgstr "Terminé."
+
+#: src/app/qml/SyncProgressDialog.qml:90
+msgid "Preview finished. Nothing was changed on the Kobo."
+msgstr "Aperçu terminé. Rien n'a été modifié sur la Kobo."
+
+#: src/app/qml/SyncProgressDialog.qml:104
+msgid "One more step to group the new books by series"
+msgstr "Encore une étape pour regrouper les nouveaux livres par série"
+
+#: src/app/qml/SyncProgressDialog.qml:111
+msgid ""
+"The Kobo sorts books into series only after adding them to its library, "
+"which it does once ejected."
+msgstr ""
+"La Kobo ne range les livres par série qu'après les avoir ajoutés à sa "
+"bibliothèque, ce qu'elle fait une fois éjectée."
+
+#: src/app/qml/SyncProgressDialog.qml:120
+msgid "1. Kobold ejects the Kobo. It adds the new books to its library."
+msgstr ""
+"1. Kobold éjecte la Kobo. Elle ajoute les nouveaux livres à sa bibliothèque."
+
+#: src/app/qml/SyncProgressDialog.qml:121
+msgid "1. Eject the Kobo. It adds the new books to its library."
+msgstr "1. Éjectez la Kobo. Elle ajoute les nouveaux livres à sa bibliothèque."
+
+#: src/app/qml/SyncProgressDialog.qml:135
+msgid "2. When it has finished, connect it again."
+msgstr "2. Quand elle a terminé, rebranchez-la."
+
+#: src/app/qml/SyncProgressDialog.qml:141
+msgid ""
+"3. Kobold then sets their series by itself. Eject the Kobo once more: the "
+"series are grouped."
+msgstr ""
+"3. Kobold définit alors leur série tout seul. Éjectez la Kobo une dernière "
+"fois : les séries sont regroupées."
+
+#: src/app/qml/SyncProgressDialog.qml:142
+msgid "3. Sync it again, then eject it once more: the series are grouped."
+msgstr ""
+"3. Synchronisez-la de nouveau, puis éjectez-la une dernière fois : les "
+"séries sont regroupées."
+
+#: src/app/qml/SyncProgressDialog.qml:148
+msgctxt "@option:check"
+msgid "Do not show these steps again"
+msgstr "Ne plus afficher ces étapes"
+
+#: src/app/qml/SyncProgressDialog.qml:161
+msgctxt "@action:button"
+msgid "Details"
+msgstr "Détails"
+
+#: data/me.kodara.kobold.desktop:4
+msgid "Kobo Sync for Komga"
+msgstr "Synchronisation Kobo pour Komga"
+
+#: data/me.kodara.kobold.desktop:10
+msgid "kobo;komga;ebook;epub;kepub;comics;sync;"
+msgstr "kobo;komga;ebook;epub;kepub;comics;sync;livre;liseuse;bd;manga;synchronisation;"
+
+#: data/me.kodara.kobold.metainfo.xml:10
+msgid ""
+"Kobold copies books from a Komga server, and from folders of your own, to "
+"Kobo e-readers connected over USB. EPUB books are converted to KEPUB, comics "
+"(CBZ, CBR) to fixed-layout KEPUB sized for each Kobo model, and reading "
+"progress is sent back to Komga."
+msgstr ""
+"Kobold copie des livres d'un serveur Komga, et de vos propres dossiers, vers "
+"des liseuses Kobo branchées en USB. Les livres EPUB sont convertis en KEPUB, "
+"les bandes dessinées (CBZ, CBR) en KEPUB à mise en page fixe adaptée à "
+"chaque modèle de Kobo, et la progression de lecture est renvoyée à Komga."
+
+#: data/me.kodara.kobold.metainfo.xml:16
+msgid "Browse libraries, series, collections and read lists with covers"
+msgstr ""
+"Parcourir les bibliothèques, séries, collections et listes de lecture avec "
+"leurs couvertures"
+
+#: data/me.kodara.kobold.metainfo.xml:17
+msgid "Choose books, or follow whole series, for each Kobo"
+msgstr "Choisir des livres, ou suivre des séries entières, pour chaque Kobo"
+
+#: data/me.kodara.kobold.metainfo.xml:18
+msgid "Sync one or every connected Kobo, with a preview of the changes"
+msgstr ""
+"Synchroniser un Kobo ou tous les Kobo connectés, avec un aperçu des "
+"changements"
+
+#: data/me.kodara.kobold.metainfo.xml:19
+msgid ""
+"Shelves: folders of books outside Komga, with metadata you can edit or find "
+"online"
+msgstr ""
+"Étagères : des dossiers de livres hors de Komga, avec des métadonnées à "
+"modifier ou à chercher en ligne"
+
+#: data/me.kodara.kobold.metainfo.xml:20
+msgid "Manage the books on a Kobo: hide, show, delete, with backups and undo"
+msgstr ""
+"Gérer les livres d'une Kobo : masquer, afficher, supprimer, avec sauvegardes "
+"et annulation"
+
+#: data/me.kodara.kobold.metainfo.xml:21
+msgid ""
+"Parental control with a PIN, and Komga's own Kobo sync set up in one click"
+msgstr ""
+"Contrôle parental avec un NIP, et synchronisation Kobo de Komga installée en "
+"un clic"
+
+#: data/me.kodara.kobold.metainfo.xml:29
+msgid "Jonathan St-Michel"
+msgstr "Jonathan St-Michel"
+
+#: data/me.kodara.kobold.metainfo.xml:39
+msgid "First release."
+msgstr "Première version."
+
+#: data/me.kodara.kobold.metainfo.xml:41
+msgid "Sync Komga books, local files and shelves to Kobo e-readers over USB"
+msgstr ""
+"Synchroniser les livres Komga, les fichiers locaux et les étagères vers des "
+"liseuses Kobo en USB"
+
+#: data/me.kodara.kobold.metainfo.xml:42
+msgid ""
+"EPUB to KEPUB with kepubify, comics to KEPUB with Kindle Comic Converter"
+msgstr ""
+"EPUB vers KEPUB avec kepubify, bandes dessinées vers KEPUB avec Kindle Comic "
+"Converter"
+
+#: data/me.kodara.kobold.metainfo.xml:43
+msgid ""
+"Reading progress sent back to Komga; Komga's Kobo sync installed in one click"
+msgstr ""
+"Progression de lecture renvoyée à Komga ; synchronisation Kobo de Komga "
+"installée en un clic"
+
+#: data/me.kodara.kobold.metainfo.xml:44
+msgid "Shelves with manual and online metadata, covers, export and import"
+msgstr ""
+"Étagères avec métadonnées manuelles et en ligne, couvertures, export et "
+"import"
+
+#: data/me.kodara.kobold.metainfo.xml:45
+msgid "Manage the books on a Kobo, with backups, history and undo"
+msgstr ""
+"Gestion des livres d'une Kobo, avec sauvegardes, historique et annulation"
+
+#: data/me.kodara.kobold.metainfo.xml:46
+msgid "Parental control, mount and eject, English and French"
+msgstr "Contrôle parental, montage et éjection, anglais et français"

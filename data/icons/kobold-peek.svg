@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Kobold icon "peek": a kobold peeking over an e-reader. -->
+  <g transform="translate(0,-6)">
+  <path d="M46 34 C40 24 36 16 34 8 C44 14 52 22 56 30 Z" fill="#e67e22"/>
+  <path d="M82 34 C88 24 92 16 94 8 C84 14 76 22 72 30 Z" fill="#e67e22"/>
+  <ellipse cx="64" cy="48" rx="30" ry="22" fill="#27ae60"/>
+  <ellipse cx="64" cy="44" rx="30" ry="18" fill="#2ecc71"/>
+  <circle cx="51" cy="36" r="8" fill="#fdf6c3"/>
+  <circle cx="77" cy="36" r="8" fill="#fdf6c3"/>
+  <ellipse cx="52" cy="37" rx="2.6" ry="5.5" fill="#232629"/>
+  <ellipse cx="76" cy="37" rx="2.6" ry="5.5" fill="#232629"/>
+  </g>
+  <rect x="22" y="52" width="84" height="72" rx="10" fill="#232629"/>
+  <rect x="22" y="50" width="84" height="72" rx="10" fill="#31363b"/>
+  <rect x="30" y="60" width="68" height="52" rx="3" fill="#eff0f1"/>
+  <rect x="38" y="70" width="44" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="38" y="80" width="52" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="38" y="90" width="48" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="38" y="100" width="30" height="4" rx="2" fill="#a1a9b1"/>
+  <circle cx="40" cy="51" r="7" fill="#2ecc71"/>
+  <circle cx="88" cy="51" r="7" fill="#2ecc71"/>
+  <path d="M35 48l2 -5 2 5zM39 47l2 -5 2 5zM43 48l2 -5 2 5z" fill="#fdf6c3"/>
+  <path d="M83 48l2 -5 2 5zM87 47l2 -5 2 5zM91 48l2 -5 2 5z" fill="#fdf6c3"/>
+</svg>

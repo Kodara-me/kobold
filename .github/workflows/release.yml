@@ -1,0 +1,88 @@
+# On a version tag, builds the Arch package from the tag's source archive in a fresh Arch
+# container (tests included) and attaches the package, the archive, the PKGBUILD and their
+# checksums to a draft release, which the maintainer publishes (TASKS.md R5, R9).
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Existing tag to build, e.g. v0.1.0'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Package and draft the release
+    runs-on: ubuntu-latest
+    container: archlinux:base-devel
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - name: Install dependencies
+        # SPEC-INSTALL.md §3 without the AUR: makepkg runs with --nodeps, so kepubify (an AUR
+        # runtime dependency) is not needed to build; its tests are skipped.
+        run: |
+          pacman -Syu --noconfirm --needed \
+            git cmake ninja extra-cmake-modules gettext pacman-contrib github-cli \
+            qt6-base qt6-declarative kcoreaddons ki18n kconfig solid qtkeychain-qt6 \
+            karchive poppler-qt6 kirigami kirigami-addons kcrash kiconthemes \
+            sqlite python
+          sed -i -E 's/^#(en_US|fr_FR|fr_CA|de_DE)(\.UTF-8 UTF-8)/\1\2/' /etc/locale.gen
+          locale-gen
+
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+
+      - name: Check the version
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          version="${TAG#v}"
+          project=$(sed -n 's/^project(kobold VERSION \([0-9.]*\).*/\1/p' CMakeLists.txt)
+          if [ "$version" != "$project" ]; then
+            echo "::error::tag $TAG does not match project version $project in CMakeLists.txt"
+            exit 1
+          fi
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+
+      - name: Source archive
+        run: |
+          mkdir -p dist
+          git archive --format=tar.gz --prefix="kobold-$VERSION/" -o "dist/kobold-$VERSION.tar.gz" "$TAG"
+
+      - name: Build the package
+        # makepkg refuses to run as root.
+        run: |
+          useradd --create-home builder
+          mkdir -p /tmp/package
+          cp packaging/release/PKGBUILD "dist/kobold-$VERSION.tar.gz" /tmp/package/
+          sed -i "s/^pkgver=.*/pkgver=$VERSION/" /tmp/package/PKGBUILD
+          chown -R builder: /tmp/package
+          su builder -c 'cd /tmp/package && updpkgsums && makepkg --nodeps --noconfirm'
+          cp /tmp/package/PKGBUILD dist/PKGBUILD
+          cp /tmp/package/kobold-"$VERSION"-*.pkg.tar.zst dist/
+
+      - name: Checksums
+        run: |
+          cd dist
+          sha256sum kobold-* PKGBUILD > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Draft the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes="docs/release-notes/$VERSION.md"
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            gh release upload "$TAG" dist/* --clobber --repo "$GITHUB_REPOSITORY"
+          elif [ -f "$notes" ]; then
+            gh release create "$TAG" dist/* --draft --title "Kobold $VERSION" --notes-file "$notes" --repo "$GITHUB_REPOSITORY"
+          else
+            gh release create "$TAG" dist/* --draft --title "Kobold $VERSION" --generate-notes --repo "$GITHUB_REPOSITORY"
+          fi

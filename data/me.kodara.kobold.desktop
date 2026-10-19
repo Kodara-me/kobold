@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Kobold
+GenericName=Kobo Sync for Komga
+Comment=Synchronize Komga books with a Kobo e-reader
+Exec=kobold-gui
+Icon=me.kodara.kobold
+Terminal=false
+Categories=Qt;KDE;Office;Viewer;
+Keywords=kobo;komga;ebook;epub;kepub;comics;sync;
+StartupNotify=true

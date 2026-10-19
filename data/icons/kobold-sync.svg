@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Kobold icon "sync": an e-reader with a sync badge. -->
+  <rect x="18" y="8" width="80" height="112" rx="11" fill="#232629"/>
+  <rect x="18" y="6" width="80" height="112" rx="11" fill="#31363b"/>
+  <rect x="26" y="16" width="64" height="84" rx="3" fill="#eff0f1"/>
+  <rect x="34" y="28" width="40" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="34" y="38" width="48" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="34" y="48" width="44" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="34" y="58" width="48" height="4" rx="2" fill="#a1a9b1"/>
+  <rect x="34" y="68" width="30" height="4" rx="2" fill="#a1a9b1"/>
+  <path d="M70 16h12v24l-6 -5 -6 5z" fill="#9b59b6"/>
+  <circle cx="58" cy="109" r="3.5" fill="#4d4d4d"/>
+  <circle cx="94" cy="94" r="27" fill="#232629" opacity="0.35"/>
+  <circle cx="94" cy="92" r="26" fill="#9b59b6"/>
+  <path d="M80 90 a14 14 0 0 1 24 -8" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M106 74 l1 11 -11 -1 z" fill="#fff"/>
+  <path d="M108 94 a14 14 0 0 1 -24 8" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M82 110 l-1 -11 11 1 z" fill="#fff"/>
+</svg>

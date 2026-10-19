@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: CC0-1.0 -->
+<component type="desktop-application">
+  <id>me.kodara.kobold</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Kobold</name>
+  <summary>Synchronize Komga books with a Kobo e-reader</summary>
+  <description>
+    <p>
+      Kobold copies books from a Komga server, and from folders of your own, to Kobo
+      e-readers connected over USB. EPUB books are converted to KEPUB, comics (CBZ, CBR) to
+      fixed-layout KEPUB sized for each Kobo model, and reading progress is sent back to Komga.
+    </p>
+    <ul>
+      <li>Browse libraries, series, collections and read lists with covers</li>
+      <li>Choose books, or follow whole series, for each Kobo</li>
+      <li>Sync one or every connected Kobo, with a preview of the changes</li>
+      <li>Shelves: folders of books outside Komga, with metadata you can edit or find online</li>
+      <li>Manage the books on a Kobo: hide, show, delete, with backups and undo</li>
+      <li>Parental control with a PIN, and Komga's own Kobo sync set up in one click</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">me.kodara.kobold.desktop</launchable>
+  <url type="homepage">https://github.com/jstmichel/kobold</url>
+  <url type="bugtracker">https://github.com/jstmichel/kobold/issues</url>
+  <url type="vcs-browser">https://github.com/jstmichel/kobold</url>
+  <developer id="me.kodara">
+    <name>Jonathan St-Michel</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <provides>
+    <binary>kobold</binary>
+    <binary>kobold-gui</binary>
+  </provides>
+  <releases>
+    <release version="0.1.0" date="2026-10-18">
+      <description>
+        <p>First release.</p>
+        <ul>
+          <li>Sync Komga books, local files and shelves to Kobo e-readers over USB</li>
+          <li>EPUB to KEPUB with kepubify, comics to KEPUB with Kindle Comic Converter</li>
+          <li>Reading progress sent back to Komga; Komga's Kobo sync installed in one click</li>
+          <li>Shelves with manual and online metadata, covers, export and import</li>
+          <li>Manage the books on a Kobo, with backups, history and undo</li>
+          <li>Parental control, mount and eject, English and French</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

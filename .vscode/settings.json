@@ -1,0 +1,7 @@
+{
+  // CMakePresets.json decides compiler and build folder (GCC: Kirigami needs OpenMP).
+  "cmake.useCMakePresets": "always",
+  "cmake.configureOnOpen": true,
+  // clangd reads build/compile_commands.json; the C++ extension's IntelliSense is not used.
+  "clangd.arguments": ["--compile-commands-dir=${workspaceFolder}/build", "--header-insertion=never"]
+}
