@@ -34,6 +34,16 @@ QQC2.Pane {
             Layout.fillWidth: true
         }
 
+        Kirigami.InlineMessage {
+            id: error
+
+            Layout.fillWidth: true
+            Layout.margins: Kirigami.Units.smallSpacing
+            type: Kirigami.MessageType.Error
+            showCloseButton: true
+            visible: false
+        }
+
         QQC2.ScrollView {
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -99,6 +109,7 @@ QQC2.Pane {
                             required property string title
                             required property string subtitle
                             required property string badge
+                            required property bool followed
                             required property bool current
 
                             width: ListView.view.width
@@ -107,7 +118,7 @@ QQC2.Pane {
                             onClicked: AppController.openItem(kind, id)
 
                             QQC2.ToolTip.text: badge
-                            QQC2.ToolTip.visible: hovered && badge !== ""
+                            QQC2.ToolTip.visible: hovered && badge !== "" && !followButton.hovered
                             QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
 
                             contentItem: RowLayout {
@@ -145,10 +156,36 @@ QQC2.Pane {
                                 }
 
                                 Kirigami.Icon {
-                                    visible: row.badge !== ""
+                                    visible: row.badge !== "" && !followButton.visible
                                     source: "emblem-checked"
                                     implicitWidth: Kirigami.Units.iconSizes.small
                                     implicitHeight: Kirigami.Units.iconSizes.small
+                                }
+
+                                // Follows or stops following the whole series without opening it
+                                // (SPEC-APP.md §5). Kept in the layout while hidden so the row does
+                                // not reflow on hover, and so the keyboard can still reach it.
+                                QQC2.ToolButton {
+                                    id: followButton
+
+                                    visible: row.kind === "series"
+                                    opacity: row.followed || row.hovered || row.activeFocus || activeFocus ? 1 : 0
+                                    enabled: AppController.currentKobo !== "" && !AppController.busy
+                                    flat: true
+                                    display: QQC2.AbstractButton.IconOnly
+                                    icon.name: row.followed ? "starred-symbolic" : "non-starred-symbolic"
+                                    text: row.followed ? i18nc("@action:button", "Stop Following %1 on %2", row.title, AppController.currentKoboName)
+                                                       : i18nc("@action:button", "Follow %1 on %2", row.title, AppController.currentKoboName)
+                                    onClicked: {
+                                        const message = AppController.setSeriesFollowed(row.id, !row.followed);
+                                        error.text = message;
+                                        error.visible = message !== "";
+                                    }
+
+                                    QQC2.ToolTip.text: row.followed ? i18nc("@info:tooltip", "Stop following on %1", AppController.currentKoboName)
+                                                                    : i18nc("@info:tooltip", "Follow every volume on %1", AppController.currentKoboName)
+                                    QQC2.ToolTip.visible: hovered
+                                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
                                 }
                             }
                         }

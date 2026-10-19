@@ -224,3 +224,11 @@ release) wait for the user's go-ahead.
 | R8 | ✅ Done 2026-10-18: `.github/workflows/ci.yml`, green on `main` (`af0b100`); it found a real bug (comic pages sorted wrongly under the C locale). Idea for later: a ccache cache. Was: CI: on every push and pull request, build and run `ctest` (translations included) in an `archlinux` container with the dependencies of SPEC-INSTALL.md §3 (GitHub Actions) | a green run on `main`; a failing test fails the run |
 | R9 | ✅ Done 2026-10-18: `.github/workflows/release.yml` (to confirm on the first tag). Was: CD: on a `v*` tag, build the package in the container, run its `check()`, and attach the package, the source tarball and `SHA256SUMS` to a draft release for the user to publish | the tag of R7 produces the draft by itself |
 | R10 | ✅ Done 2026-10-19: description and topics, README with badges, one-command install and demo screenshots (`scripts/demo/`: fake Komga server with public-domain books, fake Kobo), `README.fr.md`, issue templates (bug, idea), CONTRIBUTING with the spec-driven flow; the AUR waits for #5. Was: project page: description, topics, website link, README with screenshots (French and English), install and build instructions, issue templates (bug, idea), CONTRIBUTING with the conventions (English code and commits, Conventional Commits, tests) | the page reads like a KDE application's |
+
+# Kobold — Tasks (follow from the sidebar)
+
+Derived from [SPEC-APP.md](SPEC-APP.md) §5 and issue #2; `AC n` are SPEC-APP.md §14.
+
+| # | Task | Spec | Acceptance |
+|---|---|---|---|
+| F1 | Sidebar rows carry a `followed` role; a series row's **Follow** button follows every volume or stops following, with its tooltip, accessible name and inline error | §5 | controller test, French translations, check in the application (AC 12) |

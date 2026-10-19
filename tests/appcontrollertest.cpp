@@ -678,6 +678,32 @@ private Q_SLOTS:
         QCOMPARE(m_controller->series()->get(1).value(QStringLiteral("badge")).toString(), QStringLiteral("Following volumes 1-2"));
     }
 
+    // AAC 12: the sidebar's Follow button, without opening the series first.
+    void followingSeriesFromTheSidebar()
+    {
+        const auto sidebarFollowed = [this]() {
+            for (const QVariantMap &row : m_controller->sidebar()->items()) {
+                if (row.value(QStringLiteral("id")).toString() == QLatin1String("NARUTO")) {
+                    return row.value(QStringLiteral("followed")).toBool();
+                }
+            }
+            return false;
+        };
+        QTRY_VERIFY(m_controller->sidebar()->rowCount() > 0);
+        QVERIFY(!sidebarFollowed());
+
+        QCOMPARE(m_controller->setSeriesFollowed(QStringLiteral("NARUTO"), true), QString());
+        QTRY_VERIFY(sidebarFollowed());
+        SelectionStore store(SelectionStore::koboFilePath(QStringLiteral("CLARA")));
+        QVERIFY(store.load());
+        QCOMPARE(store.followedSeries(), QList<FollowedSeries>({{QStringLiteral("NARUTO"), QString()}}));
+
+        QCOMPARE(m_controller->setSeriesFollowed(QStringLiteral("NARUTO"), false), QString());
+        QTRY_VERIFY(!sidebarFollowed());
+        QVERIFY(store.load());
+        QVERIFY(store.followedSeries().isEmpty());
+    }
+
     // AAC 4
     void checkingABookSelectsItDirectly()
     {

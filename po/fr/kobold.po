@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kobold\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 08:14-0400\n"
+"POT-Creation-Date: 2026-10-19 16:02-0400\n"
 "PO-Revision-Date: 2026-10-17\n"
 "Last-Translator: Kira <kira@kodara.me>\n"
 "Language-Team: French\n"
@@ -44,7 +44,7 @@ msgid "No Komga API key is set. Enter one in the settings."
 msgstr ""
 "Aucune clé d'API Komga n'est définie. Saisissez-en une dans la configuration."
 
-#: src/app/appcontroller.cpp:559 src/app/appcontroller.cpp:698
+#: src/app/appcontroller.cpp:559 src/app/appcontroller.cpp:700
 #, kde-format
 msgid "Following"
 msgstr "Suivi"
@@ -61,7 +61,7 @@ msgid_plural "%1 selected"
 msgstr[0] "%1 sélectionné"
 msgstr[1] "%1 sélectionnés"
 
-#: src/app/appcontroller.cpp:593 src/app/appcontroller.cpp:749
+#: src/app/appcontroller.cpp:593 src/app/appcontroller.cpp:752
 #: src/cli/librarycommand.cpp:198 src/cli/librarycommand.cpp:301
 #, kde-format
 msgid "1 series"
@@ -69,8 +69,8 @@ msgid_plural "%1 series"
 msgstr[0] "%1 série"
 msgstr[1] "%1 séries"
 
-#: src/app/appcontroller.cpp:609 src/app/appcontroller.cpp:669
-#: src/app/appcontroller.cpp:738 src/app/appcontroller.cpp:753
+#: src/app/appcontroller.cpp:609 src/app/appcontroller.cpp:670
+#: src/app/appcontroller.cpp:741 src/app/appcontroller.cpp:756
 #: src/app/shelfeditcontroller.cpp:157 src/cli/librarycommand.cpp:227
 #: src/cli/librarycommand.cpp:369 src/cli/selectcommand.cpp:456
 #: src/cli/shelfcommand.cpp:556 src/cli/shelfcommand.cpp:578
@@ -80,88 +80,88 @@ msgid_plural "%1 books"
 msgstr[0] "%1 livre"
 msgstr[1] "%1 livres"
 
-#: src/app/appcontroller.cpp:704
+#: src/app/appcontroller.cpp:707
 #, kde-format
 msgid "Collections"
 msgstr "Collections"
 
-#: src/app/appcontroller.cpp:705
+#: src/app/appcontroller.cpp:708
 #, kde-format
 msgid "Read Lists"
 msgstr "Listes de lecture"
 
-#: src/app/appcontroller.cpp:740
+#: src/app/appcontroller.cpp:743
 #, kde-format
 msgid "Read right to left"
 msgstr "Lecture de droite à gauche"
 
-#: src/app/appcontroller.cpp:749
+#: src/app/appcontroller.cpp:752
 #, kde-format
 msgid "Collection · %1"
 msgstr "Collection · %1"
 
-#: src/app/appcontroller.cpp:753
+#: src/app/appcontroller.cpp:756
 #, kde-format
 msgid "Read list · %1"
 msgstr "Liste de lecture · %1"
 
-#: src/app/appcontroller.cpp:891
+#: src/app/appcontroller.cpp:894
 #, kde-format
 msgid "Synced by Komga"
 msgstr "Synchronisé par Komga"
 
-#: src/app/appcontroller.cpp:895
+#: src/app/appcontroller.cpp:898
 #, kde-format
 msgid "Selected through the followed %1"
 msgstr "Sélectionné par le suivi de %1"
 
-#: src/app/appcontroller.cpp:899
+#: src/app/appcontroller.cpp:902
 #, kde-format
 msgctxt "@info volume number · format"
 msgid "Volume %1 · %2"
 msgstr "Tome %1 · %2"
 
-#: src/app/appcontroller.cpp:925
+#: src/app/appcontroller.cpp:928
 #, kde-format
 msgid "Invalid volume range; examples: 1-10, 5, 1-3,7,10-"
 msgstr "Plage de tomes non valable ; exemples : 1-10, 5, 1-3,7,10-"
 
-#: src/app/appcontroller.cpp:941 src/cli/devicecommand.cpp:175
+#: src/app/appcontroller.cpp:944 src/cli/devicecommand.cpp:175
 #, kde-format
 msgid "No Kobo known yet. Plug one in."
 msgstr "Aucun Kobo connu pour l'instant. Branchez-en un."
 
-#: src/app/appcontroller.cpp:1013 src/app/appcontroller.cpp:1039
+#: src/app/appcontroller.cpp:1016 src/app/appcontroller.cpp:1042
 #, kde-format
 msgid "Series"
 msgstr "Série"
 
-#: src/app/appcontroller.cpp:1017 src/app/appcontroller.cpp:1047
+#: src/app/appcontroller.cpp:1020 src/app/appcontroller.cpp:1050
 #, kde-format
 msgid "Collection"
 msgstr "Collection"
 
-#: src/app/appcontroller.cpp:1021 src/app/appcontroller.cpp:1055
+#: src/app/appcontroller.cpp:1024 src/app/appcontroller.cpp:1058
 #, kde-format
 msgid "Read list"
 msgstr "Liste de lecture"
 
-#: src/app/appcontroller.cpp:1114
+#: src/app/appcontroller.cpp:1117
 #, kde-format
 msgid "Not an EPUB, PDF, CBZ or CBR file: %1"
 msgstr "Pas un fichier EPUB, PDF, CBZ ou CBR : %1"
 
-#: src/app/appcontroller.cpp:1129
+#: src/app/appcontroller.cpp:1132
 #, kde-format
 msgid "No Kobo selected"
 msgstr "Aucun Kobo sélectionné"
 
-#: src/app/appcontroller.cpp:1415
+#: src/app/appcontroller.cpp:1418
 #, kde-format
 msgid "The series could not be set on %1: %2"
 msgstr "La série n'a pas pu être définie sur %1 : %2"
 
-#: src/app/appcontroller.cpp:1418
+#: src/app/appcontroller.cpp:1421
 #, kde-format
 msgid "Series set for 1 book on %2. Eject the Kobo to see it grouped."
 msgid_plural ""
@@ -171,117 +171,117 @@ msgstr[0] ""
 msgstr[1] ""
 "Série définie pour %1 livres sur %2. Éjectez la Kobo pour les voir regroupés."
 
-#: src/app/appcontroller.cpp:1471
+#: src/app/appcontroller.cpp:1474
 #, kde-format
 msgid "This Kobo is not waiting to be mounted."
 msgstr "Ce Kobo n'attend pas d'être monté."
 
-#: src/app/appcontroller.cpp:1476 src/cli/devicecommand.cpp:112
+#: src/app/appcontroller.cpp:1479 src/cli/devicecommand.cpp:112
 #, kde-format
 msgid "Mounted at %1."
 msgstr "Monté à %1."
 
-#: src/app/appcontroller.cpp:1498
+#: src/app/appcontroller.cpp:1501
 #, kde-format
 msgid "The Kobo is in use; wait for the operation to finish."
 msgstr "Le Kobo est utilisé ; attendez la fin de l'opération."
 
-#: src/app/appcontroller.cpp:1595 src/app/appcontroller.cpp:1636
+#: src/app/appcontroller.cpp:1598 src/app/appcontroller.cpp:1639
 #, kde-format
 msgid "The shelf database cannot be opened."
 msgstr "La base des étagères ne peut pas être ouverte."
 
-#: src/app/appcontroller.cpp:1710
+#: src/app/appcontroller.cpp:1713
 #, kde-format
 msgid "Scanning %1…"
 msgstr "Scan de %1…"
 
-#: src/app/appcontroller.cpp:1713
+#: src/app/appcontroller.cpp:1716
 #, kde-format
 msgid "Scanning %1: %2 of %3"
 msgstr "Scan de %1 : %2 sur %3"
 
-#: src/app/appcontroller.cpp:1719
+#: src/app/appcontroller.cpp:1722
 #, kde-format
 msgid "%1: %2 new, %3 changed, %4 missing."
 msgstr "%1 : %2 nouveaux, %3 modifiés, %4 absents."
 
-#: src/app/appcontroller.cpp:1774 src/app/kobobookscontroller.cpp:180
+#: src/app/appcontroller.cpp:1777 src/app/kobobookscontroller.cpp:180
 #: src/app/kobobookscontroller.cpp:397
 #, kde-format
 msgid "Connect the Kobo first."
 msgstr "Branchez d'abord le Kobo."
 
-#: src/app/appcontroller.cpp:1797
+#: src/app/appcontroller.cpp:1800
 #, kde-format
 msgid "No longer in Komga"
 msgstr "N'est plus dans Komga"
 
-#: src/app/appcontroller.cpp:1798
+#: src/app/appcontroller.cpp:1801
 #, kde-format
 msgid "No longer on its shelf"
 msgstr "N'est plus sur son étagère"
 
-#: src/app/appcontroller.cpp:1799
+#: src/app/appcontroller.cpp:1802
 #, kde-format
 msgid "Left the selection"
 msgstr "Retiré de la sélection"
 
-#: src/app/appcontroller.cpp:2087
+#: src/app/appcontroller.cpp:2090
 #, kde-format
 msgid "No Kobo connected"
 msgstr "Aucun Kobo connecté"
 
-#: src/app/appcontroller.cpp:2100
+#: src/app/appcontroller.cpp:2103
 #, kde-format
 msgctxt "@title:dialog"
 msgid "Preview"
 msgstr "Aperçu"
 
-#: src/app/appcontroller.cpp:2100
+#: src/app/appcontroller.cpp:2103
 #, kde-format
 msgctxt "@title:dialog"
 msgid "Sync"
 msgstr "Synchronisation"
 
-#: src/app/appcontroller.cpp:2191
+#: src/app/appcontroller.cpp:2194
 #, kde-format
 msgctxt "@title:dialog"
 msgid "Preview Reading Progress"
 msgstr "Aperçu de la progression de lecture"
 
-#: src/app/appcontroller.cpp:2191
+#: src/app/appcontroller.cpp:2194
 #, kde-format
 msgctxt "@title:dialog"
 msgid "Send Reading Progress"
 msgstr "Envoi de la progression de lecture"
 
-#: src/app/appcontroller.cpp:2252
+#: src/app/appcontroller.cpp:2255
 #, kde-format
 msgid "Cannot write the configuration file"
 msgstr "Impossible d'écrire le fichier de configuration"
 
-#: src/app/appcontroller.cpp:2263
+#: src/app/appcontroller.cpp:2266
 #, kde-format
 msgid "Enter an API key."
 msgstr "Saisissez une clé d'API."
 
-#: src/app/appcontroller.cpp:2272
+#: src/app/appcontroller.cpp:2275
 #, kde-format
 msgid "Komga refused this API key; it was not stored."
 msgstr "Komga a refusé cette clé d'API ; elle n'a pas été enregistrée."
 
-#: src/app/appcontroller.cpp:2278
+#: src/app/appcontroller.cpp:2281
 #, kde-format
 msgid "Cannot store the API key: %1"
 msgstr "Impossible d'enregistrer la clé d'API : %1"
 
-#: src/app/appcontroller.cpp:2282
+#: src/app/appcontroller.cpp:2285
 #, kde-format
 msgid "API key stored. Connected as %1."
 msgstr "Clé d'API enregistrée. Connecté en tant que %1."
 
-#: src/app/appcontroller.cpp:2283
+#: src/app/appcontroller.cpp:2286
 #, kde-format
 msgid "API key stored, but Komga could not be reached to check it (%1)."
 msgstr ""
@@ -1023,12 +1023,12 @@ msgstr ""
 "La base de données du Kobo sera remplacée par la sauvegarde du %1 ; "
 "l'actuelle est d'abord sauvegardée."
 
-#: src/cli/kobobookscommand.cpp:408 src/core/kobobooks.cpp:623
+#: src/cli/kobobookscommand.cpp:408 src/core/kobobooks.cpp:627
 #, kde-format
 msgid "this change was already undone"
 msgstr "ce changement a déjà été annulé"
 
-#: src/cli/kobobookscommand.cpp:416 src/core/kobobooks.cpp:634
+#: src/cli/kobobookscommand.cpp:416 src/core/kobobooks.cpp:638
 #, kde-format
 msgid "nothing to undo"
 msgstr "rien à annuler"
@@ -2130,7 +2130,7 @@ msgid "kcc-c2e not found in PATH"
 msgstr "kcc-c2e introuvable dans PATH"
 
 #: src/core/comicconverter.cpp:62 src/core/converter.cpp:52
-#: src/core/epubmetadatawriter.cpp:135 src/core/syncexecutor.cpp:830
+#: src/core/epubmetadatawriter.cpp:135 src/core/syncexecutor.cpp:836
 #, kde-format
 msgid "cannot replace %1"
 msgstr "impossible de remplacer %1"
@@ -2233,7 +2233,7 @@ msgstr "kepubify %1 est trop ancien, %2 ou plus récent est requis"
 
 #: src/core/deviceidentity.cpp:42 src/core/epubmetadatawriter.cpp:100
 #: src/core/komgaclient.cpp:590 src/core/shelfcovers.cpp:110
-#: src/core/syncexecutor.cpp:651
+#: src/core/syncexecutor.cpp:657
 #, kde-format
 msgid "cannot read %1"
 msgstr "impossible de lire %1"
@@ -2300,8 +2300,8 @@ msgstr "impossible d'écrire %1 : %2"
 msgid "cannot copy %1"
 msgstr "impossible de copier %1"
 
-#: src/core/kobobooks.cpp:308 src/core/kobobooks.cpp:548
-#: src/core/kobobooks.cpp:663 src/core/kobodatabase.cpp:73
+#: src/core/kobobooks.cpp:308 src/core/kobobooks.cpp:549
+#: src/core/kobobooks.cpp:667 src/core/kobodatabase.cpp:73
 #, kde-format
 msgid "cannot open the Kobo database: %1"
 msgstr "impossible d'ouvrir la base de données du Kobo : %1"
@@ -2326,14 +2326,14 @@ msgstr ""
 "la sauvegarde de la base de données du Kobo a échoué à la vérification "
 "d'intégrité ; rien n'a été modifié"
 
-#: src/core/kobobooks.cpp:695
+#: src/core/kobobooks.cpp:699
 #, kde-format
 msgid "the backup of this deletion is gone; it cannot be undone"
 msgstr ""
 "la sauvegarde de cette suppression n'existe plus ; elle ne peut pas être "
 "annulée"
 
-#: src/core/kobobooks.cpp:754
+#: src/core/kobobooks.cpp:758
 #, kde-format
 msgid ""
 "the Kobo database failed its integrity check after the change; the backup "
@@ -2342,12 +2342,12 @@ msgstr ""
 "la base de données du Kobo a échoué à la vérification d'intégrité après la "
 "modification ; la sauvegarde a été remise en place"
 
-#: src/core/kobobooks.cpp:773 src/core/kobobooks.cpp:788
+#: src/core/kobobooks.cpp:777 src/core/kobobooks.cpp:792
 #, kde-format
 msgid "cannot move %1"
 msgstr "impossible de déplacer %1"
 
-#: src/core/kobobooks.cpp:834
+#: src/core/kobobooks.cpp:838
 #, kde-format
 msgid "this backup is damaged; nothing was changed"
 msgstr "cette sauvegarde est endommagée ; rien n'a été modifié"
@@ -2753,64 +2753,64 @@ msgstr "impossible de créer un dossier temporaire : %1"
 msgid "The series could not be set in the Kobo's library: %1"
 msgstr "La série n'a pas pu être définie dans la bibliothèque de la Kobo : %1"
 
-#: src/core/syncexecutor.cpp:561
+#: src/core/syncexecutor.cpp:567
 #, kde-format
 msgid "Series set for 1 book in the Kobo's library."
 msgid_plural "Series set for %1 books in the Kobo's library."
 msgstr[0] "Série définie pour %1 livre dans la bibliothèque de la Kobo."
 msgstr[1] "Série définie pour %1 livres dans la bibliothèque de la Kobo."
 
-#: src/core/syncexecutor.cpp:570
+#: src/core/syncexecutor.cpp:576
 #, kde-format
 msgid "Removing %1"
 msgstr "Suppression de %1"
 
-#: src/core/syncexecutor.cpp:572
+#: src/core/syncexecutor.cpp:578
 #, kde-format
 msgid "cannot delete the file"
 msgstr "impossible de supprimer le fichier"
 
-#: src/core/syncexecutor.cpp:605
+#: src/core/syncexecutor.cpp:611
 #, kde-format
 msgid "%1 is selected again"
 msgstr "%1 est de nouveau sélectionné"
 
-#: src/core/syncexecutor.cpp:607
+#: src/core/syncexecutor.cpp:613
 #, kde-format
 msgid "Renaming a hidden book"
 msgstr "Renommage d'un livre caché"
 
-#: src/core/syncexecutor.cpp:609
+#: src/core/syncexecutor.cpp:615
 #, kde-format
 msgid "Renaming %1 to %2"
 msgstr "Renommage de %1 en %2"
 
-#: src/core/syncexecutor.cpp:636
+#: src/core/syncexecutor.cpp:642
 #, kde-format
 msgid "Downloading %1"
 msgstr "Téléchargement de %1"
 
-#: src/core/syncexecutor.cpp:640
+#: src/core/syncexecutor.cpp:646
 #, kde-format
 msgid "Reading %1"
 msgstr "Lecture de %1"
 
-#: src/core/syncexecutor.cpp:666
+#: src/core/syncexecutor.cpp:672
 #, kde-format
 msgid "Converting %1 with KCC (%2, right to left)"
 msgstr "Conversion de %1 avec KCC (%2, de droite à gauche)"
 
-#: src/core/syncexecutor.cpp:667
+#: src/core/syncexecutor.cpp:673
 #, kde-format
 msgid "Converting %1 with KCC (%2, left to right)"
 msgstr "Conversion de %1 avec KCC (%2, de gauche à droite)"
 
-#: src/core/syncexecutor.cpp:721
+#: src/core/syncexecutor.cpp:727
 #, kde-format
 msgid "Converting %1"
 msgstr "Conversion de %1"
 
-#: src/core/syncexecutor.cpp:781
+#: src/core/syncexecutor.cpp:787
 #, kde-format
 msgid ""
 "The series could not be written into %1 (%2); the Kobo's library gets it at "
@@ -2819,27 +2819,27 @@ msgstr ""
 "La série n'a pas pu être écrite dans %1 (%2) ; la bibliothèque de la Kobo la "
 "recevra à la prochaine synchronisation."
 
-#: src/core/syncexecutor.cpp:799
+#: src/core/syncexecutor.cpp:805
 #, kde-format
 msgid "%1 already exists on the device"
 msgstr "%1 existe déjà sur l'appareil"
 
-#: src/core/syncexecutor.cpp:805
+#: src/core/syncexecutor.cpp:811
 #, kde-format
 msgid "cannot create the folder for %1"
 msgstr "impossible de créer le dossier de %1"
 
-#: src/core/syncexecutor.cpp:811
+#: src/core/syncexecutor.cpp:817
 #, kde-format
 msgid "not enough free space on the device (%1 needed)"
 msgstr "pas assez d'espace libre sur l'appareil (%1 nécessaires)"
 
-#: src/core/syncexecutor.cpp:816
+#: src/core/syncexecutor.cpp:822
 #, kde-format
 msgid "Copying %1"
 msgstr "Copie de %1"
 
-#: src/core/syncexecutor.cpp:834
+#: src/core/syncexecutor.cpp:840
 #, kde-format
 msgid "cannot rename %1"
 msgstr "impossible de renommer %1"
@@ -5078,19 +5078,39 @@ msgstr ""
 "Facultatif : les BD sont cherchées sur ComicVine avec ta clé gratuite "
 "(comicvine.gamespot.com/api) ; sans elle, dans les sources de livres."
 
-#: src/app/qml/Sidebar.qml:66
+#: src/app/qml/Sidebar.qml:76
 msgid "Collapse %1"
 msgstr "Replier %1"
 
-#: src/app/qml/Sidebar.qml:66
+#: src/app/qml/Sidebar.qml:76
 msgid "Expand %1"
 msgstr "Déplier %1"
 
-#: src/app/qml/Sidebar.qml:162
+#: src/app/qml/Sidebar.qml:177
+msgctxt "@action:button"
+msgid "Stop Following %1 on %2"
+msgstr "Ne plus suivre %1 sur %2"
+
+#: src/app/qml/Sidebar.qml:178
+msgctxt "@action:button"
+msgid "Follow %1 on %2"
+msgstr "Suivre %1 sur %2"
+
+#: src/app/qml/Sidebar.qml:185
+msgctxt "@info:tooltip"
+msgid "Stop following on %1"
+msgstr "Ne plus suivre sur %1"
+
+#: src/app/qml/Sidebar.qml:186
+msgctxt "@info:tooltip"
+msgid "Follow every volume on %1"
+msgstr "Suivre tous les tomes sur %1"
+
+#: src/app/qml/Sidebar.qml:199
 msgid "Loading the library…"
 msgstr "Chargement de la bibliothèque…"
 
-#: src/app/qml/Sidebar.qml:162
+#: src/app/qml/Sidebar.qml:199
 msgid "No series"
 msgstr "Aucune série"
 

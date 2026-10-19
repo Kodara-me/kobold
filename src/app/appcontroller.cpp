@@ -85,7 +85,7 @@ AppController::AppController(Settings *settings, ApiKeyStore *apiKeyStore, QNetw
     , m_series(new VariantListModel({"id", "title", "library", "booksCount", "badge", "followed", "volumes"}, this))
     , m_collections(new VariantListModel({"id", "name", "count", "followed"}, this))
     , m_readLists(new VariantListModel({"id", "name", "count", "followed"}, this))
-    , m_sidebar(new VariantListModel({"kind", "id", "title", "subtitle", "badge", "expanded", "current"}, this))
+    , m_sidebar(new VariantListModel({"kind", "id", "title", "subtitle", "badge", "followed", "expanded", "current"}, this))
     , m_books(new VariantListModel({"id", "number", "title", "subtitle", "format", "selection", "groupName", "skipReason"}, this))
     , m_selectionGroups(new VariantListModel({"kind", "kindLabel", "id", "name", "volumes", "count"}, this))
     , m_selectionBooks(new VariantListModel({"id", "title", "format"}, this))
@@ -646,6 +646,7 @@ void AppController::rebuildSidebar()
                      {QStringLiteral("title"), title},
                      {QStringLiteral("subtitle"), QString::number(items.size())},
                      {QStringLiteral("badge"), QString()},
+                     {QStringLiteral("followed"), false},
                      {QStringLiteral("expanded"), expanded},
                      {QStringLiteral("current"), false}});
         if (expanded) {
@@ -668,6 +669,7 @@ void AppController::rebuildSidebar()
                                            {QStringLiteral("title"), series.value(QStringLiteral("title"))},
                                            {QStringLiteral("subtitle"), i18np("1 book", "%1 books", series.value(QStringLiteral("booksCount")).toInt())},
                                            {QStringLiteral("badge"), series.value(QStringLiteral("badge"))},
+                                           {QStringLiteral("followed"), series.value(QStringLiteral("followed"))},
                                            {QStringLiteral("expanded"), false},
                                            {QStringLiteral("current"), m_currentKind == QLatin1String("series") && m_currentId == id}});
     }
@@ -696,6 +698,7 @@ void AppController::rebuildSidebar()
                               {QStringLiteral("title"), group.value(QStringLiteral("name"))},
                               {QStringLiteral("subtitle"), group.value(QStringLiteral("count"))},
                               {QStringLiteral("badge"), group.value(QStringLiteral("followed")).toBool() ? i18n("Following") : QString()},
+                              {QStringLiteral("followed"), group.value(QStringLiteral("followed"))},
                               {QStringLiteral("expanded"), false},
                               {QStringLiteral("current"), m_currentKind == kind && m_currentId == id}});
             }

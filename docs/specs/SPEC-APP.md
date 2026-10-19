@@ -79,6 +79,19 @@ a leading sidebar, the content, and a trailing contextual pane, separated by spl
   (collapsed sections are remembered). While searching, every section is expanded.
 - Rows show the title, the number of books and, for the current Kobo, a selection badge:
   *Following*, *Following 1-10*, or *n selected*. The selected row is highlighted.
+- Series rows end with a **Follow** button (flat icon button), so several series can be
+  followed without opening each one (issue #2):
+  - shown while the row is hovered or has keyboard focus, and always when the series is
+    followed on the current Kobo (filled icon, in place of the check badge);
+  - not followed: *Follow on <Kobo>* follows every volume, present and future, as
+    `setSeriesFollowed(id, true)` with no range; a volume range stays a content-pane setting;
+  - followed (with or without a range): *Stop Following* unfollows it, as the Kobo pane's
+    *Stop Following* does; the next sync applies the usual removal rules;
+  - the tooltip and accessible name give the action and the current Kobo; disabled while an
+    operation runs or without a current Kobo; adult series are hidden with their row while
+    parental control is locked;
+  - an error is shown as an inline message at the top of the sidebar.
+  Collections and read lists keep the content-pane switch only *(decision, 2026-10-19)*.
 
 ## 6. Content (center pane)
 
@@ -199,3 +212,6 @@ SVG icon (the default of §12.1), installed as listed in SPEC-INSTALL.md §6.1.
     `kobold-services`.
 11. The layout follows §10.1: Title Case actions, Kirigami spacing units, a single main
     toolbar, and the panes resize with their splitters.
+12. One click on a series row's **Follow** button follows the series on the current Kobo
+    (the Kobo pane lists it under *Followed*); a second click stops following it; the button
+    is reachable with the keyboard and has an accessible name.
