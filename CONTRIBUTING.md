@@ -8,9 +8,9 @@ Thanks for your interest. Kobold is a small project: discussion happens in
 1. **Idea** — open an issue with the *Idea* template (label `idea`). It describes what Kobold
    would do for its user and why. Nothing is built from an idea alone.
 2. **Specification** — once an idea is chosen, its behaviour is written in a `SPEC-*.md`
-   file (or a new section of one): rules, edge cases, and numbered **acceptance criteria**
+   file of [docs/specs/](docs/specs/) (or a new section of one): rules, edge cases, and numbered **acceptance criteria**
    that a test or an observable command can check.
-3. **Tasks** — the specification is broken into small tasks in [TASKS.md](TASKS.md), each
+3. **Tasks** — the specification is broken into small tasks in [TASKS.md](docs/specs/TASKS.md), each
    with its acceptance.
 4. **Code and tests** — each task is implemented with its tests, then committed. A change of
    behaviour updates its specification in the same commit.

@@ -15,12 +15,13 @@ copied as they are, and reading progress goes back from the Kobo to Komga.
 
 Kobold works over USB. Optionally, it also sets up Komga's own Kobo sync, so that EPUB
 books arrive over Wi-Fi while comics and PDF keep coming over USB
-([SPEC-KOBO-SYNC.md](SPEC-KOBO-SYNC.md)).
+([SPEC-KOBO-SYNC.md](docs/specs/SPEC-KOBO-SYNC.md)).
 
 Kobold speaks English and French, following the language of the system.
 
-Specifications: [SPEC.md](SPEC.md) (behaviour) and [SPEC-INSTALL.md](SPEC-INSTALL.md)
-(installation). Task breakdown: [TASKS.md](TASKS.md).
+Specifications live in [docs/specs/](docs/specs/): [SPEC.md](docs/specs/SPEC.md) (behaviour),
+[SPEC-INSTALL.md](docs/specs/SPEC-INSTALL.md) (installation) and one file per feature; the
+task breakdown is [TASKS.md](docs/specs/TASKS.md). Sections below cite them by name.
 
 ## Status
 

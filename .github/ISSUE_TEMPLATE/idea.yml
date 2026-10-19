@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Kobold follows spec-driven development: an idea is discussed here first; when it is
-        chosen, its behaviour is written in a `SPEC-*.md` file, then broken into tasks, then
+        chosen, its behaviour is written in a `SPEC-*.md` file of `docs/specs/`, then broken into tasks, then
         built with tests. See [CONTRIBUTING.md](https://github.com/jstmichel/kobold/blob/main/CONTRIBUTING.md).
   - type: textarea
     id: idea
