@@ -1,0 +1,123 @@
+// SPDX-License-Identifier: MIT
+//
+// Stand-in for KAboutData, used when KOBOLD_USE_KDE is OFF. It keeps what the command line
+// reads (name, version, description, --version and --help) and accepts the rest of the data
+// that the KDE About page would show.
+
+#pragma once
+
+#include <QByteArray>
+#include <QCommandLineOption>
+#include <QCommandLineParser>
+#include <QCoreApplication>
+#include <QString>
+#include <QTextStream>
+#include <QUrl>
+
+#include <cstdlib>
+
+class KAboutLicense
+{
+public:
+    enum LicenseKey {
+        Unknown = 0,
+        MIT,
+    };
+};
+
+class KAboutData
+{
+public:
+    KAboutData() = default;
+    KAboutData(const QString &componentName,
+               const QString &displayName,
+               const QString &version,
+               const QString &shortDescription,
+               KAboutLicense::LicenseKey = KAboutLicense::Unknown)
+        : m_componentName(componentName)
+        , m_displayName(displayName)
+        , m_version(version)
+        , m_shortDescription(shortDescription)
+    {
+    }
+
+    KAboutData &addAuthor(const QString &, const QString & = {}, const QString & = {}, const QString & = {}, const QUrl & = {})
+    {
+        return *this;
+    }
+    KAboutData &addCredit(const QString &, const QString & = {}, const QString & = {}, const QString & = {}, const QUrl & = {})
+    {
+        return *this;
+    }
+    KAboutData &setTranslator(const QString &, const QString &)
+    {
+        return *this;
+    }
+    KAboutData &setHomepage(const QString &)
+    {
+        return *this;
+    }
+    KAboutData &setBugAddress(const QByteArray &)
+    {
+        return *this;
+    }
+    KAboutData &setDesktopFileName(const QString &)
+    {
+        return *this;
+    }
+    KAboutData &setProgramLogo(const QVariant &)
+    {
+        return *this;
+    }
+
+    QString componentName() const
+    {
+        return m_componentName;
+    }
+    QString displayName() const
+    {
+        return m_displayName;
+    }
+    QString version() const
+    {
+        return m_version;
+    }
+    QString shortDescription() const
+    {
+        return m_shortDescription;
+    }
+
+    void setupCommandLine(QCommandLineParser *parser) const
+    {
+        parser->addHelpOption();
+        parser->addVersionOption();
+    }
+
+    // QCommandLineParser::process() already shows --help and --version; this only mirrors the
+    // KDE call that follows it.
+    void processCommandLine(QCommandLineParser *) const {}
+
+    static void setApplicationData(const KAboutData &data)
+    {
+        current() = data;
+        QCoreApplication::setApplicationName(data.m_componentName);
+        QCoreApplication::setApplicationVersion(data.m_version);
+    }
+
+    static KAboutData applicationData()
+    {
+        return current();
+    }
+
+private:
+    static KAboutData &current()
+    {
+        static KAboutData data;
+        return data;
+    }
+
+    QString m_componentName;
+    QString m_displayName;
+    QString m_version;
+    QString m_shortDescription;
+};

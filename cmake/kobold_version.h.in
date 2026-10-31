@@ -1,0 +1,8 @@
+// Version header for builds without extra-cmake-modules, with the names ecm_setup_version gives.
+#pragma once
+
+#define KOBOLD_VERSION_STRING "@PROJECT_VERSION@"
+#define KOBOLD_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define KOBOLD_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define KOBOLD_VERSION_PATCH @PROJECT_VERSION_PATCH@
+#define KOBOLD_VERSION ((@PROJECT_VERSION_MAJOR@ << 16) | (@PROJECT_VERSION_MINOR@ << 8) | @PROJECT_VERSION_PATCH@)

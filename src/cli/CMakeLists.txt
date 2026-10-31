@@ -15,8 +15,10 @@ add_executable(kobold
 target_link_libraries(kobold
     PRIVATE
         kobold-services
-        KF6::CoreAddons
-        KF6::I18n
 )
-
-install(TARGETS kobold ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+if(KOBOLD_USE_KDE)
+    target_link_libraries(kobold PRIVATE KF6::CoreAddons KF6::I18n)
+    install(TARGETS kobold ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+else()
+    install(TARGETS kobold RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+endif()

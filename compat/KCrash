@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: MIT
+//
+// Stand-in for KCrash: no crash handler without KDE.
+
+#pragma once
+
+namespace KCrash
+{
+inline void initialize() {}
+}

@@ -6,8 +6,14 @@
 #include <iostream>
 #include <string>
 
+#include "platform.h"
+
+#ifdef Q_OS_WIN
+#include <windows.h>
+#else
 #include <termios.h>
 #include <unistd.h>
+#endif
 
 namespace Kobold::Cli
 {
@@ -18,6 +24,22 @@ namespace
 class EchoGuard
 {
 public:
+#ifdef Q_OS_WIN
+    EchoGuard()
+    {
+        m_handle = GetStdHandle(STD_INPUT_HANDLE);
+        if (GetConsoleMode(m_handle, &m_saved)) {
+            m_active = SetConsoleMode(m_handle, m_saved & ~DWORD(ENABLE_ECHO_INPUT)) != 0;
+        }
+    }
+
+    ~EchoGuard()
+    {
+        if (m_active) {
+            SetConsoleMode(m_handle, m_saved);
+        }
+    }
+#else
     EchoGuard()
     {
         if (tcgetattr(STDIN_FILENO, &m_saved) == 0) {
@@ -33,12 +55,18 @@ public:
             tcsetattr(STDIN_FILENO, TCSAFLUSH, &m_saved);
         }
     }
+#endif
 
     EchoGuard(const EchoGuard &) = delete;
     EchoGuard &operator=(const EchoGuard &) = delete;
 
 private:
+#ifdef Q_OS_WIN
+    HANDLE m_handle = nullptr;
+    DWORD m_saved = 0;
+#else
     termios m_saved{};
+#endif
     bool m_active = false;
 };
 }
@@ -63,7 +91,7 @@ void printWarning(const QString &text)
 QString readSecret(const QString &prompt)
 {
     std::string line;
-    if (isatty(STDIN_FILENO)) {
+    if (Platform::stdinIsTerminal()) {
         std::fputs(prompt.toLocal8Bit().constData(), stderr);
         std::fflush(stderr);
         EchoGuard guard;
@@ -77,7 +105,7 @@ QString readSecret(const QString &prompt)
 
 bool isInteractive()
 {
-    return isatty(STDIN_FILENO);
+    return Platform::stdinIsTerminal();
 }
 
 QString readLine(const QString &prompt)

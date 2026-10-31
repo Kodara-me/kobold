@@ -3,7 +3,9 @@
 #include "apikeystore.h"
 
 #include <KLocalizedString>
+#ifdef KOBOLD_HAVE_KEYCHAIN
 #include <qt6keychain/keychain.h>
+#endif
 
 #include <QHash>
 #include <QMetaObject>
@@ -13,6 +15,7 @@ namespace Kobold
 
 namespace
 {
+#ifdef KOBOLD_HAVE_KEYCHAIN
 ApiKeyStore::Result resultFromJob(const QKeychain::Job *job)
 {
     ApiKeyStore::Result result;
@@ -30,6 +33,21 @@ ApiKeyStore::Result resultFromJob(const QKeychain::Job *job)
     }
     return result;
 }
+#else
+// Built without QtKeychain: only the in-memory mode works, the other calls report an error.
+void unavailable(QObject *context, std::function<void(const ApiKeyStore::Result &)> callback)
+{
+    QMetaObject::invokeMethod(
+        context,
+        [callback = std::move(callback)]() {
+            ApiKeyStore::Result result;
+            result.status = ApiKeyStore::Result::Status::Error;
+            result.errorString = i18n("keychain error: this build has no keychain support");
+            callback(result);
+        },
+        Qt::QueuedConnection);
+}
+#endif
 
 // KOBOLD_KEYCHAIN=memory: keys live in this process only, the system keychain is never read
 // or written. Every test runs with it.
@@ -50,6 +68,7 @@ void later(QObject *context, std::function<void()> call)
     QMetaObject::invokeMethod(context, std::move(call), Qt::QueuedConnection);
 }
 
+#ifdef KOBOLD_HAVE_KEYCHAIN
 template<typename JobType>
 JobType *createJob(const QString &service, const QString &key, QObject *parent)
 {
@@ -60,6 +79,7 @@ JobType *createJob(const QString &service, const QString &key, QObject *parent)
     job->setInsecureFallback(false);
     return job;
 }
+#endif
 }
 
 ApiKeyStore::ApiKeyStore(QObject *parent)
@@ -86,6 +106,7 @@ void ApiKeyStore::read(std::function<void(const Result &)> callback)
         });
         return;
     }
+#ifdef KOBOLD_HAVE_KEYCHAIN
     auto *job = createJob<QKeychain::ReadPasswordJob>(m_service, m_key, this);
     connect(job, &QKeychain::Job::finished, this, [callback = std::move(callback)](QKeychain::Job *finishedJob) {
         Result result = resultFromJob(finishedJob);
@@ -95,6 +116,9 @@ void ApiKeyStore::read(std::function<void(const Result &)> callback)
         callback(result);
     });
     job->start();
+#else
+    unavailable(this, std::move(callback));
+#endif
 }
 
 void ApiKeyStore::write(const QString &apiKey, std::function<void(const Result &)> callback)
@@ -108,12 +132,16 @@ void ApiKeyStore::write(const QString &apiKey, std::function<void(const Result &
         });
         return;
     }
+#ifdef KOBOLD_HAVE_KEYCHAIN
     auto *job = createJob<QKeychain::WritePasswordJob>(m_service, m_key, this);
     job->setTextData(apiKey);
     connect(job, &QKeychain::Job::finished, this, [callback = std::move(callback)](QKeychain::Job *finishedJob) {
         callback(resultFromJob(finishedJob));
     });
     job->start();
+#else
+    unavailable(this, std::move(callback));
+#endif
 }
 
 void ApiKeyStore::remove(std::function<void(const Result &)> callback)
@@ -127,11 +155,15 @@ void ApiKeyStore::remove(std::function<void(const Result &)> callback)
         });
         return;
     }
+#ifdef KOBOLD_HAVE_KEYCHAIN
     auto *job = createJob<QKeychain::DeletePasswordJob>(m_service, m_key, this);
     connect(job, &QKeychain::Job::finished, this, [callback = std::move(callback)](QKeychain::Job *finishedJob) {
         callback(resultFromJob(finishedJob));
     });
     job->start();
+#else
+    unavailable(this, std::move(callback));
+#endif
 }
 
 } // namespace Kobold
