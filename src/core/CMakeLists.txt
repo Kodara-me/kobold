@@ -60,6 +60,11 @@ if(Qt6Keychain_FOUND)
     target_compile_definitions(kobold-core PRIVATE KOBOLD_HAVE_KEYCHAIN)
 endif()
 
+if(TARGET Poppler::Qt6)
+    target_link_libraries(kobold-core PRIVATE Poppler::Qt6)
+    target_compile_definitions(kobold-core PRIVATE KOBOLD_HAVE_POPPLER)
+endif()
+
 if(KOBOLD_USE_KDE)
     target_link_libraries(kobold-core
         PUBLIC
@@ -69,9 +74,11 @@ if(KOBOLD_USE_KDE)
         PRIVATE
             KF6::Archive
             KF6::Solid
-            Poppler::Qt6
     )
+    target_compile_definitions(kobold-core PRIVATE KOBOLD_HAVE_SOLID)
 else()
-    # Stand-ins for the few KDE classes the sources use.
+    # Stand-ins for the few KDE classes the sources use (KZip is built on libarchive).
+    find_package(LibArchive REQUIRED)
     target_include_directories(kobold-core PUBLIC ${PROJECT_SOURCE_DIR}/compat)
+    target_link_libraries(kobold-core PUBLIC LibArchive::LibArchive)
 endif()

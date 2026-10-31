@@ -15,7 +15,9 @@
 #include <QUrl>
 #include <QXmlStreamReader>
 
+#ifdef KOBOLD_HAVE_POPPLER
 #include <poppler-qt6.h>
+#endif
 
 #include <algorithm>
 #include <memory>
@@ -939,6 +941,7 @@ BookMetadata readEmbedded(const QString &path)
         }
         return {};
     }
+#ifdef KOBOLD_HAVE_POPPLER
     if (lower.endsWith(QLatin1String(".pdf"))) {
         const std::unique_ptr<Poppler::Document> document = Poppler::Document::load(path);
         if (!document || document->isLocked()) {
@@ -951,6 +954,7 @@ BookMetadata readEmbedded(const QString &path)
         metadata.tags = splitList(document->info(QStringLiteral("Keywords")));
         return metadata;
     }
+#endif
     return {};
 }
 
@@ -991,6 +995,7 @@ QImage readPage(const QString &path, int index)
         const QString page = comicPages(path, nullptr).value(index);
         return page.isEmpty() ? QImage() : QImage::fromData(sevenZipFile(path, page));
     }
+#ifdef KOBOLD_HAVE_POPPLER
     if (lower.endsWith(QLatin1String(".pdf"))) {
         const std::unique_ptr<Poppler::Document> document = Poppler::Document::load(path);
         if (!document || document->isLocked() || index >= document->numPages()) {
@@ -999,6 +1004,7 @@ QImage readPage(const QString &path, int index)
         const std::unique_ptr<Poppler::Page> page = document->page(index);
         return page ? page->renderToImage(72.0, 72.0) : QImage();
     }
+#endif
     return {};
 }
 
@@ -1012,10 +1018,12 @@ int pageCount(const QString &path)
     if (lower.endsWith(QLatin1String(".cbr"))) {
         return int(comicPages(path, nullptr).size());
     }
+#ifdef KOBOLD_HAVE_POPPLER
     if (lower.endsWith(QLatin1String(".pdf"))) {
         const std::unique_ptr<Poppler::Document> document = Poppler::Document::load(path);
         return document && !document->isLocked() ? document->numPages() : 0;
     }
+#endif
     return 0;
 }
 
@@ -1072,6 +1080,7 @@ QImage readCover(const QString &path)
         const QString first = firstImage(sevenZipList(path));
         return first.isEmpty() ? QImage() : QImage::fromData(sevenZipFile(path, first));
     }
+#ifdef KOBOLD_HAVE_POPPLER
     if (lower.endsWith(QLatin1String(".pdf"))) {
         const std::unique_ptr<Poppler::Document> document = Poppler::Document::load(path);
         if (!document || document->isLocked() || document->numPages() == 0) {
@@ -1080,6 +1089,7 @@ QImage readCover(const QString &path)
         const std::unique_ptr<Poppler::Page> page = document->page(0);
         return page ? page->renderToImage(72.0, 72.0) : QImage();
     }
+#endif
     return {};
 }
 

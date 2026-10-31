@@ -45,6 +45,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_GUI "Build the Kirigami application (kobold-gui)" ON)
 if(NOT KOBOLD_USE_KDE)
     set(BUILD_GUI OFF)
+    # ECM's KDECMakeSettings turns these on in a KDE build.
+    set(CMAKE_AUTOMOC ON)
 endif()
 
 # Required packages are looked up without REQUIRED so that feature_summary can report

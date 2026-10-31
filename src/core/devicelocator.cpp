@@ -4,15 +4,20 @@
 #include "logging.h"
 
 #include <KLocalizedString>
+#ifdef KOBOLD_HAVE_SOLID
 #include <Solid/Device>
 #include <Solid/StorageAccess>
 #include <Solid/StorageVolume>
+#endif
 
 #include <QDir>
 #include <QFileInfo>
+#include <QStorageInfo>
 
+#ifdef Q_OS_UNIX
 #include <pwd.h>
 #include <unistd.h>
+#endif
 
 namespace Kobold::DeviceLocator
 {
@@ -63,6 +68,7 @@ Result fromCandidates(const QStringList &mountPoints)
 QStringList solidCandidates()
 {
     QStringList mountPoints;
+#ifdef KOBOLD_HAVE_SOLID
     const QList<Solid::Device> devices = Solid::Device::listFromType(Solid::DeviceInterface::StorageAccess);
     for (const Solid::Device &device : devices) {
         const auto *access = device.as<Solid::StorageAccess>();
@@ -72,6 +78,16 @@ QStringList solidCandidates()
             mountPoints.append(access->filePath());
         }
     }
+#else
+    // Without Solid every volume is already mounted (a drive letter on Windows).
+    const QList<QStorageInfo> volumes = QStorageInfo::mountedVolumes();
+    for (const QStorageInfo &volume : volumes) {
+        if (volume.isValid() && volume.isReady() && volume.name() == VolumeLabel) {
+            qCDebug(KOBOLD_DEVICE) << "Volume" << volume.device() << "mounted at" << volume.rootPath();
+            mountPoints.append(volume.rootPath());
+        }
+    }
+#endif
     return mountPoints;
 }
 
@@ -91,8 +107,12 @@ QString defaultMediaRoot()
     if (qEnvironmentVariableIsSet("KOBOLD_MEDIA_ROOT")) {
         return qEnvironmentVariable("KOBOLD_MEDIA_ROOT");
     }
+#ifdef Q_OS_UNIX
     const passwd *user = getpwuid(getuid());
     return user ? QStringLiteral("/run/media/") + QString::fromLocal8Bit(user->pw_name) : QString();
+#else
+    return {};
+#endif
 }
 
 QStringList connected()
