@@ -5,6 +5,7 @@
 
 #include <KLocalizedString>
 
+#ifdef KOBOLD_HAVE_SOLID
 #include <Solid/Device>
 #include <Solid/StorageAccess>
 #include <Solid/StorageVolume>
@@ -17,10 +18,14 @@
 #include <QDBusReply>
 #include <QTimer>
 #include <QVariantMap>
+#else
+#include <QStorageInfo>
+#endif
 
 namespace Kobold
 {
 
+#ifdef KOBOLD_HAVE_SOLID
 namespace
 {
 const QString UDisks = QStringLiteral("org.freedesktop.UDisks2");
@@ -115,5 +120,41 @@ void SolidVolumeBackend::powerOff(const QString &udi, Done done)
         done(!reply.isError(), reply.isError() ? i18n("the Kobo is unmounted but could not be powered off (%1); unplug it", reply.error().message()) : QString());
     });
 }
+
+#else
+
+// Without Solid, the volumes are the ones the system already mounted (drive letters on
+// Windows): the device id is the root path, and the user unplugs the Kobo from the system.
+QList<KoboVolume> SolidVolumeBackend::volumes() const
+{
+    QList<KoboVolume> result;
+    if (qEnvironmentVariableIsSet("KOBOLD_MEDIA_ROOT")) {
+        return result;
+    }
+    const QList<QStorageInfo> storages = QStorageInfo::mountedVolumes();
+    for (const QStorageInfo &storage : storages) {
+        if (storage.isValid() && storage.isReady() && storage.name() == DeviceLocator::VolumeLabel) {
+            result.append(KoboVolume{storage.rootPath(), QString::fromUtf8(storage.device()), true, storage.rootPath()});
+        }
+    }
+    return result;
+}
+
+void SolidVolumeBackend::mount(const QString &, Done done)
+{
+    done(true, QString());
+}
+
+void SolidVolumeBackend::unmount(const QString &, Done done)
+{
+    done(true, QString());
+}
+
+void SolidVolumeBackend::powerOff(const QString &, Done done)
+{
+    done(false, i18n("the Kobo cannot be powered off from here; eject it from the system, then unplug it"));
+}
+
+#endif
 
 } // namespace Kobold
