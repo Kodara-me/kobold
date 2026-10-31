@@ -152,7 +152,7 @@ void SolidVolumeBackend::unmount(const QString &, Done done)
 
 void SolidVolumeBackend::powerOff(const QString &, Done done)
 {
-    done(false, i18n("the Kobo cannot be powered off from here; eject it from the system, then unplug it"));
+    done(false, i18n("the Kobo cannot be powered off; unplug it"));
 }
 
 #endif

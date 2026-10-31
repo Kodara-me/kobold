@@ -42,7 +42,7 @@ void unavailable(QObject *context, std::function<void(const ApiKeyStore::Result 
         [callback = std::move(callback)]() {
             ApiKeyStore::Result result;
             result.status = ApiKeyStore::Result::Status::Error;
-            result.errorString = i18n("keychain error: this build has no keychain support");
+            result.errorString = i18n("keychain error: %1", QStringLiteral("not supported by this build"));
             callback(result);
         },
         Qt::QueuedConnection);
