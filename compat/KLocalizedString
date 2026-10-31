@@ -1,0 +1,146 @@
+// SPDX-License-Identifier: MIT
+//
+// Stand-in for KDE's KLocalizedString, used when KOBOLD_USE_KDE is OFF. It covers what Kobold
+// calls: i18n, i18nc, i18np and ki18nc, with %1..%n placeholders. Strings go through
+// QCoreApplication::translate in the "kobold" context, so a Qt translator can supply them later;
+// until one is installed the English source text is shown.
+
+#pragma once
+
+#include <QByteArray>
+#include <QCoreApplication>
+#include <QLocale>
+#include <QString>
+#include <QStringList>
+
+#include <type_traits>
+
+namespace KoboldCompat
+{
+inline QString formatArgument(const QString &value)
+{
+    return value;
+}
+
+inline QString formatArgument(const char *value)
+{
+    return QString::fromUtf8(value);
+}
+
+inline QString formatArgument(const QByteArray &value)
+{
+    return QString::fromUtf8(value);
+}
+
+inline QString formatArgument(QChar value)
+{
+    return QString(value);
+}
+
+template<typename T, std::enable_if_t<std::is_arithmetic_v<T> && !std::is_same_v<T, bool>, int> = 0>
+QString formatArgument(T value)
+{
+    if constexpr (std::is_floating_point_v<T>) {
+        return QLocale().toString(static_cast<double>(value), 'g', QLocale::FloatingPointShortest);
+    } else if constexpr (std::is_signed_v<T>) {
+        return QLocale().toString(static_cast<qlonglong>(value));
+    } else {
+        return QLocale().toString(static_cast<qulonglong>(value));
+    }
+}
+
+// Replaces %1, %2, ... with the arguments; a placeholder with no argument is kept as written.
+inline QString substitute(const QString &format, const QStringList &arguments)
+{
+    QString result;
+    result.reserve(format.size() + 16);
+    for (qsizetype i = 0; i < format.size(); ++i) {
+        const QChar current = format.at(i);
+        if (current != QLatin1Char('%') || i + 1 >= format.size() || !format.at(i + 1).isDigit()) {
+            result += current;
+            continue;
+        }
+        qsizetype end = i + 1;
+        int number = 0;
+        while (end < format.size() && format.at(end).isDigit() && number < 10) {
+            number = number * 10 + format.at(end).digitValue();
+            ++end;
+        }
+        if (number >= 1 && number <= arguments.size()) {
+            result += arguments.at(number - 1);
+        } else {
+            result += format.mid(i, end - i);
+        }
+        i = end - 1;
+    }
+    return result;
+}
+
+inline QString translated(const char *context, const char *text)
+{
+    return QCoreApplication::translate("kobold", text, context);
+}
+}
+
+// A message whose translation and arguments are resolved by toString(), as ki18nc returns it.
+class KLocalizedString
+{
+public:
+    KLocalizedString() = default;
+    KLocalizedString(const char *context, const char *text)
+        : m_context(context)
+        , m_text(text)
+    {
+    }
+
+    template<typename T>
+    KLocalizedString subs(const T &value) const
+    {
+        KLocalizedString copy = *this;
+        copy.m_arguments.append(KoboldCompat::formatArgument(value));
+        return copy;
+    }
+
+    QString toString() const
+    {
+        if (!m_text) {
+            return {};
+        }
+        return KoboldCompat::substitute(KoboldCompat::translated(m_context, m_text), m_arguments);
+    }
+
+    // Catalogs come from Qt translators here, so there is no domain to set up.
+    static void setApplicationDomain(const QByteArray &) {}
+    static void addDomainLocaleDir(const QByteArray &, const QString &) {}
+
+private:
+    const char *m_context = nullptr;
+    const char *m_text = nullptr;
+    QStringList m_arguments;
+};
+
+inline KLocalizedString ki18nc(const char *context, const char *text)
+{
+    return KLocalizedString(context, text);
+}
+
+template<typename... Args>
+QString i18nc(const char *context, const char *text, const Args &...args)
+{
+    return KoboldCompat::substitute(KoboldCompat::translated(context, text), {KoboldCompat::formatArgument(args)...});
+}
+
+template<typename... Args>
+QString i18n(const char *text, const Args &...args)
+{
+    return i18nc(nullptr, text, args...);
+}
+
+// The first argument is the count, which %1 shows; the others follow as %2, %3, ...
+template<typename Count, typename... Args>
+QString i18np(const char *singular, const char *plural, const Count &count, const Args &...args)
+{
+    const bool one = static_cast<qlonglong>(count) == 1;
+    return KoboldCompat::substitute(KoboldCompat::translated(nullptr, one ? singular : plural),
+                                    {KoboldCompat::formatArgument(count), KoboldCompat::formatArgument(args)...});
+}

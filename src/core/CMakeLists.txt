@@ -20,6 +20,7 @@ add_library(kobold-core STATIC
     manifest.cpp
     metadatalookup.cpp
     parental.cpp
+    platform.cpp
     processrunner.cpp
     progresscalculator.cpp
     progresssync.cpp
@@ -52,12 +53,25 @@ target_link_libraries(kobold-core
         Qt6::Sql
         Qt6::Gui
         Qt6::Concurrent
-        Qt6::DBus
-        KF6::ConfigCore
-        KF6::I18n
-    PRIVATE
-        KF6::Archive
-        KF6::Solid
-        Poppler::Qt6
-        qt6keychain
 )
+
+if(Qt6Keychain_FOUND)
+    target_link_libraries(kobold-core PRIVATE qt6keychain)
+    target_compile_definitions(kobold-core PRIVATE KOBOLD_HAVE_KEYCHAIN)
+endif()
+
+if(KOBOLD_USE_KDE)
+    target_link_libraries(kobold-core
+        PUBLIC
+            Qt6::DBus
+            KF6::ConfigCore
+            KF6::I18n
+        PRIVATE
+            KF6::Archive
+            KF6::Solid
+            Poppler::Qt6
+    )
+else()
+    # Stand-ins for the few KDE classes the sources use.
+    target_include_directories(kobold-core PUBLIC ${PROJECT_SOURCE_DIR}/compat)
+endif()

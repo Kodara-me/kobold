@@ -10,8 +10,7 @@
 #include <QJsonDocument>
 #include <QSaveFile>
 
-#include <fcntl.h>
-#include <unistd.h>
+#include "platform.h"
 
 namespace Kobold
 {
@@ -62,7 +61,7 @@ bool writeJsonObjectFile(const QString &filePath, const QJsonObject &object, QSt
     file.write(QJsonDocument(object).toJson(QJsonDocument::Indented));
     // On a Kobo (FAT, unplugged at any time) the data must reach the device before the rename,
     // and the rename before we report success: otherwise an empty file can remain.
-    if (!file.flush() || ::fsync(file.handle()) != 0) {
+    if (!file.flush() || !Platform::syncFile(file)) {
         file.cancelWriting();
         file.commit();
         *errorString = i18n("cannot write %1: %2", filePath, file.errorString());
@@ -72,11 +71,7 @@ bool writeJsonObjectFile(const QString &filePath, const QJsonObject &object, QSt
         *errorString = i18n("cannot write %1: %2", filePath, file.errorString());
         return false;
     }
-    const int folder = ::open(QFile::encodeName(directory).constData(), O_RDONLY | O_DIRECTORY);
-    if (folder >= 0) {
-        ::fsync(folder);
-        ::close(folder);
-    }
+    Platform::syncFolder(directory);
     return true;
 }
 

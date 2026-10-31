@@ -24,9 +24,10 @@ target_include_directories(kobold-services
 target_link_libraries(kobold-services
     PUBLIC
         kobold-core
-        KF6::CoreAddons
-        KF6::I18n
 )
+if(KOBOLD_USE_KDE)
+    target_link_libraries(kobold-services PUBLIC KF6::CoreAddons KF6::I18n)
+endif()
 
 # The build tree, where useBuildTreeTranslations() looks for compiled catalogs.
 target_compile_definitions(kobold-services PRIVATE KOBOLD_BUILD_DIR="${PROJECT_BINARY_DIR}")

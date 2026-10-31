@@ -23,7 +23,7 @@
 #include <QTemporaryDir>
 #include <QTimer>
 
-#include <unistd.h>
+#include "platform.h"
 
 namespace Kobold
 {
@@ -58,7 +58,7 @@ bool copyFileDurably(const QString &sourcePath, const QString &destinationPath, 
             return false;
         }
     }
-    if (!destination.flush() || ::fsync(destination.handle()) != 0) {
+    if (!destination.flush() || !Platform::syncFile(destination)) {
         *errorString = i18n("cannot flush %1 to the device", destinationPath);
         destination.close();
         QFile::remove(destinationPath);

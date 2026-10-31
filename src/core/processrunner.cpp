@@ -7,8 +7,11 @@
 
 #include <memory>
 
-#include <signal.h>
+#include "platform.h"
+
+#ifdef Q_OS_UNIX
 #include <unistd.h>
+#endif
 
 namespace Kobold::ProcessRunner
 {
@@ -36,10 +39,7 @@ void run(QObject *context,
 
     QObject::connect(timer, &QTimer::timeout, process, [process, timedOut]() {
         *timedOut = true;
-        const qint64 pid = process->processId();
-        if (pid > 0) {
-            ::kill(-static_cast<pid_t>(pid), SIGKILL);
-        }
+        Platform::killProcessTree(process->processId());
         process->kill();
     });
     QObject::connect(process, &QProcess::finished, process, finish);
@@ -52,9 +52,11 @@ void run(QObject *context,
     process->setProgram(program);
     process->setArguments(arguments);
     process->setProcessChannelMode(QProcess::SeparateChannels);
+#ifdef Q_OS_UNIX
     process->setChildProcessModifier([]() {
         ::setpgid(0, 0);
     });
+#endif
     timer->start(timeout);
     process->start();
 }
